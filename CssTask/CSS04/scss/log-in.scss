@@ -1,0 +1,82 @@
+@charset "utf-8";
+@import "common";
+.left{float: left;}
+.right{float:right;}
+.header{
+	background:$theme-c;
+	height: 4rem;
+	line-height: 4rem;
+	color:$font-c;
+	text-align:center;
+	a{
+		color:$font-c;
+	}
+	.left{margin-left: 1rem;}
+	.right{margin-right: 1rem;}
+}
+.log-form{
+
+}	
+	.field{
+		width:100%;
+		height:4rem;
+		line-height:4rem;
+		border-style:none;		
+	}
+	.field-log{
+
+		background:rgb(255,255,255);
+		margin:1rem auto;
+		.label{
+			height:$label-h;
+			line-height:$label-h;
+			width:$label-w;
+			margin:0 .2rem 0 .5rem;
+		}
+		.label-phone{
+			background:url(../img/iphone.png) no-repeat center center;
+		}
+		.label-pw{
+			background:url(../img/locked.png) no-repeat center center;
+		}
+		.input-txt{
+			width:$input-w;
+			height:$input-h;
+			line-height:$input-h;
+			border-style: none;
+			font-size:80%;
+			text-indent: 1rem;
+			color:rgb(228,229,231);
+			border: .1rem solid transparent;
+			border-left-color: rgb(235,237,236);
+			margin:1rem .5rem;
+			&:focus{
+				border:.1rem solid $theme-c;
+			}
+		}
+
+	}
+	.button{
+		    border-style:none;
+
+			.log-in{
+			text-align: center;
+			height:4rem;
+			line-height:4rem;
+			background:$theme-c;
+			width:100%;
+			border-style:none;
+			color:rgb(255,255,255);
+			font-size:80%;
+		}
+	}
+
+	.retrieve {
+		float:right;
+		margin:2rem;
+
+		a {
+		color:$theme-c;
+
+		}
+	}

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="29" height="43" viewBox="0 0 29 43">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f7f7f7;
+        fill-rule: evenodd;
+        filter: url(#filter);
+      }
+    </style>
+    <filter id="filter" x="43" y="287" width="29" height="43" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#bababa"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <path id="locked_2.svg" data-name="locked 2.svg" class="cls-1" d="M57.5,330A14.3,14.3,0,0,1,43,315.914a13.982,13.982,0,0,1,6.868-11.962v-8.8a8.4,8.4,0,0,1,16.789,0V305A13.907,13.907,0,0,1,72,315.914,14.3,14.3,0,0,1,57.5,330Zm6.105-34.845a5.344,5.344,0,0,0-10.684,0v7.4a14.747,14.747,0,0,1,10.684.594v-8Zm-6.105,8.9a11.867,11.867,0,1,0,12.211,11.862A12.039,12.039,0,0,0,57.5,304.052Zm0,22.982a11.125,11.125,0,1,1,11.447-11.12A11.287,11.287,0,0,1,57.5,327.034Zm2.29-14.086a2.29,2.29,0,0,0-4.579,0,2.21,2.21,0,0,0,1.781,2.125l-1.781,6.772h4.674L57.879,315.1A2.215,2.215,0,0,0,59.789,312.948Z" transform="translate(-43 -287)"/>
+</svg>

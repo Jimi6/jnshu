@@ -1,0 +1,38 @@
+@charset "utf-8";
+$unit:1px;
+$black:rgb(0,0,0);
+$theme-color:rgb(41, 176, 120);
+.footer-top{
+  	background-color: rgb(38, 162, 111);
+  	padding:30px 0;
+  	color:white;
+	dt h6{
+		font-size:14px;
+	}
+	dl{
+		  line-height:2;
+	}
+	dt,dd{
+  		display:inline;
+  		padding:5px;		
+	}
+  	dd{
+
+  		a{
+  			color:white;
+  			font-size:10px;
+  		}
+  	}
+  	.foot-links{
+  		margin:0 auto;
+  	}
+ }
+
+ .footer-copyright{
+   	background-color: $theme-color;
+ 	border-top: 1px solid rgb(35,149,98);
+ 	padding:10px;
+	color:white;
+	font-size:12px;
+	text-align:center;
+ }
