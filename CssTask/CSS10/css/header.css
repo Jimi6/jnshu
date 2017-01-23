@@ -1,0 +1,48 @@
+.header-top {
+  background-color: #1d7ad9;
+  height: 40px;
+  line-height: 40px;
+  width: 100%;
+  color: white;
+}
+
+.nav-tabs {
+  border-bottom: none;
+  height: 40px;
+  line-height: 40px;
+}
+.nav-tabs li a {
+  border-radius: 0;
+  border-color: transparent white transparent white;
+  height: 40px;
+  line-height: 40px;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-right: 0;
+  color: white;
+}
+.nav-tabs li a:hover {
+  color: black;
+}
+
+.header-nav {
+  background: #f9f9f9;
+  height: 100px;
+  line-height: 100px;
+}
+.header-nav .nav {
+  margin-top: 3rem;
+}
+.header-nav .nav-pills > li > a {
+  border-radius: 4px;
+  background-color: white;
+  margin: 0 1rem;
+  color: black;
+  line-height: .701;
+}
+.header-nav .nav-pills > li > a:hover, .header-nav .nav-pills > li.active > a {
+  color: #fff;
+  background-color: #337ab7;
+}
+
+/*# sourceMappingURL=header.css.map */

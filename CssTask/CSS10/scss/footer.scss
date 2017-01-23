@@ -1,0 +1,28 @@
+@charset "utf-8";
+.footer-top{
+  background-color: rgb(249, 249, 249);
+  height: 206px; 
+  line-height: 2.5;;
+}
+
+.footer-center ul{
+  li{
+        float: left;
+        line-height: 2;
+    }
+  li+li{
+      padding-left: 20px;
+  }  
+} 
+.footer-bottom{
+  clear: both;
+  background-color: rgb(29, 122, 217);
+}
+
+.footer-copyright{
+    height: 58px;
+    line-height: 58px;
+    color:rgb(255,255,255);
+    font-size: 14px;
+    text-align: center;
+}

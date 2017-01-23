@@ -1,0 +1,28 @@
+.footer-top {
+  background-color: #f9f9f9;
+  height: 206px;
+  line-height: 2.5;
+}
+
+.footer-center ul li {
+  float: left;
+  line-height: 2;
+}
+.footer-center ul li + li {
+  padding-left: 20px;
+}
+
+.footer-bottom {
+  clear: both;
+  background-color: #1d7ad9;
+}
+
+.footer-copyright {
+  height: 58px;
+  line-height: 58px;
+  color: white;
+  font-size: 14px;
+  text-align: center;
+}
+
+/*# sourceMappingURL=footer.css.map */

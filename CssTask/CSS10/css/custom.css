@@ -1,0 +1,91 @@
+body {
+  background: white;
+  font-size: 18px;
+  font-family: "Microsoft YaHei";
+  color: #666666;
+}
+
+.custom-step-wrap {
+  clear: both;
+  margin-top: 3rem;
+}
+.custom-step-wrap .step {
+  position: relative;
+  height: 4rem;
+  line-height: 4rem;
+}
+.custom-step-wrap .step:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 5px;
+  background-color: #cccccc;
+}
+.custom-step-wrap .step .step-no {
+  position: absolute;
+  top: -.75rem;
+  height: 1.5rem;
+  left: 53%;
+  line-height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 50%;
+  background-color: #cccccc;
+  text-align: center;
+  font-size: 12px;
+  color: white;
+}
+.custom-step-wrap .step:hover, .custom-step-wrap .step.active {
+  color: #ff7f02;
+}
+.custom-step-wrap .step:hover .step-no, .custom-step-wrap .step:hover:before, .custom-step-wrap .step.active .step-no, .custom-step-wrap .step.active:before {
+  background-color: #ff7f02;
+}
+.custom-step-wrap .step:hover:before, .custom-step-wrap .step.active:before {
+  border-radius: .5rem;
+}
+
+.custom-content {
+  clear: both;
+  margin-top: 4rem;
+}
+
+.custom-form .panel-heading {
+  color: #1d7ad9;
+  line-height: 1;
+}
+.custom-form .panel-heading img {
+  padding-right: 1rem;
+  margin-bottom: .3rem;
+}
+.custom-form label {
+  height: 3rem;
+  line-height: 3rem;
+  font-weight: normal;
+}
+.custom-form .checkbox-inline {
+  margin-bottom: 10px;
+}
+.custom-form .checkbox-inline span {
+  padding-left: 1.5rem;
+}
+.custom-form .diameter-number {
+  padding-left: 30px;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+.custom-form .input-number {
+  height: 2rem;
+  line-height: 1.5;
+  width: 6rem;
+  padding: 5px;
+  font-size: 12px;
+  margin: 0 1rem;
+}
+
+.next-step {
+  padding-left: 3rem;
+  padding-right: 3rem;
+  margin: 5rem 0 5rem 45%;
+}
+
+/*# sourceMappingURL=custom.css.map */
