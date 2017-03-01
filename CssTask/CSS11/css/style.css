@@ -3,49 +3,54 @@ body {
   width: 100%;
   max-width: 768px;
   margin: 0 auto;
-  font-size: 1.6rem;
+  font-family: "STHeitiSC";
+  font-size: 1rem;
 }
 
 a {
   text-decoration: none;
 }
 
-.header {
+.top {
   background: #5ac0ce;
   color: #fff;
   display: flex;
   justify-content: space-between;
-  height: 4rem;
-  line-height: 4rem;
+  height: 3rem;
+  line-height: 3rem;
   padding: 0 1rem;
 }
-.header a {
+.top a {
   color: #fff;
 }
-.header h3 {
+.top h3 {
   margin: 0;
   padding: 0;
+  font-weight: normal;
 }
 
 .user fieldset {
   background: #fff;
   margin: 2rem 0;
-  height: 2.5rem;
-  line-height: 2.5rem;
+  display: inline-block;
+  width: 100%;
+  height: 3rem;
+  line-height: 3rem;
   border: none;
   vertical-align: middle;
+  padding: .5rem 0;
 }
 .user fieldset img {
-  margin-left: 3%;
-  height: 100%;
+  margin: 0 3%;
+  float: left;
 }
 .user fieldset input {
-  float: right;
   border: none;
   border-left: 1px solid #ccc;
-  width: 85%;
-  height: 2.4rem;
-  font-size: 1.6rem;
+  height: 1.5rem;
+  line-height: 1.5rem;
+  width: 80%;
+  font-size: 0.88889rem;
   text-indent: 2rem;
   color: #cec0cd;
 }
@@ -56,7 +61,7 @@ a {
   line-height: 3rem;
   color: #fff;
   border: none;
-  font-size: 1.6rem;
+  font-size: 1rem;
   cursor: pointer;
 }
 

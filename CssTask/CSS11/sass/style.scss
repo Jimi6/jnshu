@@ -1,25 +1,31 @@
-$bg-color: #eff0f4;
-$theme-color: #5ac0ce;
-$input-color: #cec0cd;
-$body-color: #fff;
-$font-size:1.6rem;
+$bgColor: #eff0f4;
+$themeColor: #5ac0ce;
+$bodyColor: #fff;
+$fontSize:1rem;
+$fontStack:"STHeitiSC";
+$inputColor: #cec0cd;
+$maxWidth:768px;
+$itemHeight:3rem;
 body {
-    background: $bg-color;
+    background: $bgColor;
     width: 100%;
-    max-width: 768px;
+    max-width: $maxWidth;
     margin: 0 auto;
-    font-size: $font-size;
+    font-family: $fontStack;
+    font-size: $fontSize;
 }
 a{
     text-decoration: none;
 }
-.header {
-    background: $theme-color;
-    color: $body-color;
+
+
+.top {
+    background: $themeColor;
+    color: $bodyColor;
     display: flex;
     justify-content: space-between;
-    height: 4rem;
-    line-height: 4rem;
+    height:$itemHeight;
+    line-height: $itemHeight;
     padding: 0 1rem;
     a{
         color: #fff;
@@ -27,48 +33,53 @@ a{
     h3{
         margin: 0;
         padding: 0;
+        font-weight: normal;
     }
     
 }
+
 .user {
     fieldset{
         background: #fff;
         margin: 2rem 0;
-        height: 2.5rem;
-        line-height: 2.5rem;
+        display: inline-block;   
+        width: 100%;     
+        height:$itemHeight;
+        line-height: $itemHeight;
         border: none;
         vertical-align: middle;
+        padding: .5rem 0;
         img{
-            margin-left: 3%;
-            height: 100%;
+            margin: 0 3%;
+            float: left;
         }
         input{
-            float: right;
             border: none;
             border-left: 1px solid #ccc;
-            width: 85%;
-            height: 2.4rem;
-            font-size: $font-size;
+            height: .5*$itemHeight;
+            line-height: .5*$itemHeight;
+            width: 80%;
+            font-size: (32/36)*$fontSize;
             text-indent: 2rem;
-            color: $input-color;           
+            color: $inputColor;           
             
             
         }
     }
     .log-in {
-        background: $theme-color;
+        background: $themeColor;
         width: 100%;
-        height: 3rem;
-        line-height: 3rem;
-        color: $body-color;
+        height: $itemHeight;
+        line-height: $itemHeight;
+        color: $bodyColor;
         border: none;
-        font-size: $font-size;
+        font-size: $fontSize;
         cursor: pointer;
     }
 }
 
 .forget {
-    color: $theme-color;
+    color: $themeColor;
     float: right;
     margin-top: 1rem;
 }
