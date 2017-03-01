@@ -1,8 +1,14 @@
 @charset "utf-8";
+li{
+    list-style: none;
+}
 .footer-top{
   background-color: rgb(249, 249, 249);
-  height: 206px; 
-  line-height: 2.5;;
+//
+//line-height: 2.5;
+  .col-md-4{
+//  height: 206px;   
+  }
 }
 
 .footer-center ul{
@@ -20,9 +26,10 @@
 }
 
 .footer-copyright{
-    height: 58px;
-    line-height: 58px;
+//  height: 58px;
+//  line-height: 58px;
     color:rgb(255,255,255);
     font-size: 14px;
     text-align: center;
+    line-height: 2.5;
 }

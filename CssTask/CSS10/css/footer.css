@@ -1,7 +1,9 @@
+li {
+  list-style: none;
+}
+
 .footer-top {
   background-color: #f9f9f9;
-  height: 206px;
-  line-height: 2.5;
 }
 
 .footer-center ul li {
@@ -18,11 +20,10 @@
 }
 
 .footer-copyright {
-  height: 58px;
-  line-height: 58px;
   color: white;
   font-size: 14px;
   text-align: center;
+  line-height: 2.5;
 }
 
 /*# sourceMappingURL=footer.css.map */

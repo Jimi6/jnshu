@@ -1,9 +1,13 @@
 .header-top {
   background-color: #1d7ad9;
-  height: 40px;
-  line-height: 40px;
   width: 100%;
   color: white;
+}
+
+.header-tel {
+  height: 40px;
+  line-height: 40px;
+  font-size: 10px;
 }
 
 .nav-tabs {
@@ -27,18 +31,27 @@
 
 .header-nav {
   background: #f9f9f9;
-  height: 100px;
-  line-height: 100px;
+}
+.header-nav .row {
+  display: flex;
+  justify-content: flex-end;
 }
 .header-nav .nav {
-  margin-top: 3rem;
+  margin: 2rem 0;
+}
+.header-nav .nav li {
+  height: 5rem;
+  line-height: 5rem;
+  text-align: center;
+}
+.header-nav .nav-pills > li + li {
+  margin-left: 0;
 }
 .header-nav .nav-pills > li > a {
   border-radius: 4px;
   background-color: white;
-  margin: 0 1rem;
   color: black;
-  line-height: .701;
+  line-height: 2;
 }
 .header-nav .nav-pills > li > a:hover, .header-nav .nav-pills > li.active > a {
   color: #fff;
