@@ -1,0 +1,281 @@
+@charset "UTF-8";
+body {
+  font-size: 16px;
+  font-family: "Microsoft YaHei";
+  color: black;
+  width: 100%;
+  background-color: #fafafa;
+}
+
+h3 {
+  font-size: 18px;
+  color: #333333;
+}
+
+.container {
+  margin: 30px auto;
+}
+
+.breadcrumb {
+  background-color: transparent;
+  color: #333333;
+  line-height: 0.701;
+}
+.breadcrumb a {
+  color: black;
+}
+.breadcrumb a:hover {
+  text-decoration: none;
+}
+.breadcrumb li + li:before {
+  color: black;
+  content: ">";
+}
+.breadcrumb .active {
+  color: #29b078;
+}
+
+.muted {
+  text-align: left;
+  color: #999999;
+  line-height: 1.625;
+}
+
+body {
+  background-color: #fafafa;
+}
+
+.main-jobs .nav-pills {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 15px 0;
+  font-size: 14px;
+}
+.main-jobs .nav-pills li + li {
+  margin-left: 10px;
+}
+.main-jobs .nav-pills li > a {
+  border-radius: 0;
+  padding: 4px;
+  color: black;
+  font-size: 14px;
+}
+.main-jobs .nav-pills > li.active > a, .main-jobs .nav-pills > li.active > a:focus, .main-jobs .nav-pills > li.active > a:hover {
+  color: #fff;
+  background-color: #29b078;
+}
+.main-jobs .nav > li > a:focus, .main-jobs .nav > li > a:hover {
+  background-color: #29b078;
+  color: #fff;
+}
+
+.job-group h3 {
+  border-bottom: 1px solid #ccc;
+  line-height: 3;
+  font-size: 16px;
+}
+
+.job-group-item {
+  padding: 0;
+}
+.job-group-item .item-wrap {
+  background: white;
+  width: 94%;
+  margin: 3% auto;
+  position: relative;
+  overflow: hidden;
+  word-break: break-all;
+  border-radius: 5px;
+  box-shadow: 0 1px 1px #ddd,0 -1px 1px #ddd,1px 0 1px #ddd,-1px 0 #ddd;
+}
+.job-group-item .item-wrap .job-detail {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 40px 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 5px;
+  color: white;
+  opacity: 0;
+}
+.job-group-item .item-wrap .job-detail.active {
+  opacity: 1;
+}
+.job-group-item .item-wrap .job-detail h4 {
+  text-align: center;
+}
+.job-group-item .item-wrap .job-detail p {
+  text-indent: 2em;
+  line-height: 1.5;
+}
+.job-group-item table {
+  width: 101%;
+  line-height: 2.5;
+  font-size: 12px;
+}
+.job-group-item table span, .job-group-item table p, .job-group-item table h4 {
+  padding: 0 10px;
+}
+.job-group-item table strong {
+  color: #f01400;
+}
+.job-group-item table .job-intro {
+  font-size: 14px;
+}
+.job-group-item table tr {
+  width: 100%;
+}
+.job-group-item table tr td {
+  border: 1px solid #ccc;
+}
+.job-group-item table tr .col-left {
+  width: 35%;
+  float: left;
+  text-align: center;
+}
+.job-group-item table tr .thumbnail {
+  border: none;
+  border-radius: 0;
+}
+.job-group-item table tr .pay {
+  line-height: 7.5;
+}
+.job-group-item table tr .col-right1, .job-group-item table tr .col-right2 {
+  float: right;
+  width: 65%;
+}
+.job-group-item table tr .col-right1 p {
+  line-height: 1.5;
+}
+.job-group-item table tr .col-right2 {
+  border-left: 1px solid #ccc;
+}
+.job-group-item table tr .col-right2 .col-right2-row {
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+}
+.job-group-item table tr .col-right2 .col-right2-row3 {
+  border-bottom: none;
+}
+
+@keyframes job-detail-animation {
+  0% {
+    background-color: rgba(255, 255, 255, 0.1);
+    opacity: .1;
+    color: #c8c8c8;
+  }
+  25% {
+    background-color: rgba(200, 200, 200, 0.2);
+    opacity: .3;
+    color: gainsboro;
+  }
+  50% {
+    background-color: rgba(80, 80, 80, 0.35);
+    opacity: .6;
+    color: #f0f0f0;
+  }
+  75% {
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: .8;
+    color: #fafafa;
+  }
+  100% {
+    background-color: rgba(0, 0, 0, 0.75);
+    opacity: 1;
+    color: white;
+  }
+}
+@-moz-keyframes job-detail-animation /* Firefox */ {
+  0% {
+    background-color: rgba(255, 255, 255, 0.1);
+    opacity: .1;
+    color: #c8c8c8;
+  }
+  25% {
+    background-color: rgba(200, 200, 200, 0.2);
+    opacity: .3;
+    color: gainsboro;
+  }
+  50% {
+    background-color: rgba(80, 80, 80, 0.35);
+    opacity: .6;
+    color: #f0f0f0;
+  }
+  75% {
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: .8;
+    color: #fafafa;
+  }
+  100% {
+    background-color: rgba(0, 0, 0, 0.75);
+    opacity: 1;
+    color: white;
+  }
+}
+@-webkit-keyframes job-detail-animation /* Safari 和 Chrome */ {
+  0% {
+    background-color: rgba(255, 255, 255, 0.1);
+    opacity: .1;
+    color: #c8c8c8;
+  }
+  25% {
+    background-color: rgba(200, 200, 200, 0.2);
+    opacity: .3;
+    color: gainsboro;
+  }
+  50% {
+    background-color: rgba(80, 80, 80, 0.35);
+    opacity: .6;
+    color: #f0f0f0;
+  }
+  75% {
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: .8;
+    color: #fafafa;
+  }
+  100% {
+    background-color: rgba(0, 0, 0, 0.75);
+    opacity: 1;
+    color: white;
+  }
+}
+@-o-keyframes job-detail-animation /* Opera */ {
+  0% {
+    background-color: rgba(255, 255, 255, 0.1);
+    opacity: .1;
+    color: #c8c8c8;
+  }
+  25% {
+    background-color: rgba(200, 200, 200, 0.2);
+    opacity: .3;
+    color: gainsboro;
+  }
+  50% {
+    background-color: rgba(80, 80, 80, 0.35);
+    opacity: .6;
+    color: #f0f0f0;
+  }
+  75% {
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: .8;
+    color: #fafafa;
+  }
+  100% {
+    background-color: rgba(0, 0, 0, 0.75);
+    opacity: 1;
+    color: white;
+  }
+}
+.job-detail:hover {
+  animation: job-detail-animation 5s;
+  -moz-animation: job-detail-animation 5s;
+  /* Firefox */
+  -webkit-animation: job-detail-animation 5s;
+  /* Safari and Chrome */
+  -o-animation: job-detail-animation 5s;
+  /* Opera */
+}
+
+/*# sourceMappingURL=jobs.css.map */
