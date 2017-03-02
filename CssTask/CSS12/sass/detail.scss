@@ -93,8 +93,9 @@ body {
         border-bottom: 1px solid #ccc;
         dd,
         dt {
-            height: 3rem;
-            line-height: 3rem;
+            //          height: 3rem;
+            //          line-height: 3rem;
+            padding: 1rem 0;
             border-bottom: 1px solid #ccc;
             display: flex;
             align-items: center;
@@ -125,7 +126,7 @@ body {
             }
             &:last-child {
                 border-bottom: none;
-                .muted{
+                .muted {
                     line-height: 1;
                 }
                 p {
@@ -140,9 +141,9 @@ body {
     }
 
     .muted {
-        //      width: 8rem;
         color: $mutedColor;
         font-weight: bold;
+        white-space: nowrap;
     }
     .strong {
         color: $strongColor;

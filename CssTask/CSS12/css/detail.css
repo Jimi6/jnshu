@@ -81,8 +81,7 @@ body {
 }
 .userDetail dl dd,
 .userDetail dl dt {
-  height: 3rem;
-  line-height: 3rem;
+  padding: 1rem 0;
   border-bottom: 1px solid #ccc;
   display: flex;
   align-items: center;
@@ -122,6 +121,7 @@ body {
 .userDetail .muted {
   color: #999999;
   font-weight: bold;
+  white-space: nowrap;
 }
 .userDetail .strong {
   color: #e26163;
