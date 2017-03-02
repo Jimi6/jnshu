@@ -24,6 +24,7 @@ a{
     color: $bodyColor;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     height:$itemHeight;
     line-height: $itemHeight;
     padding: 0 1rem;
@@ -39,7 +40,7 @@ a{
 }
 
 .user {
-    fieldset{
+    .userItem{
         background: #fff;
         margin: 2rem 0;
         display: inline-block;   
@@ -47,12 +48,18 @@ a{
         height:$itemHeight;
         line-height: $itemHeight;
         border: none;
-        vertical-align: middle;
         padding: .5rem 0;
-        img{
+        label{
+
+            img{
             margin: 0 3%;
+            padding-top: .8rem;
+            height: 50%;
             float: left;
+            
         }
+        }
+        
         input{
             border: none;
             border-left: 1px solid #ccc;
@@ -82,4 +89,6 @@ a{
     color: $themeColor;
     float: right;
     margin-top: 1rem;
+    padding:0 .5rem 2rem 0;
+    font-size: .8*$fontSize;
 }
