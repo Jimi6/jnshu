@@ -1,3 +1,147 @@
+body,
+html, .footer {
+  width: 100%;
+  max-width: 768px;
+  margin: 0 auto;
+}
 
+.header {
+  background: #5fc0cd;
+  height: 3rem;
+  line-height: 3rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .find {
+  background: #51a8b4;
+  border-radius: 5px;
+  height: 70%;
+  line-height: 2;
+  text-align: center;
+}
+.header .find .btn-find {
+  color: white;
+  border: 1px solid transparent;
+  padding: 0 0.6rem;
+  margin: 0;
+  background: transparent;
+  height: 100%;
+  border-radius: 5px;
+}
+.header .find .assistant {
+  background: white;
+  color: #5fc0cd;
+  margin-left: -.7rem;
+}
+.header .map {
+  position: absolute;
+  right: 2rem;
+  top: 0;
+}
+.header .map img {
+  width: 1rem;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.list-group {
+  margin: 0;
+}
+.list-group ul {
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.list-group ul li {
+  height: 3rem;
+  line-height: 3rem;
+  width: 33%;
+  text-align: center;
+  border-right: 1px solid #ccc;
+}
+.list-group .list-group-item {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding: 1rem;
+  line-height: 2;
+  border-bottom: 1px solid #ccc;
+}
+.list-group .list-group-item .item-left img {
+  width: 0.8rem;
+  padding-right: 0.5rem;
+}
+.list-group .list-group-item .item-left .date {
+  margin-left: 1.4rem;
+}
+.list-group .list-group-item .item-left .date span {
+  font-weight: bold;
+}
+.list-group .list-group-item .item-right {
+  line-height: 6;
+}
+.list-group .list-group-item .item-right strong {
+  color: #e26163;
+}
+.list-group .list-group-item .item-right img {
+  width: 0.5rem;
+}
+
+.footer {
+  background: #f8fafb;
+  height: 3rem;
+}
+.footer .footerWrap {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .footerWrap a {
+  display: flex;
+  height: 2.6rem;
+  width: 2.6rem;
+  justify-content: center;
+  align-items: flex-end;
+  text-decoration: none;
+}
+.footer .footerWrap a span {
+  display: block;
+  margin-top: 0.9rem;
+  font-size: 0.8rem;
+}
+.footer .footerWrap .home {
+  background: url("../img/home.png") top center no-repeat;
+  background-size: 1.5rem;
+  color: #5fc0cd;
+}
+.footer .footerWrap .edit {
+  background: #5fc0cd;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer .footerWrap .edit img {
+  width: 1.5rem;
+}
+.footer .footerWrap .mine {
+  background: url("../img/mine.png") top center no-repeat;
+  background-size: 1.5rem;
+  color: #9b9b9b;
+}
 
 /*# sourceMappingURL=index.css.map */

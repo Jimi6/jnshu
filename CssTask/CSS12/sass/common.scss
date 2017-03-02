@@ -1,0 +1,24 @@
+@charset "utf-8";
+
+$maxWidth: 768px;
+
+$fontStack: "STHeitiSC";
+$fontStack2: "HiraginoSansGB";
+$fontSize: 1rem;
+
+
+$themeColor: rgb(95, 192, 205);
+$white: rgb(255,255,255);
+$strongColor: rgb(226,97,99);
+$nomalColor: rgb(51,51,51);
+$mutedColor: rgb(153, 153, 153);
+
+%maxWidth {
+    width: 100%;
+    max-width: $maxWidth;
+    margin: 0 auto;
+}
+body,
+html {
+    @extend %maxWidth;
+}

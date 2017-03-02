@@ -1,22 +1,8 @@
 @charset "utf-8";
-$themeColor: rgb(95, 192, 205);
-$maxWidth: 768px;
-$fontStack: "STHeitiSC";
-$fontStack2: "HiraginoSansGB";
-
-$fontSize: 1rem;
-$white: rgb(255,255,255);
-$strongColor: rgb(226,97,99);
-$nomalColor: rgb(51,51,51);
-$mutedColor: rgb(153, 153, 153);
+@import"common";
 $footerH: 3rem;
 $footerMarginBottom: 1.5rem;
-body,
-html {
-    width: 100%;
-    max-width: $maxWidth;
-    margin: 0 auto;
-}
+
 body {
     position: relative;
     font-family: $fontStack;
@@ -58,16 +44,12 @@ body {
         align-items: center;
     }
     .userPic {
-        background: url("../img/user.png") center top no-repeat;
-        background-size: cover;
+        background: url("../img/user.png") -1rem top no-repeat;
+        background-size: 8rem;
         width: 5rem;
         height: 5rem;
         border-radius: 50%;
-        margin: 0 1rem;
-
-        img {
-            width: 100%;
-        }
+        margin: 0 1rem;        
     }
     .userInfo {
         color: $white;
@@ -153,8 +135,7 @@ body {
 }
 
 .footer {
-    width: 100%;
-    max-width: $maxWidth;
+    @extend %maxWidth;
     height: $footerH;
     position: fixed;
     bottom: 0;
