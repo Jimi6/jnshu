@@ -1,0 +1,180 @@
+@charset "utf-8";
+$themeColor: rgb(95, 192, 205);
+$maxWidth: 768px;
+$fontStack: "STHeitiSC";
+$fontStack2: "HiraginoSansGB";
+
+$fontSize: 1rem;
+$white: rgb(255,255,255);
+$strongColor: rgb(226,97,99);
+$nomalColor: rgb(51,51,51);
+$mutedColor: rgb(153, 153, 153);
+$footerH: 3rem;
+$footerMarginBottom: 1.5rem;
+body,
+html {
+    width: 100%;
+    max-width: $maxWidth;
+    margin: 0 auto;
+}
+body {
+    position: relative;
+    font-family: $fontStack;
+    color: $nomalColor;
+    font-size: 32px;
+    font-size: $fontSize;
+    padding-bottom: $footerH+$footerMarginBottom;
+
+}
+.header {
+    background: $themeColor;
+    padding: 0 1rem;
+    height: 3rem;
+    line-height: 3rem;
+    text-align: center;
+
+    a {
+        float: left;
+        font-size: $fontSize;
+        img {
+            width: 0.6rem;
+        }
+    }
+    .title {
+        text-align: center;
+        text-indent: 40%;
+        color: $white;
+    }
+}
+.user {
+    background: url("../img/bg.png") 0 center no-repeat;
+    background-size: cover;
+    height: 10rem;
+    display: flex;
+    //  justify-content: center;
+    .userWrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .userPic {
+        background: url("../img/user.png") center top no-repeat;
+        background-size: cover;
+        width: 5rem;
+        height: 5rem;
+        border-radius: 50%;
+        margin: 0 1rem;
+
+        img {
+            width: 100%;
+        }
+    }
+    .userInfo {
+        color: $white;
+        line-height: 2;
+        .location {
+            background: url("../img/zone.png") left 0.8rem no-repeat;
+            background-size: 0.6rem;
+            padding-left: 1rem;
+            span {
+                font-size: 0.6*$fontSize;
+            }
+        }
+    }
+    .userName {
+        font-size: (36/32)*$fontSize;
+    }
+}
+
+.userDetail {
+    font-size: $fontSize;
+    color: $nomalColor;
+    dl {
+        border-bottom: 1px solid #ccc;
+        dd,
+        dt {
+            height: 3rem;
+            line-height: 3rem;
+            border-bottom: 1px solid #ccc;
+            display: flex;
+            align-items: center;
+        }
+        dt {
+            &:before {
+                display: block;
+                margin: 0 0.8rem;
+                content: "";
+                width: 0.2rem;
+                height: 1rem;
+                background: $themeColor;
+            }
+        }
+        dd {
+            margin-left: 1rem;
+            .star {
+                img {
+                    height: 0.8rem;
+                    margin: 0 0.2rem;
+                }
+            }
+            .line {
+                width: 1px;
+                height: 1.5rem;
+                background: #ccc;
+                margin: 0 1rem;
+            }
+            &:last-child {
+                border-bottom: none;
+                .muted{
+                    line-height: 1;
+                }
+                p {
+                    line-height: 1.5;
+                    padding: 0;
+                    margin: 0;
+                }
+            }
+
+        }
+
+    }
+
+    .muted {
+        //      width: 8rem;
+        color: $mutedColor;
+        font-weight: bold;
+    }
+    .strong {
+        color: $strongColor;
+        font-family: $fontStack2;
+        font-weight: bold;
+    }
+}
+
+.footer {
+    width: 100%;
+    max-width: $maxWidth;
+    height: $footerH;
+    position: fixed;
+    bottom: 0;
+    margin-bottom: $footerMarginBottom;
+
+    .btn {
+        font-family: $fontStack2;
+        font-size: (34/32)*$fontSize;
+        border-radius: 5px;
+        border: 1px solid $themeColor;
+        width: 44%;
+        height: $footerH;
+        margin: 0 2%;
+    }
+    .message {
+        background: $white;
+        color: $themeColor;
+    }
+    .call {
+        background: $themeColor;
+        color: $white;
+    }
+
+}

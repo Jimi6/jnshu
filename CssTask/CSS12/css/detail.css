@@ -1,0 +1,158 @@
+body,
+html {
+  width: 100%;
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+body {
+  position: relative;
+  font-family: "STHeitiSC";
+  color: #333333;
+  font-size: 32px;
+  font-size: 1rem;
+  padding-bottom: 4.5rem;
+}
+
+.header {
+  background: #5fc0cd;
+  padding: 0 1rem;
+  height: 3rem;
+  line-height: 3rem;
+  text-align: center;
+}
+.header a {
+  float: left;
+  font-size: 1rem;
+}
+.header a img {
+  width: 0.6rem;
+}
+.header .title {
+  text-align: center;
+  text-indent: 40%;
+  color: white;
+}
+
+.user {
+  background: url("../img/bg.png") 0 center no-repeat;
+  background-size: cover;
+  height: 10rem;
+  display: flex;
+}
+.user .userWrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.user .userPic {
+  background: url("../img/user.png") center top no-repeat;
+  background-size: cover;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  margin: 0 1rem;
+}
+.user .userPic img {
+  width: 100%;
+}
+.user .userInfo {
+  color: white;
+  line-height: 2;
+}
+.user .userInfo .location {
+  background: url("../img/zone.png") left 0.8rem no-repeat;
+  background-size: 0.6rem;
+  padding-left: 1rem;
+}
+.user .userInfo .location span {
+  font-size: 0.6rem;
+}
+.user .userName {
+  font-size: 1.125rem;
+}
+
+.userDetail {
+  font-size: 1rem;
+  color: #333333;
+}
+.userDetail dl {
+  border-bottom: 1px solid #ccc;
+}
+.userDetail dl dd,
+.userDetail dl dt {
+  height: 3rem;
+  line-height: 3rem;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+}
+.userDetail dl dt:before {
+  display: block;
+  margin: 0 0.8rem;
+  content: "";
+  width: 0.2rem;
+  height: 1rem;
+  background: #5fc0cd;
+}
+.userDetail dl dd {
+  margin-left: 1rem;
+}
+.userDetail dl dd .star img {
+  height: 0.8rem;
+  margin: 0 0.2rem;
+}
+.userDetail dl dd .line {
+  width: 1px;
+  height: 1.5rem;
+  background: #ccc;
+  margin: 0 1rem;
+}
+.userDetail dl dd:last-child {
+  border-bottom: none;
+}
+.userDetail dl dd:last-child .muted {
+  line-height: 1;
+}
+.userDetail dl dd:last-child p {
+  line-height: 1.5;
+  padding: 0;
+  margin: 0;
+}
+.userDetail .muted {
+  color: #999999;
+  font-weight: bold;
+}
+.userDetail .strong {
+  color: #e26163;
+  font-family: "HiraginoSansGB";
+  font-weight: bold;
+}
+
+.footer {
+  width: 100%;
+  max-width: 768px;
+  height: 3rem;
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 1.5rem;
+}
+.footer .btn {
+  font-family: "HiraginoSansGB";
+  font-size: 1.0625rem;
+  border-radius: 5px;
+  border: 1px solid #5fc0cd;
+  width: 44%;
+  height: 3rem;
+  margin: 0 2%;
+}
+.footer .message {
+  background: white;
+  color: #5fc0cd;
+}
+.footer .call {
+  background: #5fc0cd;
+  color: white;
+}
+
+/*# sourceMappingURL=detail.css.map */
