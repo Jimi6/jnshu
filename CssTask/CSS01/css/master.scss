@@ -1,0 +1,16 @@
+@charset "utf-8";
+body{
+    margin: 0;
+}
+.wrapper{
+    margin: 2vw;
+    overflow: hidden;
+}
+.grid{
+    float: left;
+    width: 30vw;
+    height: 30vw;
+    background: #ffa600;
+    margin: 1vw;
+    border-radius: 2vw;
+}
