@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-size: 1.0625rem;
+  background: #f0f0f0;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  height: 3.75rem;
+  padding: 0 0.6875rem;
+  background: #29bdf4;
+}
+.header .btn-menu {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+.header .btn-menu img {
+  width: 1.0625rem;
+}
+
+.container .wraper {
+  padding: 0 1.09375rem;
+}
+.container .last-game {
+  height: 3.6875rem;
+  line-height: 3.6875rem;
+  border: 1px solid #ccc;
+  margin: 0.9375rem 0;
+  text-align: center;
+  background: white;
+}
+.container .last-game a {
+  color: #9a9a9a;
+}
+.container .last-game .last {
+  float: right;
+  margin-right: 0.4375rem;
+}
+.container .last-game .last img {
+  width: 0.75rem;
+  vertical-align: middle;
+}
+.container .game {
+  padding-bottom: 0.9375rem;
+  border: 1px solid #ccc;
+  background: white;
+}
+.container .game .list-group-tittle {
+  height: 2.8125rem;
+  line-height: 2.8125rem;
+  border-bottom: 2px solid #fbb435;
+  font-size: 1.25rem;
+  text-align: center;
+  color: #fbb435;
+}
+.container .game .list-group-item {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+.container .game .btn-game {
+  display: block;
+  margin: 0.625rem 0;
+  width: 100%;
+  height: 4.25rem;
+  line-height: 4.25rem;
+  color: white;
+  font-size: 1.0625rem;
+  border: none;
+  background: #29bdf4;
+}
+.container .game .state {
+  font-size: 0.8125rem;
+  color: #787878;
+}
+
+/*# sourceMappingURL=index.css.map */

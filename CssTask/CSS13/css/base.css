@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body,
+footer,
+html {
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: "HiraginoSansGB";
+}
+
+ul, li {
+  list-style: none;
+}
+
+/*# sourceMappingURL=base.css.map */

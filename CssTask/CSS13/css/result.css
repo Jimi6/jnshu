@@ -1,0 +1,113 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 3.75rem;
+  padding: 0 0.5625rem;
+  border-bottom: 2px solid rgba(141, 189, 224, 0.5);
+  background: #29bde0;
+}
+.header .home img {
+  width: 1.625rem;
+}
+.header .title {
+  font-size: 1.0625rem;
+  color: white;
+}
+.header .info img {
+  width: 1.25rem;
+}
+
+.result-info {
+  padding: 0.9375rem 1.875rem;
+  background: #29bde0;
+}
+.result-info .result-win {
+  margin: 0 auto;
+}
+.result-info .result-win img {
+  display: block;
+  margin: 0 auto 0.9375rem;
+  width: 60%;
+}
+.result-info .result-win .txt-win {
+  font-size: 1.03125rem;
+  color: #ffc865;
+  line-height: 1.28125rem;
+  font-weight: bold;
+}
+.result-info .result-info-detail {
+  line-height: 1.28125rem;
+  font-size: 0.8125rem;
+  color: white;
+}
+.result-info .result-info-detail .row span + span {
+  margin-left: 1.5625rem;
+}
+
+.result-detail {
+  background: white;
+}
+.result-detail .list-group .list-group-item {
+  padding: 0 1.875rem;
+  border-bottom: 1px solid #dddddd;
+  line-height: 2;
+}
+.result-detail .list-group .list-group-item .time-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.result-detail .list-group .list-group-item .time-wrapper .date {
+  font-size: 0.875rem;
+  color: #515151;
+}
+.result-detail .list-group .list-group-item .time-wrapper .time {
+  font-size: 0.59375rem;
+  color: #c7c7c7;
+}
+.result-detail .list-group .list-group-item .muted {
+  font-size: 0.78125rem;
+  color: #a6a6a6;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 640px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4.0625rem;
+  background: rgba(41, 189, 224, 0.5);
+}
+.footer .btn {
+  margin: 0 4%;
+  width: 40%;
+  height: 2.6875rem;
+  line-height: 2.6875rem;
+  border-radius: 5px;
+  font-family: "微软雅黑";
+  font-size: 1.25rem;
+  color: white;
+  text-align: center;
+}
+.footer .btn-again {
+  background: #f66f6f;
+}
+.footer .btn-share {
+  background: #fbb435;
+}
+
+/*# sourceMappingURL=result.css.map */

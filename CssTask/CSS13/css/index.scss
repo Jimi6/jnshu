@@ -1,0 +1,87 @@
+@charset "utf-8";
+@import "common";
+$themeColor: rgb(41,189,244);
+$bgColor: rgb(240,240,240);
+
+body {
+    font-size: 34*$unit;
+    background: $bgColor;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    height: 120*$unit;
+    padding: 0 22*$unit;
+
+    background: $themeColor;
+    .btn-menu {
+        width: 40*$unit;
+        height: 40*$unit;
+        img{
+            width: 34*$unit;
+        }
+
+    }
+}
+
+.container {
+    .wraper {
+        padding: 0 35*$unit;
+    }
+    .last-game {
+        height: 118*$unit;
+        line-height: 118*$unit;
+        border: 1px solid #ccc;
+        margin: 30*$unit 0;
+        text-align: center;
+        background: white;
+        a {
+            color: rgb(154,154,154);
+        }
+        .last {
+            float: right;
+            margin-right: 14*$unit;
+            img {
+                width: 24*$unit;
+                vertical-align: middle;
+            }
+        }
+
+    }
+    .game {
+        padding-bottom: 30*$unit;
+        border: 1px solid #ccc;
+        background: white;
+
+        .list-group-tittle {
+            height: 90*$unit;
+            line-height: 90*$unit;
+            border-bottom: 2px solid rgb(251,180,53);
+            font-size: 40*$unit;
+            text-align: center;
+            color: rgb(251,180,53);
+        }
+        .list-group-item {
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .btn-game {
+            display: block;
+            margin: 20*$unit 0;
+            width: 100%;
+            height: 136*$unit;
+            line-height: 136*$unit;
+            color: white;
+            font-size: 34*$unit;
+            border: none;
+            background: $themeColor;
+        }
+        .state {
+            font-size: 26*$unit;
+            color: rgb(120,120,120);
+        }
+    }
+
+}

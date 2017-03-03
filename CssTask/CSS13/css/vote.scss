@@ -1,0 +1,131 @@
+@charset "utf-8";
+@import "common";
+$themeColor: rgb(41,189,244);
+body {
+    //  background: $themeColor;
+    font-size: 30*$unit;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 118*$unit;
+    padding: 0 24*$unit;
+    background: $themeColor;
+    .title {
+        font-size: 34*$unit;
+        color: white;
+    }
+    img {
+        width: 36*$unit;
+    }
+}
+
+.container {
+    background: $themeColor;
+    overflow: hidden;
+    .main-hint {
+        display: flex;
+        justify-content: space-between;
+        height: 82*$unit;
+        line-height: 82*$unit;
+        padding: 0 17*$unit;
+        background: #C4E3F3;
+        .hint-txt {
+            font-size: 26*$unit;
+            color: #000;
+            text-indent: 20*$unit;
+        }
+        .music {
+            width: 52*$unit;
+            height: 52*$unit;
+            img {
+                width: 100%;
+                vertical-align: middle;
+            }
+        }
+    }
+    .sub-hint {
+        height: 70*$unit;
+        line-height: 70*$unit;
+        font-size: 24*$unit;
+        color: white;
+        text-indent: 45*$unit;
+    }
+    .role-list-group {
+        .list-group {
+            //          display: flex;
+        }
+        .list-group-item {
+            float: left;
+            width: 33%;
+            .role-info {
+                margin: 0 auto;
+                //              width: 126*$unit;
+                //              height: 126*$unit;
+
+                width: 20vw;
+                height: 20vw;
+                border: 5*$unit solid white;
+                .role-name {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 70%;
+                    background: rgb(245,201,123);
+                    font-size: 30*$unit;
+                    color: #000000;
+                }
+                .role-no {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 30%;
+                    font-size: 24*$unit;
+                    background: rgb(131,176,154);
+                    color: white;
+                }
+            }
+            .role-tool {
+                margin: 20*$unit auto;
+                //              width: 126*$unit;
+                //              height: 42*$unit; 
+                width: 20vw;
+
+                .role-tool-item {
+                    display: inline-block;
+                    background: white;
+                    width: 16%;
+                }
+                img {
+                    width: 100%;
+                }
+            }
+
+        }
+    }
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    height: 192*$unit;
+    border-top: 1px solid #29cDCD;
+    background: $themeColor;
+    .btn-vote {
+        display: block;
+        margin-left: 6%;
+        width: 88%;
+        height: 72*$unit;
+        line-height: 72*$unit;
+        border: none;
+        font-family: "STHeitiSC";
+        font-size: 40*$unit;
+        color: white;
+        text-align: center;
+        background: rgb(252,180,53);
+
+    }
+}
