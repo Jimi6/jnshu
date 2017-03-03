@@ -32,13 +32,13 @@ a {
 
 .user .userItem {
   background: #fff;
-  margin: 2rem 0;
+  margin: .4rem 0;
   display: inline-block;
   width: 100%;
   height: 3rem;
   line-height: 3rem;
   border: none;
-  padding: .5rem 0;
+  padding: .2rem 0;
 }
 .user .userItem label img {
   margin: 0 3%;
@@ -55,6 +55,7 @@ a {
   font-size: 0.88889rem;
   text-indent: 2rem;
   color: #cec0cd;
+  outline: none;
 }
 .user .log-in {
   background: #5ac0ce;

@@ -42,13 +42,13 @@ a{
 .user {
     .userItem{
         background: #fff;
-        margin: 2rem 0;
+        margin: .4rem 0;
         display: inline-block;   
         width: 100%;     
         height:$itemHeight;
         line-height: $itemHeight;
         border: none;
-        padding: .5rem 0;
+        padding: .2rem 0;
         label{
 
             img{
@@ -68,7 +68,8 @@ a{
             width: 80%;
             font-size: (32/36)*$fontSize;
             text-indent: 2rem;
-            color: $inputColor;           
+            color: $inputColor;   
+            outline: none;        
             
             
         }
