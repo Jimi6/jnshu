@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-size: 0.9375rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 3.6875rem;
+  padding: 0 0.75rem;
+  background: #29bdf4;
+}
+.header .title {
+  font-size: 1.0625rem;
+  color: white;
+}
+.header img {
+  width: 1.125rem;
+}
+
+.container {
+  background: #29bdf4;
+  overflow: hidden;
+}
+.container .main-hint {
+  display: flex;
+  justify-content: space-between;
+  height: 2.5625rem;
+  line-height: 2.5625rem;
+  padding: 0 0.53125rem;
+  background: #C4E3F3;
+}
+.container .main-hint .hint-txt {
+  font-size: 0.8125rem;
+  color: #000;
+  text-indent: 0.625rem;
+}
+.container .main-hint .music {
+  width: 1.625rem;
+  height: 1.625rem;
+}
+.container .main-hint .music img {
+  width: 100%;
+  vertical-align: middle;
+}
+.container .sub-hint {
+  height: 2.1875rem;
+  line-height: 2.1875rem;
+  font-size: 0.75rem;
+  color: white;
+  text-indent: 1.40625rem;
+}
+.container .role-list-group .list-group-item {
+  float: left;
+  width: 33%;
+}
+.container .role-list-group .list-group-item .role-info {
+  margin: 0 auto;
+  width: 20vw;
+  height: 20vw;
+  border: 0.15625rem solid white;
+}
+.container .role-list-group .list-group-item .role-info .role-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70%;
+  background: #f5c97b;
+  font-size: 0.9375rem;
+  color: #000000;
+}
+.container .role-list-group .list-group-item .role-info .role-no {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30%;
+  font-size: 0.75rem;
+  background: #83b09a;
+  color: white;
+}
+.container .role-list-group .list-group-item .role-tool {
+  margin: 0.625rem auto;
+  width: 20vw;
+}
+.container .role-list-group .list-group-item .role-tool .role-tool-item {
+  display: inline-block;
+  background: white;
+  width: 16%;
+}
+.container .role-list-group .list-group-item .role-tool img {
+  width: 100%;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  height: 6rem;
+  border-top: 1px solid #29cDCD;
+  background: #29bdf4;
+}
+.footer .btn-vote {
+  display: block;
+  margin-left: 6%;
+  width: 88%;
+  height: 2.25rem;
+  line-height: 2.25rem;
+  border: none;
+  font-family: "STHeitiSC";
+  font-size: 1.25rem;
+  color: white;
+  text-align: center;
+  background: #fcb435;
+}
+
+/*# sourceMappingURL=vote.css.map */

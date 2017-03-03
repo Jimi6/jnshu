@@ -1,0 +1,113 @@
+@charset "utf-8";
+@import "common";
+$themeColor:rgb(41,189,224);
+$maxWidth:640px;
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120*$unit;
+    padding: 0 18*$unit;
+    border-bottom: 2px solid rgba(141,189,224,.5);
+    background: $themeColor;
+    .home{
+        img{
+            width: 52*$unit;
+        }
+    }
+    .title{
+        font-size: 34*$unit;
+        color: white;
+    }
+    .info{
+        img{
+            width: 40*$unit;
+        }
+    }
+}
+
+
+.result-info{
+    padding: 30*$unit 60*$unit;
+    background: $themeColor;
+    .result-win{
+        margin: 0 auto;
+        img{
+            display: block;
+            margin: 0 auto 30*$unit;
+            width: 60%;
+        }
+        .txt-win{
+            font-size: 33*$unit;
+            color: rgb(255, 200, 101);
+            line-height: 41*$unit;
+            font-weight: bold;
+        }
+    }
+    
+    .result-info-detail{
+        line-height: 41*$unit;
+        font-size: 26*$unit;
+        color: white;
+        .row{
+            span+span{
+                margin-left: 50*$unit;
+            }
+        }
+    }
+}
+.result-detail{
+    background: white;
+    .list-group{
+        .list-group-item{
+            padding: 0 60*$unit;
+            border-bottom: 1px solid rgb(221,221,221);
+            line-height: 2;
+            .time-wrapper{
+                display: flex;
+                justify-content: space-between;
+                .date{
+                    font-size: 28*$unit;
+                    color: rgb(81,81,81);
+                }
+                .time{
+                    font-size: 19*$unit;
+                    color: rgb(199,199,199);
+                }
+            }
+            .muted{
+                font-size: 25*$unit;
+                color: rgb(166,166,166);
+            }
+        }
+    }
+}
+.footer{
+    position: fixed;
+    bottom: 0;
+    margin: 0 auto;
+    width: 100%;
+    max-width: $maxWidth;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 130*$unit;
+    background: rgba(41,189,224,.5);
+    .btn{
+        margin: 0 4%;
+        width: 40%;
+        height: 86*$unit;
+        line-height: 86*$unit;;
+        border-radius: 5px;
+        font-family: "微软雅黑";
+        font-size: 40*$unit;
+        color: white;
+        text-align: center;
+    }
+    .btn-again{
+        background: rgb(246,111,111);
+    }
+    .btn-share{
+        background: rgb(251,180,53);
+    }
+}
