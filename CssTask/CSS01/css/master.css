@@ -1,19 +1,16 @@
 body {
-  margin: 0;
+    margin: 0 auto;
 }
-
 .wrapper {
-  margin: 1vw;
-  overflow: hidden;
+    width: 100%;
+    max-width: 768px;
+    margin: 0 auto;
 }
-
 .grid {
-  float: left;
-  width: 30vw;
-  height: 30vw;
-  background: #ffa600;
-  margin: 1vw;
-  border-radius: 2vw;
+    float: left;
+    width: 30%;
+    padding: 15% 0;
+    margin: 3% 0 0 3%;
+    border-radius: 5%;
+    background: #ffa600;
 }
-
-/*# sourceMappingURL=master.css.map */
