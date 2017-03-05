@@ -1,0 +1,40 @@
+.sideBar .list-group {
+  border: 1px solid #eee;
+  border-radius: 5px;
+  font-size: 22px;
+  color: #333333;
+}
+.sideBar dt.list-group-item {
+  text-align: center;
+  border-bottom: 2px solid #ccc;
+}
+.sideBar .list-group-item {
+  border: none;
+}
+.sideBar .list-group-item a {
+  font-size: 16px;
+  text-align: left;
+  color: #29b078;
+  cursor: pointer;
+  position: relative;
+  padding-left: 30%;
+}
+.sideBar .list-group-item a .item-icon {
+  width: 10px;
+  height: 10px;
+  display: block;
+  background: url("../img/circle.png") 0 0 no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 6px;
+  left: 40px;
+}
+.sideBar .list-group-item a.active, .sideBar .list-group-item a:hover {
+  text-decoration: none;
+  color: #ff6500;
+}
+.sideBar .list-group-item a.active .item-icon, .sideBar .list-group-item a:hover .item-icon {
+  background-image: url("../img/active.png");
+}
+
+/*# sourceMappingURL=sidebar.css.map */

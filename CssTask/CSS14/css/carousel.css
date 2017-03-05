@@ -1,0 +1,162 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Microsoft YaHei";
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+.carousel {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.carousel .carousel-indicators {
+  width: 60%;
+  position: absolute;
+  bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 20%;
+  list-style: none;
+}
+.carousel .carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border: 1px solid #fff;
+  border-radius: 45%;
+  text-align: center;
+  text-indent: -999px;
+  cursor: pointer;
+  background: transparent;
+}
+.carousel .carousel-indicators li + li {
+  margin-left: 5px;
+}
+.carousel .carousel-indicators li:hover {
+  width: 12px;
+  height: 12px;
+  background: #fff;
+}
+.carousel .carousel-inner {
+  width: calc(3*100%);
+}
+.carousel .carousel-inner .item {
+  width: calc(100%/3);
+  float: left;
+}
+.carousel .carousel-inner .item img {
+  width: 100%;
+}
+.carousel .carousel-control {
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  height: 100%;
+  cursor: pointer;
+  /*----渐变----begin--*/
+  /*----渐变----end--*/
+}
+.carousel .carousel-control.left {
+  left: 0;
+  background: linear-gradient left, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.0001) 100%;
+  background: -webkit-linear-gradientleft, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.0001) 100%;
+  background: -ms-linear-gradientleft, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.0001) 100%;
+  background: -moz-linear-gradientleft, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.0001) 100%;
+}
+.carousel .carousel-control.left:hover {
+  background: linear-gradient left, rgba(0, 0, 0, 0.1) 0, rgba(0, 0, 0, 0.0001) 100%;
+  background: -webkit-linear-gradientleft, rgba(0, 0, 0, 0.1) 0, rgba(0, 0, 0, 0.0001) 100%;
+  background: -ms-linear-gradientleft, rgba(0, 0, 0, 0.1) 0, rgba(0, 0, 0, 0.0001) 100%;
+  background: -moz-linear-gradientleft, rgba(0, 0, 0, 0.1) 0, rgba(0, 0, 0, 0.0001) 100%;
+}
+.carousel .carousel-control.right {
+  right: 0;
+  background: linear-gradient right, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.0001) 100%;
+  background: -webkit-linear-gradientright, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.0001) 100%;
+  background: -ms-linear-gradientright, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.0001) 100%;
+  background: -moz-linear-gradientright, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.0001) 100%;
+}
+.carousel .carousel-control.right:hover {
+  background: linear-gradient right, rgba(0, 0, 0, 0.1) 0, rgba(0, 0, 0, 0.0001) 100%;
+  background: -webkit-linear-gradientright, rgba(0, 0, 0, 0.1) 0, rgba(0, 0, 0, 0.0001) 100%;
+  background: -ms-linear-gradientright, rgba(0, 0, 0, 0.1) 0, rgba(0, 0, 0, 0.0001) 100%;
+  background: -moz-linear-gradientright, rgba(0, 0, 0, 0.1) 0, rgba(0, 0, 0, 0.0001) 100%;
+}
+
+@keyframes carousel {
+  0%,
+    33% {
+    margin-left: 0;
+  }
+  40%,
+    66% {
+    margin-left: -100%;
+  }
+  100%,
+    73% {
+    margin-left: -200%;
+  }
+}
+#carousel-inner {
+  animation: carousel 8s ease-in-out infinite alternate;
+}
+
+@keyframes indicator1 {
+  0% {
+    margin-left: -200%;
+  }
+  100% {
+    margin-left: 0;
+  }
+}
+@keyframes indicator2 {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -100%;
+  }
+}
+@keyframes indicator3 {
+  0% {
+    margin-left: -100%;
+  }
+  100% {
+    margin-left: -200%;
+  }
+}
+#carousel-inner:hover,
+.indicator:hover {
+  animation-play-state: paused;
+}
+
+#indicator1 ~ #carousel-inner {
+  animation: indicator1 0.5s ease-out forwards;
+}
+
+#indicator2 ~ #carousel-inner {
+  animation: indicator2 0.5s ease-out forwards;
+}
+
+#indicator3 ~ #carousel-inner {
+  animation: indicator3 0.5s ease-out forwards;
+}
+
+/*# sourceMappingURL=carousel.css.map */

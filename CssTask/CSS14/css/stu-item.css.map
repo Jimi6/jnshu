@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACA,cAAc;EACV,OAAO,EAAE,MAAM;EACf,UAAU,EAAE,cAAc",
+"sources": ["stu-item.scss"],
+"names": [],
+"file": "stu-item.css"
+}

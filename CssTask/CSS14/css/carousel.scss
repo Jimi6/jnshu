@@ -1,0 +1,188 @@
+@charset "utf-8";
+@import "common";
+.carousel {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    .carousel-indicators {
+        width: 60%;
+        position: absolute;
+        bottom: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        left: 20%;
+        list-style: none;
+        li {
+            width: 10px;
+            height: 10px;
+            border: 1px solid #fff;
+            border-radius: 45%;
+            text-align: center;
+            text-indent: -999px;
+            cursor: pointer;
+            background: transparent;
+            &+li {
+                margin-left: 5px;
+            }
+            &:hover {
+                width: 12px;
+                height: 12px;
+                background: #fff;
+            }
+        }
+    }
+    .carousel-inner {
+        width: calc(3*100%);
+        .item {
+            width: calc(100%/3);
+            float: left;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .carousel-control {
+        position: absolute;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 20%;
+        height: 100%;
+        cursor: pointer;
+
+        /*----渐变----begin--*/
+        $star-color-normal: rgba(0,0,0,.5);
+        $star-color-hover: rgba(0, 0, 0,.1);
+        $end-color-normal: rgba(0,0,0,.0001);
+        $end-color-hover: rgba(0,0,0,.0001);
+
+        @mixin gradient($method:linear-gradient,$direction:left, $star-color:#000, $end-color:#fff) {
+            background: $method($direction,$star-color 0,$end-color 100%);
+            background: -webkit-#{$method}($direction,$star-color 0,$end-color 100%);
+            background: -ms-#{$method}($direction,$star-color 0,$end-color 100%);
+            background: -moz-#{$method}($direction,$star-color 0,$end-color 100%);
+        }
+        /*----渐变----end--*/
+
+        &.left {
+            left: 0;
+            @include gradient(linear-gradient,left,$star-color-normal,$end-color-normal);
+            &:hover {
+                @include gradient(linear-gradient,left,$star-color-hover,$end-color-hover);
+            }
+        }
+        &.right {
+            right: 0;
+            @include gradient(linear-gradient,right,$star-color-normal,$end-color-normal);
+            &:hover {
+                @include gradient(linear-gradient,right,$star-color-hover,$end-color-hover);
+            }
+        }
+    }
+}
+
+@keyframes carousel {
+    0%,
+    33% {
+        margin-left: 0;
+    }
+    40%,
+    66% {
+        margin-left: -100%;
+    }
+    100%,
+    73% {
+        margin-left: -200%;
+    }
+}
+#carousel-inner {
+    animation: carousel 8s ease-in-out infinite alternate;
+}
+@keyframes indicator1 {
+    0% {
+        margin-left: -200%;
+    }
+    100% {
+        margin-left: 0;
+    }
+}
+@keyframes indicator2 {
+    0% {
+        margin-left: 0;
+    }
+    100% {
+        margin-left: -100%;
+    }
+}
+@keyframes indicator3 {
+    0% {
+        margin-left: -100%;
+    }
+    100% {
+        margin-left: -200%;
+    }
+}
+#carousel-inner:hover,
+.indicator:hover {
+    animation-play-state: paused;
+}
+#indicator1~#carousel-inner {
+    animation: indicator1 0.5s ease-out forwards;
+}
+#indicator2~#carousel-inner {
+    animation: indicator2 0.5s ease-out forwards;
+}
+#indicator3~#carousel-inner {
+    animation: indicator3 0.5s ease-out forwards;
+}
+
+//div
+//{
+//transform: translate(50px,100px);
+//-ms-transform: translate(50px,100px);       /* IE 9 */
+//-webkit-transform: translate(50px,100px);   /* Safari and Chrome */
+//-o-transform: translate(50px,100px);        /* Opera */
+//-moz-transform: translate(50px,100px);      /* Firefox */
+//}
+//div
+//{
+//animation: myfirst 5s;
+//-moz-animation: myfirst 5s; /* Firefox */
+//-webkit-animation: myfirst 5s;  /* Safari 和 Chrome */
+//-o-animation: myfirst 5s;   /* Opera */
+//}
+//
+//@keyframes myfirst
+//{
+//0%   {background: red;}
+//25%  {background: yellow;}
+//50%  {background: blue;}
+//100% {background: green;}
+//}
+//
+//@-moz-keyframes myfirst /* Firefox */
+//{
+//0%   {background: red;}
+//25%  {background: yellow;}
+//50%  {background: blue;}
+//100% {background: green;}
+//}
+//
+//@-webkit-keyframes myfirst /* Safari 和 Chrome */
+//{
+//0%   {background: red;}
+//25%  {background: yellow;}
+//50%  {background: blue;}
+//100% {background: green;}
+//}
+//
+//@-o-keyframes myfirst /* Opera */
+//{
+//0%   {background: red;}
+//25%  {background: yellow;}
+//50%  {background: blue;}
+//100% {background: green;}
+//}
