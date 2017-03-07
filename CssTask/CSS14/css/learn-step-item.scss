@@ -1,0 +1,31 @@
+@charset "utf-8";
+@import "common";
+@import "layout";
+.learn-step-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 20px;
+    padding: 50px 0;
+    font-family: "microsoft yahei";
+    .step-no {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        color: rgb(41, 176, 120);
+        font-size: 18px;
+        background: #fff;
+        border: 1px solid #eee;
+    }
+    .step-detail {
+        width: 60%;
+        font-size: 14px;
+        color: rgb(153, 153, 153);
+
+    }
+    .step-next-icon {display: block}
+
+}

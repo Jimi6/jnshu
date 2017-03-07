@@ -1,6 +1,14 @@
+@charset "UTF-8";
+/*----线性渐变----begin--*/
+/*----线性渐变----end--*/
 * {
   margin: 0;
   padding: 0;
+}
+
+html {
+  /*set 1rem=10px*/
+  font-size: 62.5%;
 }
 
 body {
@@ -8,7 +16,8 @@ body {
   font-family: "Microsoft YaHei";
 }
 
-ul, ol {
+ol,
+ul {
   list-style: none;
 }
 

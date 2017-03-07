@@ -113,87 +113,19 @@ a {
     width: 40%;
   }
 }
-.sideBar {
-  width: 100%;
+.home-tag {
+  margin: 0 20px;
+  padding: 40px 0;
+  text-align: center;
 }
-
-@media (min-width: 768px) {
-  .sideBar {
-    width: 25%;
-  }
-}
-.sideBar {
-  margin-right: 15px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  background: #fff;
-}
-.sideBar dl {
-  line-height: 2.5;
-  text-align: left;
-}
-.sideBar dl dt {
-  padding-left: 25%;
-  border-bottom: 1px solid #ccc;
-  font-size: 22px;
+.home-tag h4 {
+  margin: 30px 0;
   color: #333333;
+  font-size: 18px;
 }
-.sideBar dl dd {
-  padding-left: 25%;
+.home-tag p {
   font-size: 16px;
-}
-.sideBar dl dd a {
-  display: inline-flex;
-  align-items: center;
-  color: #29b078;
-}
-.sideBar dl dd .item-icon {
-  display: inline-block;
-  margin-right: 5px;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  border: 1px solid #ff650e;
-  background: transparent;
-}
-.sideBar dl dd:hover {
-  color: #ff650e;
-}
-.sideBar dl dd:hover .item-icon {
-  background-color: #fca36d;
+  color: #999999;
 }
 
-._合作企业 {
-  font-size: 22px;
-  font-family: "Microsoft YaHei";
-  color: #333333;
-  line-height: 0.51;
-  position: absolute;
-  left: 478.987px;
-  top: 491.671px;
-  z-index: 77;
-}
-
-._阿里巴巴 {
-  font-size: 22px;
-  font-family: "Microsoft YaHei";
-  color: #29b078;
-  line-height: 0.51;
-  position: absolute;
-  left: 492px;
-  top: 573.386px;
-  z-index: 78;
-}
-
-._土豆网 {
-  font-size: 22px;
-  font-family: "Microsoft YaHei";
-  color: #ff650e;
-  line-height: 0.51;
-  position: absolute;
-  left: 492px;
-  top: 672.386px;
-  z-index: 80;
-}
-
-/*# sourceMappingURL=sidebar.css.map */
+/*# sourceMappingURL=home-tag.css.map */

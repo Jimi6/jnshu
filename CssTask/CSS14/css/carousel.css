@@ -1,7 +1,14 @@
 @charset "UTF-8";
+/*----线性渐变----begin--*/
+/*----线性渐变----end--*/
 * {
   margin: 0;
   padding: 0;
+}
+
+html {
+  /*set 1rem=10px*/
+  font-size: 62.5%;
 }
 
 body {
@@ -9,7 +16,8 @@ body {
   font-family: "Microsoft YaHei";
 }
 
-ul, ol {
+ol,
+ul {
   list-style: none;
 }
 
@@ -70,34 +78,35 @@ a {
   width: 20%;
   height: 100%;
   cursor: pointer;
-  /*----渐变----begin--*/
-  /*----渐变----end--*/
+}
+.carousel .carousel-control img {
+  width: 10%;
 }
 .carousel .carousel-control.left {
   left: 0;
-  background: linear-gradient left, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.0001) 100%;
-  background: -webkit-linear-gradientleft, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.0001) 100%;
-  background: -ms-linear-gradientleft, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.0001) 100%;
-  background: -moz-linear-gradientleft, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.0001) 100%;
+  background: linear-gradient(left, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.0001) 100%);
+  background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.0001) 100%);
+  background: -ms-linear-gradient(left, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.0001) 100%);
+  background: -moz-linear-gradient(left, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.0001) 100%);
 }
 .carousel .carousel-control.left:hover {
-  background: linear-gradient left, rgba(0, 0, 0, 0.1) 0, rgba(0, 0, 0, 0.0001) 100%;
-  background: -webkit-linear-gradientleft, rgba(0, 0, 0, 0.1) 0, rgba(0, 0, 0, 0.0001) 100%;
-  background: -ms-linear-gradientleft, rgba(0, 0, 0, 0.1) 0, rgba(0, 0, 0, 0.0001) 100%;
-  background: -moz-linear-gradientleft, rgba(0, 0, 0, 0.1) 0, rgba(0, 0, 0, 0.0001) 100%;
+  background: linear-gradient(left, rgba(0, 0, 0, 0.1) 0, rgba(0, 0, 0, 0.0001) 100%);
+  background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.1) 0, rgba(0, 0, 0, 0.0001) 100%);
+  background: -ms-linear-gradient(left, rgba(0, 0, 0, 0.1) 0, rgba(0, 0, 0, 0.0001) 100%);
+  background: -moz-linear-gradient(left, rgba(0, 0, 0, 0.1) 0, rgba(0, 0, 0, 0.0001) 100%);
 }
 .carousel .carousel-control.right {
   right: 0;
-  background: linear-gradient right, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.0001) 100%;
-  background: -webkit-linear-gradientright, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.0001) 100%;
-  background: -ms-linear-gradientright, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.0001) 100%;
-  background: -moz-linear-gradientright, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.0001) 100%;
+  background: linear-gradient(right, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.0001) 100%);
+  background: -webkit-linear-gradient(right, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.0001) 100%);
+  background: -ms-linear-gradient(right, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.0001) 100%);
+  background: -moz-linear-gradient(right, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.0001) 100%);
 }
 .carousel .carousel-control.right:hover {
-  background: linear-gradient right, rgba(0, 0, 0, 0.1) 0, rgba(0, 0, 0, 0.0001) 100%;
-  background: -webkit-linear-gradientright, rgba(0, 0, 0, 0.1) 0, rgba(0, 0, 0, 0.0001) 100%;
-  background: -ms-linear-gradientright, rgba(0, 0, 0, 0.1) 0, rgba(0, 0, 0, 0.0001) 100%;
-  background: -moz-linear-gradientright, rgba(0, 0, 0, 0.1) 0, rgba(0, 0, 0, 0.0001) 100%;
+  background: linear-gradient(right, rgba(0, 0, 0, 0.1) 0, rgba(0, 0, 0, 0.0001) 100%);
+  background: -webkit-linear-gradient(right, rgba(0, 0, 0, 0.1) 0, rgba(0, 0, 0, 0.0001) 100%);
+  background: -ms-linear-gradient(right, rgba(0, 0, 0, 0.1) 0, rgba(0, 0, 0, 0.0001) 100%);
+  background: -moz-linear-gradient(right, rgba(0, 0, 0, 0.1) 0, rgba(0, 0, 0, 0.0001) 100%);
 }
 
 @keyframes carousel {
@@ -110,7 +119,7 @@ a {
     margin-left: -100%;
   }
   100%,
-    73% {
+    67% {
     margin-left: -200%;
   }
 }

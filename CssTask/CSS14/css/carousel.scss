@@ -1,5 +1,10 @@
 @charset "utf-8";
 @import "common";
+//      线性渐变起始颜色
+$star-color-normal: rgba(0,0,0,.5);
+$star-color-hover: rgba(0, 0, 0,.1);
+$end-color-normal: rgba(0,0,0,.0001);
+$end-color-hover: rgba(0,0,0,.0001);
 .carousel {
     width: 100%;
     position: relative;
@@ -52,33 +57,22 @@
         width: 20%;
         height: 100%;
         cursor: pointer;
-
-        /*----渐变----begin--*/
-        $star-color-normal: rgba(0,0,0,.5);
-        $star-color-hover: rgba(0, 0, 0,.1);
-        $end-color-normal: rgba(0,0,0,.0001);
-        $end-color-hover: rgba(0,0,0,.0001);
-
-        @mixin gradient($method:linear-gradient,$direction:left, $star-color:#000, $end-color:#fff) {
-            background: $method($direction,$star-color 0,$end-color 100%);
-            background: -webkit-#{$method}($direction,$star-color 0,$end-color 100%);
-            background: -ms-#{$method}($direction,$star-color 0,$end-color 100%);
-            background: -moz-#{$method}($direction,$star-color 0,$end-color 100%);
+        img {
+            width: 10%;
         }
-        /*----渐变----end--*/
 
         &.left {
             left: 0;
-            @include gradient(linear-gradient,left,$star-color-normal,$end-color-normal);
+            @include linear-gradient(left,$star-color-normal,$end-color-normal);
             &:hover {
-                @include gradient(linear-gradient,left,$star-color-hover,$end-color-hover);
+                @include linear-gradient(left,$star-color-hover,$end-color-hover);
             }
         }
         &.right {
             right: 0;
-            @include gradient(linear-gradient,right,$star-color-normal,$end-color-normal);
+            @include linear-gradient(right,$star-color-normal,$end-color-normal);
             &:hover {
-                @include gradient(linear-gradient,right,$star-color-hover,$end-color-hover);
+                @include linear-gradient(right,$star-color-hover,$end-color-hover);
             }
         }
     }
@@ -94,7 +88,7 @@
         margin-left: -100%;
     }
     100%,
-    73% {
+    67% {
         margin-left: -200%;
     }
 }

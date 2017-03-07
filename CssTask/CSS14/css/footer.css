@@ -1,33 +1,165 @@
-.footer-top {
-  background-color: #26a26f;
-  padding: 30px 0;
-  color: white;
+@charset "UTF-8";
+/*----线性渐变----begin--*/
+/*----线性渐变----end--*/
+* {
+  margin: 0;
+  padding: 0;
 }
-.footer-top dt h6 {
-  font-size: 14px;
+
+html {
+  /*set 1rem=10px*/
+  font-size: 62.5%;
 }
-.footer-top dl {
-  line-height: 2;
+
+body {
+  font-size: 16px;
+  font-family: "Microsoft YaHei";
 }
-.footer-top dt, .footer-top dd {
-  display: inline;
-  padding: 5px;
+
+ol,
+ul {
+  list-style: none;
 }
-.footer-top dd a {
-  color: white;
-  font-size: 10px;
+
+a {
+  color: #000;
+  text-decoration: none;
 }
-.footer-top .foot-links {
+
+/*----线性渐变----begin--*/
+/*----线性渐变----end--*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  /*set 1rem=10px*/
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Microsoft YaHei";
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+/*鍝嶅簲寮忓竷灞€*/
+.responsive-wrap-20 {
+  width: 100%;
+}
+
+.responsive-wrap-25 {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .responsive-wrap-20 {
+    width: 50%;
+  }
+
+  .responsive-wrap-25 {
+    width: 50%;
+  }
+}
+@media (min-width: 992px) {
+  .responsive-wrap-20 {
+    width: 20%;
+  }
+
+  .responsive-wrap-25 {
+    width: 25%;
+  }
+}
+.container {
+  padding: 0 15px;
   margin: 0 auto;
 }
 
-.footer-copyright {
-  background-color: #29b078;
-  border-top: 1px solid #239562;
-  padding: 10px;
-  color: white;
-  font-size: 12px;
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+.percent20 {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .percent20 {
+    width: 20%;
+  }
+}
+.percent40 {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .percent40 {
+    width: 40%;
+  }
+}
+.footer {
+  font-size: 16px;
+  color: #fff;
+  text-align: left;
+  background: #1ba36d;
+}
+
+.copyright {
   text-align: center;
+  font-size: 14px;
+  line-height: 2;
+}
+
+.footer-top .container {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  overflow: hidden;
+}
+.footer-top .container div {
+  float: left;
+}
+.footer-top .container .center p a + a {
+  margin-left: 16px;
+}
+.footer-top p {
+  line-height: 2;
+}
+.footer-top p.null {
+  margin-bottom: 3.6rem;
+}
+.footer-top p a {
+  display: inline-block;
+  margin: 5px 0;
+  color: #fff;
+  font-size: 16px;
+  border-bottom: 1px solid transparent;
+}
+.footer-top p a:hover {
+  border-bottom-color: #fff;
+}
+.footer-top .headline {
+  font-size: 17px;
+}
+
+.footer-bottom {
+  clear: both;
+  border-top: 1px solid #26c184;
 }
 
 /*# sourceMappingURL=footer.css.map */
