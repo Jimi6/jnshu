@@ -12,30 +12,40 @@
 @import "sidebar";
 @import "jobcard";
 @import "footer";
-.home-main{
-    h3{
+.home-main {
+    h3 {
         margin: 20px 0;
         width: 100%;
         text-align: center;
     }
 }
+.margin-top-bottom-30 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
 
-.step-next-icon{
+@media screen and (max-width:992px) {
+    .percent25-reset {
+        width: 100%;
+    }
+}
+
+.step-next-icon {
     visibility: visible;
 }
-@media screen and (max-width:768px){
-    .learn-step-item{
+@media screen and (max-width:992px) {
+    .learn-step-item {
         padding: 20px 0;
     }
-.step-next-icon{
-    visibility: hidden;
-}  
-  
+    .step-next-icon {
+        visibility: hidden;
+    }
+
 }
 /*浅色字体*/
-.muted{
-       color: #999; 
-    }
+.muted {
+    color: #999;
+}
 /*广告横幅*/
 .banner {
     width: 100%;
@@ -77,7 +87,7 @@
 
 .nav-pills {
     overflow: hidden;
-    border-top:1px solid #ccc ;
+    border-top: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
     li {
         display: inline-block;
@@ -97,47 +107,44 @@
             background-color: #29b078;
         }
     }
-    
+
 }
 
-
 /*企业详情栏*/
-
 
 .partnerBar-wrap {
     float: left;
     width: 100%;
 }
 @media (min-width:768px) {
-    .partnerBar-wrap{
+    .partnerBar-wrap {
         width: 75%;
     }
 }
-.partnerBar{
-    
-   
+.partnerBar {
+
     padding: 20px;
     margin: 15px;
     border: 1px solid #ddd;
-     border-radius:5px ;background: #fff;
-    .intro{
+    border-radius: 5px;
+    background: #fff;
+    .intro {
         width: 100%;
         border-bottom: 1px solid #ddd;
-        .thumbnail{
+        .thumbnail {
             float: left;
             width: 200px;
             padding: 5px;
-            img{
+            img {
                 width: 100%;
             }
         }
-        .intro-content{
-        }
+        .intro-content {}
     }
-    .partner-detail{
+    .partner-detail {
         width: 100%;
     }
-    p{
+    p {
         padding: 20px;
         text-indent: 2em;
         line-height: 2;

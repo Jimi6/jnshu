@@ -1,0 +1,69 @@
+@charset "utf-8";
+@import "common";
+.loginbar-wrap {
+    width: 100%;
+    background: #fff;
+}
+.loginbar {
+    height: 40px;
+    .loginbar-PC,.loginbar-mobile{
+        height: 100%;
+    }
+    .loginbar-tel {
+        color: #29b078;
+        font-size: 14px;
+        text-align: left;
+    }
+    
+    .loginbar-login {
+        li {
+            display: inline-block;
+        
+                padding:0 5px;
+
+        }
+    }
+    .loginbar-mobile{
+       .loginbar-login{
+           li{
+               &+li{
+                   border-left: 1px solid #29b078;
+               }
+           }
+       }
+    }
+
+}
+    .loginbar-PC {
+        display: none;
+    }
+    .loginbar-mobile {
+        display: block;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    @media (min-width:768px) {
+        .loginbar {
+           .container{
+               margin-left: -15px;
+               margin-right: -15px;
+           }
+        }
+        .loginbar-PC {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .loginbar-mobile {
+            display: none;
+        }
+    }
+    //   @media (min-width:992px){
+    //     .loginbar-PC{
+    //      display: none;
+    //  }
+    //  .loginbar-mobile{
+    //      display: block
+    //  } 
+    //  }

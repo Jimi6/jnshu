@@ -1,0 +1,158 @@
+@charset "UTF-8";
+/*----线性渐变----begin--*/
+/*----线性渐变----end--*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  /*set 1rem=10px*/
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Microsoft YaHei";
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+/*----线性渐变----begin--*/
+/*----线性渐变----end--*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  /*set 1rem=10px*/
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Microsoft YaHei";
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+/*响应式布局*/
+.container {
+  clear: both;
+  padding: 0 15px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+.percent20,
+.percent25 {
+  float: left;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .percent20 {
+    width: 50%;
+  }
+
+  .percent25 {
+    width: 50%;
+  }
+}
+@media (min-width: 768px) {
+  .percent20-reset {
+    width: 20%;
+  }
+}
+@media (min-width: 992px) {
+  .percent20 {
+    width: 20%;
+  }
+
+  .percent25 {
+    width: 25%;
+  }
+}
+.percent33 {
+  float: left;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .percent33 {
+    width: 50%;
+  }
+}
+@media (min-width: 992px) {
+  .percent33 {
+    width: 33.3%;
+  }
+}
+.percent40 {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .percent40 {
+    width: 40%;
+  }
+}
+.home-tag {
+  margin: 0 20px;
+  padding: 40px 0;
+  text-align: center;
+}
+.home-tag h4 {
+  margin: 30px 0;
+  color: #333333;
+  font-size: 18px;
+}
+.home-tag p {
+  font-size: 16px;
+  color: #999999;
+}
+
+.home-tag-no {
+  border-left: 1px solid #ddd;
+  text-align: left;
+  padding: 70px 0 40px 20px;
+  line-height: 2;
+}
+
+@media screen and (max-width: 992px) {
+  .home-tag-no {
+    border-left-color: transparent;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/*# sourceMappingURL=home-tag.css.map */

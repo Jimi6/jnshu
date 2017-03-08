@@ -1,1 +1,152 @@
 @charset "utf-8";
+@import "common";
+@import "layout";
+@import "loginbar";
+@import "navbar";
+@import "carousel";
+@import "home-tag";
+@import "learn-step-item";
+@import "stu-item";
+@import "partner";
+@import "friendLink";
+@import "sidebar";
+@import "jobcard";
+@import "footer";
+.home-main {
+    h3 {
+        margin: 20px 0;
+        width: 100%;
+        text-align: center;
+    }
+}
+.margin-top-bottom-30 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width:992px) {
+    .percent25-reset {
+        width: 100%;
+    }
+}
+
+.step-next-icon {
+    visibility: visible;
+}
+@media screen and (max-width:992px) {
+    .learn-step-item {
+        padding: 20px 0;
+    }
+    .step-next-icon {
+        visibility: hidden;
+    }
+
+}
+/*浅色字体*/
+.muted {
+    color: #999;
+}
+/*广告横幅*/
+.banner {
+    width: 100%;
+    img {
+        width: 100%;
+    }
+}
+
+/*下边框*/
+.boder-bottom-ccc {
+    border-bottom: 1px solid #ccc;
+}
+
+.job-headline {
+    width: 100%;
+    padding: 20px 0;
+    text-align: left;
+}
+
+.breadcrumb {
+    padding: 10px 0;
+    li {
+        display: inline-block;
+        &+li:before {
+            content: ">";
+        }
+        a {
+            font-size: 16px;
+            color: rgb(51,51,51);
+
+        }
+        &.active,
+        &:focus,
+        &:hover {
+            color: #29b078;
+        }
+    }
+}
+
+.nav-pills {
+    overflow: hidden;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    li {
+        display: inline-block;
+        padding: 15px 0;
+        &+li {
+            margin-left: 10px;
+        }
+        a {
+            padding: 4px;
+            font-size: 14px;
+            color: rgb(51,51,51);
+        }
+        &.active > a,
+        &:focus > a,
+        &:hover > a {
+            color: #fff;
+            background-color: #29b078;
+        }
+    }
+
+}
+
+/*企业详情栏*/
+
+.partnerBar-wrap {
+    float: left;
+    width: 100%;
+}
+@media (min-width:768px) {
+    .partnerBar-wrap {
+        width: 75%;
+    }
+}
+.partnerBar {
+
+    padding: 20px;
+    margin: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #fff;
+    .intro {
+        width: 100%;
+        border-bottom: 1px solid #ddd;
+        .thumbnail {
+            float: left;
+            width: 200px;
+            padding: 5px;
+            img {
+                width: 100%;
+            }
+        }
+        .intro-content {}
+    }
+    .partner-detail {
+        width: 100%;
+    }
+    p {
+        padding: 20px;
+        text-indent: 2em;
+        line-height: 2;
+    }
+}

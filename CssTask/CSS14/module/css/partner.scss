@@ -1,0 +1,14 @@
+@charset "utf-8";
+@import "common";
+@import "layout";
+.partner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    margin: 10px 0;
+    height: 14rem;
+    &:hover {
+        margin: 10px;
+    }
+}

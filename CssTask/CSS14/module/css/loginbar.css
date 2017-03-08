@@ -1,0 +1,81 @@
+@charset "UTF-8";
+/*----线性渐变----begin--*/
+/*----线性渐变----end--*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  /*set 1rem=10px*/
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Microsoft YaHei";
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+.loginbar-wrap {
+  width: 100%;
+  background: #fff;
+}
+
+.loginbar {
+  height: 40px;
+}
+.loginbar .loginbar-PC, .loginbar .loginbar-mobile {
+  height: 100%;
+}
+.loginbar .loginbar-tel {
+  color: #29b078;
+  font-size: 14px;
+  text-align: left;
+}
+.loginbar .loginbar-login li {
+  display: inline-block;
+  padding: 0 5px;
+}
+.loginbar .loginbar-mobile .loginbar-login li + li {
+  border-left: 1px solid #29b078;
+}
+
+.loginbar-PC {
+  display: none;
+}
+
+.loginbar-mobile {
+  display: block;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .loginbar .container {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+
+  .loginbar-PC {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .loginbar-mobile {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=loginbar.css.map */

@@ -1,0 +1,57 @@
+@charset "utf-8";
+//@import "common";
+.friendLinks-wrap{
+    clear: both;
+    overflow: hidden;
+    background: #fff;
+    
+}
+.friendLinks {
+    li {
+        float: left;
+        width: 50%;
+
+        a {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            padding: 8px;
+            border-bottom: 1px solid transparent;
+            font-size: 14px;
+            color: rgb(153, 153, 153);
+            text-align: left;
+            &:hover {
+                border-bottom-color: rgb(27,163,109);
+            }
+
+        }
+        .dot {
+            margin-right: 10px;
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+            background: rgb(153, 153, 153);
+        }
+    }
+}
+@media (min-width:414px) {
+    .friendLinks {
+        li {
+            width: 33.3%;
+        }
+    }
+}
+@media (min-width:768px) {
+    .friendLinks {
+        li {
+            width: 20%;
+        }
+    }
+}
+@media(min-width:992px) {
+    .friendLinks {
+        li {
+            width: 10%;
+        }
+    }
+}

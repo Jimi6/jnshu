@@ -1,0 +1,135 @@
+@charset "utf-8";
+//@import "common";
+//@import "layout";
+.nav {
+    li {
+
+        a {}
+    }
+
+}
+.navbar-wrap {
+    width: 100%;
+    background-color: #29b078;
+
+}
+
+.logo {
+    img {
+        max-height: 100%;
+    }
+}
+$navbar-height: 100px;
+
+.navbar {
+
+    overflow: hidden;
+    .navbar-brand {
+        position: relative;
+        top: 20px;
+        float: left;
+        height: 80px;
+        line-height: 80px;
+    }
+    .navbar-nav {
+
+        li {
+            height: ($navbar-height)-4px;
+            width: 100px;
+            line-height: ($navbar-height)-4px;
+            text-align: center;
+
+            border-bottom: 4px solid transparent;
+            &.active,
+            &:focus,
+            &:hover {
+
+                border-bottom-color: #fff;
+
+            }
+            a {
+                display: block;
+                color: #fff;
+                text-align: center;
+            }
+
+        }
+    }
+
+    .nav-mobile {
+        display: none;
+
+        .navbar-toggle {
+            position: relative;
+            float: right;
+            padding: 9px 10px;
+            margin: 15px 4px 0 0;
+            background-color: transparent;
+            background-image: none;
+            border: 1px solid transparent;
+            border-radius: 4px;
+            outline: none;
+            cursor: pointer;
+
+            .icon-bar {
+                display: block;
+                margin: 5px;
+                width: 22px;
+                height: 2px;
+                border-radius: 1px;
+                background-color: #0b925a;
+            }
+            &:focus,
+            &:hover {
+                background-color: #47ce96;
+                border-color: #3dc48c;
+            }
+        }
+        .navbar-nav {
+            clear: both;
+            display: none;
+            padding-bottom: 10px;
+            border-top: 2px solid #0b925a;
+            li {
+                width: 100%;
+                height: 40px;
+                line-height: 40px;
+                border-width: 2px;
+            }
+
+        }
+        &:focus,
+        &:hover {
+            .navbar-nav {
+                display: block;
+            }
+        }
+    }
+
+    .nav-PC {
+        float: right;
+        display: block;
+        .navbar-nav {
+            height: 100px;
+            line-height: 100px;
+            li {
+                float: left;
+                margin: 0 5px;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    .navbar {
+        .nav-mobile {
+            display: block;
+
+        }
+        .nav-PC {
+            display: none;
+        }
+    }
+
+}
