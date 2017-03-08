@@ -1052,18 +1052,18 @@ a {
     width: 40%;
   }
 }
-.sideBar {
+.sideBar-wrap {
   float: left;
   width: 100%;
 }
 
 @media (min-width: 768px) {
-  .sideBar {
+  .sideBar-wrap {
     width: 25%;
   }
 }
 .sideBar {
-  margin-right: 15px;
+  margin: 15px;
   border: 1px solid #ddd;
   border-radius: 5px;
   background: #fff;
@@ -1101,39 +1101,6 @@ a {
 }
 .sideBar dl dd:hover .item-icon {
   background-color: #fca36d;
-}
-
-._合作企业 {
-  font-size: 22px;
-  font-family: "Microsoft YaHei";
-  color: #333333;
-  line-height: 0.51;
-  position: absolute;
-  left: 478.987px;
-  top: 491.671px;
-  z-index: 77;
-}
-
-._阿里巴巴 {
-  font-size: 22px;
-  font-family: "Microsoft YaHei";
-  color: #29b078;
-  line-height: 0.51;
-  position: absolute;
-  left: 492px;
-  top: 573.386px;
-  z-index: 78;
-}
-
-._土豆网 {
-  font-size: 22px;
-  font-family: "Microsoft YaHei";
-  color: #ff650e;
-  line-height: 0.51;
-  position: absolute;
-  left: 492px;
-  top: 672.386px;
-  z-index: 80;
 }
 
 .jobcard {
@@ -1230,6 +1197,7 @@ a {
   left: 0;
   width: 100%;
   height: 100%;
+  border-radius: 5px;
   background-color: rgba(0, 0, 0, 0.75);
   color: #fff;
   opacity: 0;
@@ -1494,6 +1462,11 @@ a {
   border-top: 1px solid #26c184;
 }
 
+/*浅色字体*/
+.muted {
+  color: #999;
+}
+
 /*广告横幅*/
 .banner {
   width: 100%;
@@ -1551,8 +1524,44 @@ a {
   color: #fff;
   background-color: #29b078;
 }
-.nav-pills .muted {
-  color: #999;
+
+/*企业详情栏*/
+.partner-wrap {
+  float: left;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .partner-wrap {
+    width: 75%;
+  }
+}
+.partnerBar {
+  padding: 20px;
+  margin: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background: #fff;
+}
+.partnerBar .intro {
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+}
+.partnerBar .intro .thumbnail {
+  float: left;
+  width: 200px;
+  padding: 5px;
+}
+.partnerBar .intro .thumbnail img {
+  width: 100%;
+}
+.partnerBar .partner-detail {
+  width: 100%;
+}
+.partnerBar p {
+  padding: 20px;
+  text-indent: 2em;
+  line-height: 2;
 }
 
 /*# sourceMappingURL=base.css.map */

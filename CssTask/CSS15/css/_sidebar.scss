@@ -2,17 +2,17 @@
 @import "common";
 @import "layout";
 
-.sideBar {
+.sideBar-wrap {
     float: left;
     width: 100%;
 }
 @media (min-width:768px) {
-    .sideBar {
+    .sideBar-wrap {
         width: 25%;
     }
 }
 .sideBar {
-    margin-right: 15px;
+    margin: 15px;
     border: 1px solid #ddd;
     border-radius: 5px;
     background: #fff;
@@ -55,34 +55,4 @@
             }
         }
     }
-}
-._合作企业 {
-    font-size: 22px;
-    font-family: "Microsoft YaHei";
-    color: rgb(51, 51, 51);
-    line-height: 0.51;
-    position: absolute;
-    left: 478.987px;
-    top: 491.671px;
-    z-index: 77;
-}
-._阿里巴巴 {
-    font-size: 22px;
-    font-family: "Microsoft YaHei";
-    color: rgb(41, 176, 120);
-    line-height: 0.51;
-    position: absolute;
-    left: 492px;
-    top: 573.386px;
-    z-index: 78;
-}
-._土豆网 {
-    font-size: 22px;
-    font-family: "Microsoft YaHei";
-    color: rgb(255, 101, 14);
-    line-height: 0.51;
-    position: absolute;
-    left: 492px;
-    top: 672.386px;
-    z-index: 80;
 }

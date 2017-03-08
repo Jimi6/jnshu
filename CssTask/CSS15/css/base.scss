@@ -12,6 +12,11 @@
 @import "sidebar";
 @import "jobcard";
 @import "footer";
+
+/*浅色字体*/
+.muted{
+       color: #999; 
+    }
 /*广告横幅*/
 .banner {
     width: 100%;
@@ -73,7 +78,49 @@
             background-color: #29b078;
         }
     }
-    .muted{
-       color: #999; 
+    
+}
+
+
+/*企业详情栏*/
+
+
+.partner-wrap {
+    float: left;
+    width: 100%;
+}
+@media (min-width:768px) {
+    .partner-wrap {
+        width: 75%;
+    }
+}
+.partnerBar{
+    
+   
+    padding: 20px;
+    margin: 15px;
+    border: 1px solid #ddd;
+     border-radius:5px ;background: #fff;
+    .intro{
+        width: 100%;
+        border-bottom: 1px solid #ddd;
+        .thumbnail{
+            float: left;
+            width: 200px;
+            padding: 5px;
+            img{
+                width: 100%;
+            }
+        }
+        .intro-content{
+        }
+    }
+    .partner-detail{
+        width: 100%;
+    }
+    p{
+        padding: 20px;
+        text-indent: 2em;
+        line-height: 2;
     }
 }
