@@ -1,0 +1,131 @@
+@charset "UTF-8";
+/*----线性渐变----begin--*/
+/*----线性渐变----end--*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  /*set 1rem=10px*/
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Microsoft YaHei";
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+/*----线性渐变----begin--*/
+/*----线性渐变----end--*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  /*set 1rem=10px*/
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Microsoft YaHei";
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+/*鍝嶅簲寮忓竷灞€*/
+.responsive-wrap-20 {
+  width: 100%;
+}
+
+.responsive-wrap-25 {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .responsive-wrap-20 {
+    width: 50%;
+  }
+
+  .responsive-wrap-25 {
+    width: 50%;
+  }
+}
+@media (min-width: 992px) {
+  .responsive-wrap-20 {
+    width: 20%;
+  }
+
+  .responsive-wrap-25 {
+    width: 25%;
+  }
+}
+.container {
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+.percent20 {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .percent20 {
+    width: 20%;
+  }
+}
+.percent40 {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .percent40 {
+    width: 40%;
+  }
+}
+.partner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  margin: 10px;
+  height: 18rem;
+  box-shadow: 0 1px 1px transparent,0 -1px 1px transparent,10px 0 10px transparent,-10px 0 10px transparent;
+  -webkit-box-shadow: 0 10px 10px transparent,0 -10px 10px transparent,10px 0 10px transparent,-10px 0 10px transparent;
+}
+.partner:hover {
+  box-shadow: 0 1px 1px rgba(200, 200, 200, 0.1), 0 -1px 1px rgba(200, 200, 200, 0.1), 10px 0 10px rgba(200, 200, 200, 0.1), -10px 0 10px rgba(200, 200, 200, 0.1);
+  -webkit-box-shadow: 0 10px 10px rgba(200, 200, 200, 0.1), 0 -10px 10px rgba(200, 200, 200, 0.1), 10px 0 10px rgba(200, 200, 200, 0.1), -10px 0 10px rgba(50, 50, 50, 0.2);
+}
+
+/*# sourceMappingURL=partner.css.map */

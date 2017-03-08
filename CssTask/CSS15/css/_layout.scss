@@ -1,0 +1,71 @@
+//布局样式
+@charset "utf-8";
+//@import "common";
+/*响应式布局*/
+.container {
+    clear: both;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+.responsive-wrap-20,.responsive-wrap-25{
+    float: left;
+    width: 100%;
+}
+@media (min-width:768px){
+    .responsive-wrap-20{
+    width: 50%;
+}
+    .responsive-wrap-25{
+        width: 50%;
+    }
+}
+@media (min-width:992px){
+    .responsive-wrap-20{
+    width: 20%;
+}
+    .responsive-wrap-25{
+        width: 25%;
+    }
+}
+.percent33 {
+    float: left;
+    width: 100%;
+}
+@media(min-width:768px) {
+    .percent33 {
+        width: 50%;
+    }
+}
+@media(min-width:992px) {
+    .percent33 {
+        width: 33.3%;
+    }
+}
+
+.percent20{
+    width: 100%;
+}
+@media(min-width:768px) {
+    .percent20 {
+        width: 20%;
+    }
+}
+.percent40 {
+    width: 100%;
+}
+@media(min-width:768px) {
+    .percent40 {
+        width: 40%;
+    }
+}

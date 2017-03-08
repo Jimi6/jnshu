@@ -1,18 +1,6 @@
 @charset "utf-8";
-@import "common";
-.percent33 {
-    width: 100%;
-}
-@media(min-width:768px) {
-    .percent33 {
-        width: 50%;
-    }
-}
-@media(min-width:992px) {
-    .percent33 {
-        width: 33.3%;
-    }
-}
+//@import "common";
+
 .jobcard {
     position: relative;
     overflow: hidden;

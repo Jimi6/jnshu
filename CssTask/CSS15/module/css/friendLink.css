@@ -1,0 +1,70 @@
+@charset "UTF-8";
+/*----线性渐变----begin--*/
+/*----线性渐变----end--*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  /*set 1rem=10px*/
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Microsoft YaHei";
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+.friendLinks li {
+  float: left;
+  width: 50%;
+}
+.friendLinks li a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  border-bottom: 1px solid transparent;
+  font-size: 14px;
+  color: #999999;
+  text-align: left;
+}
+.friendLinks li a:hover {
+  border-bottom-color: #1ba36d;
+}
+.friendLinks li .dot {
+  margin-right: 10px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #999999;
+}
+
+@media (min-width: 414px) {
+  .friendLinks li {
+    width: 33.3%;
+  }
+}
+@media (min-width: 768px) {
+  .friendLinks li {
+    width: 20%;
+  }
+}
+@media (min-width: 992px) {
+  .friendLinks li {
+    width: 10%;
+  }
+}
+
+/*# sourceMappingURL=friendLink.css.map */
