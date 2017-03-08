@@ -12,7 +12,26 @@
 @import "sidebar";
 @import "jobcard";
 @import "footer";
+.home-main{
+    h3{
+        margin: 20px 0;
+        width: 100%;
+        text-align: center;
+    }
+}
 
+.step-next-icon{
+    visibility: visible;
+}
+@media screen and (max-width:768px){
+    .learn-step-item{
+        padding: 20px 0;
+    }
+.step-next-icon{
+    visibility: hidden;
+}  
+  
+}
 /*浅色字体*/
 .muted{
        color: #999; 
@@ -85,12 +104,12 @@
 /*企业详情栏*/
 
 
-.partner-wrap {
+.partnerBar-wrap {
     float: left;
     width: 100%;
 }
 @media (min-width:768px) {
-    .partner-wrap {
+    .partnerBar-wrap{
         width: 75%;
     }
 }

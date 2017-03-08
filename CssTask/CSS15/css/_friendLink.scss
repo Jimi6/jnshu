@@ -1,5 +1,11 @@
 @charset "utf-8";
 //@import "common";
+.friendLinks-wrap{
+    clear: both;
+    overflow: hidden;
+    background: #fff;
+    
+}
 .friendLinks {
     li {
         float: left;
