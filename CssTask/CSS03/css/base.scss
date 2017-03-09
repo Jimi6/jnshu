@@ -1,167 +1,84 @@
-@charset"utf-8";
+@charset "utf-8";
 
-*{
-	margin: 0;
-	padding: 0;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-
-html{
-//  width: 100%;
-//  height: 100%;
-	font-size:62.5%;
-}
-body{
-
-}
-//
-//@media only screen and (device-maxwidth:480px){
-//	html{
-//		font-size: 480/640*100%;
-//	}
-//}
-//
-//
-//
-//$unit:1rem/16;
-//
-//
-//
-//body{
-//	background-color: #6accd5;
-//	font-family: "Hiragino Sans GB W3";
-//	font-size: 30*$unit;
-//	color: #fff;
-//	position: relative;
-//	// max-width: 640px;
-//	// min-width: 320px;
-//	margin:0 auto;
-//}
-//
-//
-//
-//.back{
-//	position:absolute;
-//	left:35*$unit;
-//	top:20*$unit;
-//	width:45*$unit;
-//	height:45*$unit;
-//	img{
-//		width:100%;
-//		height: 100%;
-//	}
-//}
-//
-//.wrap{
-//	margin:0 auto;
-//	width:450/640*100%;
-//	padding-top:116*$unit;
-//}
-//
-//.logo{
-//	margin:0 auto;
-//	text-align:center;
-//
-//}
-//
-//
-//.main{
-//	margin: 130*$unit auto;	
-//	p{
-//		line-height: 1.5;
-//
-//	}
-//}
-//.footer{
-//	padding-bottom:160*$unit;
-//}
-//
-//%footer-item{
-//	width:110*$unit;
-//	text-align: center;
-//	font-size: 24*$unit;
-//	line-height:54.22*$unit;
-//	font-weight: bold;
-//	display: inline-block;
-//	font-family:"AdobeHeitiStd Regular";
-//	background-size: 100%;
-//	padding-top:84*$unit;
-//
-//}
-//
-//.friend{
-//	float:left;
-//	@extend %footer-item;
-//	background: url(../img/friend.png) no-repeat top center ;
-//}
-//.we{
-//	float:right;
-//	@extend %footer-item;
-//	background: url(../img/we.png) no-repeat top center ;
-//}
-
-.wrap{
+.wrap,
+body,
+html {
+    width: 100%;
+    height: 100%;
+    font-size: 62.5%;
     margin: 0 auto;
+
+}
+body {
+    max-width: 768px;
+}
+
+.wrap {
     color: #fff;
     background: #6accd5;
     overflow: hidden;
 }
 
-.header{
-    .back{
+.header {
+    .back {
         float: left;
         width: 2.7rem;
         margin: 1rem 0 0 1.8rem;
-        img{
-           width: 100%; 
+        img {
+            width: 100%;
         }
     }
 }
 
-.main{
- padding: 2rem 4.6rem 0;
+.main {
+    padding: 2rem 4.6rem 0;
     clear: both;
     font-family: "Hiragino Sans GB";
-    
-    .logo{
-        margin:0 auto;
-     text-align: center;
-     width: 9rem;
-     img{
-         width: 100%;
-     }
+
+    .logo {
+        margin: 0 auto;
+        text-align: center;
+        width: 9rem;
+        img {
+            width: 100%;
+        }
     }
-    p{
-      margin-top: 6rem;
-      line-height: 1.8; 
-      font-size: 1.5rem; 
+    p {
+        margin-top: 6rem;
+        line-height: 1.8;
+        font-size: 1.5rem;
     }
 }
 
-.footer{
+.footer {
     padding: 9rem 5.5rem;
-    font-family:"Adobe Heiti Std";
+    font-family: "Adobe Heiti Std";
     font-size: 1.2rem;
     overflow: hidden;
-    .icon{
+    .icon {
         width: 7rem;
         height: 6.5rem;
         text-align: center;
-        img{
+        img {
             width: 4rem;
             margin: 0 auto;
             vertical-align: middle;
         }
-        span{
+        span {
             display: block;
             margin-top: 1rem;
         }
-        
+
     }
-    .icon-friend{
-       float: left; 
+    .icon-friend {
+        float: left;
     }
     .icon-PTTeng {
-       float: right; 
+        float: right;
     }
 }

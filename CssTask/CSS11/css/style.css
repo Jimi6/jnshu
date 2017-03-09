@@ -1,10 +1,21 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*璁剧疆1rem=10px*/
+html {
+  font-size: 62.5%;
+}
+
 body {
   background: #eff0f4;
   width: 100%;
   max-width: 640px;
   margin: 0 auto;
   font-family: "STHeitiSC";
-  font-size: 1rem;
+  font-size: 1.6rem;
 }
 
 a {
@@ -17,9 +28,9 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 3rem;
-  line-height: 3rem;
-  padding: 0 1rem;
+  height: 5rem;
+  line-height: 5rem;
+  padding: 0 1.5rem;
 }
 .top a {
   color: #fff;
@@ -28,52 +39,63 @@ a {
   margin: 0;
   padding: 0;
   font-weight: normal;
+  font-size: 1.8rem;
 }
 
 .user .userItem {
   background: #fff;
-  margin: .4rem 0;
+  margin-top: 0.5rem;
   display: inline-block;
   width: 100%;
-  height: 3rem;
-  line-height: 3rem;
+  height: 5rem;
+  line-height: 5rem;
   border: none;
-  padding: .2rem 0;
 }
-.user .userItem label img {
-  margin: 0 3%;
-  padding-top: .8rem;
-  height: 50%;
+.user .userItem label {
   float: left;
+  margin: 1.25rem 0;
+  width: 5.5rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  background: transparent center center no-repeat;
+  background-size: contain;
+}
+.user .userItem .icon-phone {
+  background-image: url("../img/iphone.png");
+}
+.user .userItem .icon-lock {
+  background-image: url("../img/locked.png");
 }
 .user .userItem input {
   border: none;
   border-left: 1px solid #ccc;
-  height: 1.5rem;
-  line-height: 1.5rem;
-  width: 80%;
-  font-size: 0.88889rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  width: 70%;
   text-indent: 2rem;
   color: #cec0cd;
   outline: none;
 }
-.user .log-in {
+.user .userItem input:focus {
+  color: #333333;
+}
+.user .userItem-login {
+  margin-top: 3.5rem;
+}
+.user .userItem-login .login {
   background: #5ac0ce;
   width: 100%;
-  height: 3rem;
-  line-height: 3rem;
+  height: 100%;
   color: #fff;
   border: none;
-  font-size: 1rem;
+  font-size: 1.8rem;
   cursor: pointer;
 }
 
 .forget {
   color: #5ac0ce;
   float: right;
-  margin-top: 1rem;
-  padding: 0 .5rem 2rem 0;
-  font-size: 0.8rem;
+  margin: 1rem 1.5rem 0 0;
 }
 
 /*# sourceMappingURL=style.css.map */

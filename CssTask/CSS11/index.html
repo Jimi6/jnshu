@@ -16,18 +16,18 @@
 		</div>
 		<form class="user" method="post">
 			<fieldset class="userItem">
-				<label for="phone"><img alt="账号" src="img/iphone.png"/></label>
+				<label class="icon-phone" for="phone"></label>
 				<input type="text" name="phone" id="phone" maxlength="11" placeholder="请输入手机号"/><br />
 
 			</fieldset>
 
 			<fieldset class="userItem">
-				<label for="password"><img alt="密码" src="img/locked.png"/></label>
+				<label class="icon-lock" for="password"></label>
 				<input type="password" name="password" id="password" maxlength="8" placeholder="请输入密码" /><br />
 
 			</fieldset>
-
-			<input class="log-in" type="submit" value="登陆" />
+			<fieldset class="userItem userItem-login"><button class="login" type="submit">登陆</button></fieldset>
+			
 		</form>
 		<a class="forget">忘记密码？</a>
 	</body>

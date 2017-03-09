@@ -1,32 +1,38 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="css/log-in.css">
-<!--[if lt IE 9]>
+
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/master.css">
+		<!--[if lt IE 9]>
 　　　　<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
 <![endif]-->
-	<meta name="viewport" content="width=device-width,height=device-height,initial-scale=.5,maximum-scale=.5,minimum-scale=.5,user-scalable=no">
-	<title>登陆</title>
-</head>
-<body>
-	<header class="header">
-		<a class="left" href="#">关闭</a><span class="title">登陆</span><a class="right" href="#">注册</a>
-	</header>
-	<div class="main">
-		<form class="log-form">
-			<fieldset class="phone field field-log">
-				<label class="label-phone label left" for="phone-no"></label><input class="phone-no input-txt right" type="text" name="phone-no" value="请输入手机号">
-			</fieldset>
-			<fieldset class="pass field field-log">
-				<label class="label-pw label left" for="pass-wd"></label><input class="pass-wd input-txt right" type="text" name="pass-wd" value="请输入密码">
-			</fieldset>
-			<fieldset class="button field">
-				<button class="log-in" type="submit" value="登陆">登陆</button>
-			</fieldset>
+		<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+		<title>登陆</title>
+	</head>
 
-		</form>
-		<div class="retrieve"><a href="忘记密码">忘记密码</a></div>
-	</div>
-</body>
+	<body>
+		<header class="header">
+			<a class="left" href="#">关闭</a><span class="title">登陆</span>
+			<a class="right" href="#">注册</a>
+		</header>
+		<div class="main">
+			<form class="log-form">
+				<fieldset class="phone field field-log">
+					<label class="label-phone label left" for="phone-no"></label><input class="phone-no input-txt right" type="text" name="phone-no" value="请输入手机号" maxlength="11">
+				</fieldset>
+				<fieldset class="pass field field-log">
+					<label class="label-pw label left" for="pass-wd"></label><input class="pass-wd input-txt right" type="text" name="pass-wd" value="请输入密码" maxlength="8">
+				</fieldset>
+				<fieldset class="button field">
+					<button class="log-in" type="submit" value="登陆">登陆</button>
+				</fieldset>
+
+			</form>
+			<div class="retrieve">
+				<a href="忘记密码">忘记密码</a>
+			</div>
+		</div>
+	</body>
+
 </html>

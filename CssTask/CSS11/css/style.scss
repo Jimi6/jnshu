@@ -1,11 +1,19 @@
 $bgColor: #eff0f4;
 $themeColor: #5ac0ce;
 $bodyColor: #fff;
-$fontSize:1rem;
-$fontStack:"STHeitiSC";
+$fontSize: 1.6rem;
+$fontStack: "STHeitiSC";
 $inputColor: #cec0cd;
-$maxWidth:640px;
-$itemHeight:3rem;
+$maxWidth: 640px;
+$itemHeight: 5rem;
+* {
+    margin: 0;
+    padding: 0;
+}
+/*设置1rem=10px*/
+html {
+    font-size: 62.5%;
+}
 body {
     background: $bgColor;
     width: 100%;
@@ -14,10 +22,9 @@ body {
     font-family: $fontStack;
     font-size: $fontSize;
 }
-a{
+a {
     text-decoration: none;
 }
-
 
 .top {
     background: $themeColor;
@@ -25,71 +32,78 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height:$itemHeight;
+    height: $itemHeight;
     line-height: $itemHeight;
-    padding: 0 1rem;
-    a{
+    padding: 0 1.5rem;
+    a {
         color: #fff;
     }
-    h3{
+    h3 {
         margin: 0;
         padding: 0;
         font-weight: normal;
+        font-size: 1.8rem;
     }
-    
+
 }
 
 .user {
-    .userItem{
+    .userItem {
         background: #fff;
-        margin: .4rem 0;
-        display: inline-block;   
-        width: 100%;     
-        height:$itemHeight;
-        line-height: $itemHeight;
-        border: none;
-        padding: .2rem 0;
-        label{
-
-            img{
-            margin: 0 3%;
-            padding-top: .8rem;
-            height: 50%;
-            float: left;
-            
-        }
-        }
-        
-        input{
-            border: none;
-            border-left: 1px solid #ccc;
-            height: .5*$itemHeight;
-            line-height: .5*$itemHeight;
-            width: 80%;
-            font-size: (32/36)*$fontSize;
-            text-indent: 2rem;
-            color: $inputColor;   
-            outline: none;        
-            
-            
-        }
-    }
-    .log-in {
-        background: $themeColor;
+        margin-top: 0.5rem;
+        display: inline-block;
         width: 100%;
         height: $itemHeight;
         line-height: $itemHeight;
-        color: $bodyColor;
         border: none;
-        font-size: $fontSize;
-        cursor: pointer;
+        label {
+            float: left;
+            margin: 0.25*$itemHeight 0;
+            width: 5.5rem;
+            height: 0.5*$itemHeight;
+            line-height: 0.5*$itemHeight;
+            background: transparent center center no-repeat;
+            background-size: contain;
+        }
+        .icon-phone {
+            background-image: url("../img/iphone.png");
+        }
+        .icon-lock {
+            background-image: url("../img/locked.png");
+        }
+
+        input {
+            border: none;
+            border-left: 1px solid #ccc;
+            height: 0.5*$itemHeight;
+            line-height: 0.5*$itemHeight;
+            width: 70%;
+            text-indent: 2rem;
+            color: $inputColor;
+            outline: none;
+            &:focus {
+                color: rgb(51,51,51);
+            }
+
+        }
     }
+    .userItem-login {
+        margin-top: 3.5rem;
+        .login {
+            background: $themeColor;
+            width: 100%;
+            height: 100%;
+            color: $bodyColor;
+            border: none;
+            font-size: 1.8rem;
+            cursor: pointer;
+        }
+    }
+
 }
 
 .forget {
     color: $themeColor;
     float: right;
-    margin-top: 1rem;
-    padding:0 .5rem 2rem 0;
-    font-size: .8*$fontSize;
+    margin: 1rem 1.5rem 0 0;
 }
