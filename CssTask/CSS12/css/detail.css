@@ -43,7 +43,7 @@ body {
 .user {
   background: url("../img/bg.png") 0 center no-repeat;
   background-size: cover;
-  height: 10rem;
+  height: 16.5rem;
   display: flex;
 }
 .user .userWrap {

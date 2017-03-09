@@ -3,22 +3,33 @@
   padding: 0;
 }
 
-ul, li {
-  list-style: none;
+html {
+  font-size: 62.5%;
 }
 
-html, body {
-  font-size: 100%;
-  height: 100%;
+.wrap,
+body,
+html {
+  width: 100%;
+  max-width: 768px;
+  margin: 0 auto;
 }
 
 body {
-  font: normal 100% Arial,sans-serif;
-  font-size: 16px;
-  font-size: 0.8rem;
+  font-family: "STHeitiSC";
+  font-size: 1.6rem;
   width: 100%;
   text-align: left;
   background: #ffffff;
+}
+
+.wrap {
+  padding-bottom: 7rem;
+}
+
+li,
+ul {
+  list-style: none;
 }
 
 .left {
@@ -32,57 +43,60 @@ body {
 .header {
   background-color: #5fc0ce;
   width: 100%;
-  height: 3rem;
-  line-height: 3rem;
+  height: 4rem;
+  line-height: 4rem;
 }
 .header .back {
   float: left;
-  margin-left: 0.5rem;
+  margin: 1rem 0 0 1.5rem;
   display: block;
   width: 1rem;
-  height: 3rem;
-  line-height: 3rem;
-  background: url(../img/back.png) no-repeat left center;
-  background-size: 60%;
+  height: 2rem;
+  line-height: 2rem;
+  background: url("../img/back.png") no-repeat left center;
+  background-size: 100%;
 }
-.header h1 {
+
+.title {
   color: #ffffff;
   text-align: center;
-  font-size: 0.96rem;
+  font-size: 1.8rem;
   font-weight: normal;
 }
 
 .user {
-  background: url(../img/bg.png) 0 center scroll no-repeat;
+  background: url("../img/bg.png") 0 center scroll no-repeat;
   background-size: cover;
-  height: 7.5rem;
-  line-height: 7.5rem;
+  height: 16.5rem;
+  line-height: 16.5rem;
   width: 100%;
-}
-.user .wrap {
-  width: 70%;
-  padding: 1rem;
+  overflow: hidden;
   color: #ffffff;
 }
-.user .wrap .photo {
-  width: 5rem;
-  height: 5rem;
-  border-radius: 2.5rem;
-  background: url(../img/user.png) -0.9rem top no-repeat;
-  background-size: 160%;
+.user .photo {
+  margin: 4rem 1.5rem;
+  width: 8.5rem;
+  height: 8.5rem;
+  border-radius: 50%;
+  background: url("../img/user.png") center top no-repeat;
+  background-size: cover;
 }
-.user .wrap .info-basic {
-  padding-left: 7rem;
+.user .info-basic {
+  margin-top: 6rem;
+  font-size: 1.6rem;
 }
-.user .wrap .info-basic p {
-  height: 1.5rem;
-  line-height: 1.5rem;
+.user .info-basic p {
+  line-height: 2;
 }
-.user .wrap .info-basic p img {
-  width: .6rem;
+.user .info-basic p img {
+  margin-right: 0.5rem;
+  width: 1rem;
 }
-.user .wrap .area {
-  padding-left: 0.25rem;
+.user .info-basic p span + span {
+  margin-left: 1rem;
+}
+.user .info-basic .location {
+  font-size: 1.4rem;
 }
 
 .info-detail {
@@ -91,75 +105,87 @@ body {
 }
 .info-detail dl {
   width: 100%;
-  border-bottom: 0.05rem solid #ccc;
+  border-bottom: 1px solid #ccc;
+  overflow: hidden;
+}
+.info-detail dl dt {
+  display: inline-block;
+  height: 5rem;
+  line-height: 5rem;
+  text-indent: 1.5rem;
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+  font-size: 1.6rem;
+  color: #333333;
+}
+.info-detail dl dt .blue-line {
+  display: inline-block;
+  width: 0.2rem;
+  height: 1.5rem;
+  background: #5AC0CE;
+  margin-right: 1.5rem;
 }
 .info-detail dl dd {
-  border-bottom: 0.05rem solid #ccc;
-  width: 90%;
-  margin: 0 auto;
-  padding: 1rem 0;
+  float: right;
+  border-bottom: 1px solid #ccc;
+  width: 95%;
+  height: 5rem;
+  line-height: 5rem;
+  display: flex;
 }
 .info-detail dl dd:last-child {
   border-bottom: none;
 }
-.info-detail dl dd img {
-  width: 1rem;
-}
-.info-detail dl span {
-  padding: 0 0.5rem;
+.info-detail dl dd span {
   color: #999;
+  white-space: nowrap;
 }
-.info-detail dl .type {
-  border-right: 0.05rem solid #ccc;
+.info-detail dl dd img {
+  width: 1.2rem;
+  margin-right: 0.5rem;
+}
+.info-detail dl .type:after {
+  width: 1px;
+  height: 1.5rem;
+  margin: 0 1.5rem;
+  background: #ccc;
+  display: inline-block;
+  content: "";
+  vertical-align: middle;
 }
 .info-detail dl .price {
   padding-left: 0.5rem;
   color: #f00;
   font-style: normal;
 }
-
-dt {
-  display: inline-block;
-  height: 3rem;
-  line-height: 3rem;
-  text-indent: 1.5rem;
-  border-bottom: 0.05rem solid #ccc;
-  width: 100%;
+.info-detail dl .advantage {
+  line-height: 2;
 }
 
-.contact {
-  width: 100%;
-  height: 2rem;
-  line-height: 2rem;
-}
-.contact .btn {
-  width: 47%;
-  border-radius: 0.25rem;
-  border: 0.1px solid #5fc0ce;
-  height: 2rem;
-  font-size: 0.8rem;
-}
-.contact .message {
-  color: #5fc0ce;
-  background: #ffffff;
-  margin-left: 1.5%;
-}
-.contact .call {
-  color: #ffffff;
-  background: #5fc0ce;
-  margin-right: 1.5%;
-}
-
-.contact {
-  width: 100%;
-  height: 2rem;
-  line-height: 2rem;
+.footer {
   position: fixed;
   bottom: 0;
-  /* left: 0; */
-  max-width: 640px;
-  min-width: 320px;
-  /* margin: 0 auto; */
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.footer .btn {
+  width: 43%;
+  height: 4.4rem;
+  line-height: 4.4rem;
+  border-radius: 0.5rem;
+  border: 0.1px solid #5fc0ce;
+  font-family: "HiraginoSansGB";
+  font-size: 1.7rem;
+}
+.footer .message {
+  color: #5fc0ce;
+  background: #ffffff;
+  margin-left: 5%;
+}
+.footer .call {
+  color: #ffffff;
+  background: #5fc0ce;
+  margin-right: 5%;
 }
 
 /*# sourceMappingURL=style.css.map */
