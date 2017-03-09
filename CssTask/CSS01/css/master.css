@@ -1,13 +1,13 @@
 body {
-    margin: 0 auto;
 }
-.wrapper {
-    width: 100%;
-    max-width: 768px;
-    margin: 0 auto;
+.box{
+	width: 100%;
+	margin: 0 auto;
 }
+
+
 .grid {
-    float: left;
+	float: left;
     width: 30%;
     padding: 15% 0;
     margin: 3% 0 0 3%;

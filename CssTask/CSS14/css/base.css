@@ -730,6 +730,7 @@ a {
   background: #fff;
 }
 .jobcard table {
+  border: 2px solid #f0f0f0;
   border-collapse: collapse;
   font-size: 12px;
   color: #999999;
@@ -739,7 +740,7 @@ a {
   padding: 0 10px;
 }
 .jobcard table tr {
-  border-bottom: 2px solid #fafafa;
+  border-bottom: 2px solid #f0f0f0;
 }
 .jobcard table tr:last-child {
   border: none;
@@ -747,7 +748,7 @@ a {
 .jobcard table tr td {
   width: 50%;
   padding: 10px 0;
-  border-right: 2px solid #fafafa;
+  border-right: 2px solid #f0f0f0;
   text-indent: 10px;
 }
 .jobcard table tr td:last-child {
@@ -799,13 +800,13 @@ a {
 }
 .jobcard table tr td .inner-table .td-right {
   display: table-cell;
-  border-left: 2px solid #fafafa;
+  border-left: 2px solid #f0f0f0;
 }
 .jobcard table tr td .inner-table .td-right .row {
   display: flex;
   justify-content: space-between;
   padding: 10px;
-  border-bottom: 2px solid #fafafa;
+  border-bottom: 2px solid #f0f0f0;
 }
 .jobcard table tr td .inner-table .td-right .row:last-child {
   border-bottom: none;
