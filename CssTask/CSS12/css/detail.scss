@@ -1,7 +1,7 @@
 @charset "utf-8";
-@import"common";
-$footerH: 3rem;
-$footerMarginBottom: 1.5rem;
+@import "common";
+$footerH: 4.5rem;
+$footerMarginBottom: 2rem;
 
 body {
     position: relative;
@@ -14,22 +14,24 @@ body {
 }
 .header {
     background: $themeColor;
-    padding: 0 1rem;
-    height: 3rem;
-    line-height: 3rem;
+    padding: 0 2rem;
+    height: 4rem;
+    line-height: 4rem;
     text-align: center;
 
     a {
         float: left;
         font-size: $fontSize;
         img {
-            width: 0.6rem;
+            width: 1rem;
+    vertical-align: middle;
         }
     }
     .title {
         text-align: center;
         text-indent: 40%;
         color: $white;
+        font-size: 1.8rem;
     }
 }
 .user {
@@ -43,41 +45,44 @@ body {
         align-items: center;
     }
     .userPic {
-        background: url("../img/user.png") -1rem top no-repeat;
-        background-size: 8rem;
-        width: 5rem;
-        height: 5rem;
+        background: url("../img/user.png") center top no-repeat;
+        background-size: 100%;
+        width: 6.5rem;
+        height: 6.5rem;
         border-radius: 50%;
-        margin: 0 1rem;        
+        margin: 0 1rem;
     }
     .userInfo {
         color: $white;
         line-height: 2;
         .location {
             background: url("../img/zone.png") left 0.8rem no-repeat;
-            background-size: 0.6rem;
+            background-size: 0.8rem;
             padding-left: 1rem;
             span {
-                font-size: 0.6*$fontSize;
+                font-size: 1.2rem;
             }
         }
-    }
-    .userName {
-        font-size: (36/32)*$fontSize;
+        .basicInfo{
+            font-size: 1.4rem;
+            span+span{
+                margin-left: 1.5rem;
+            }
+        }
+        
     }
 }
+
 
 .userDetail {
     font-size: $fontSize;
     color: $nomalColor;
     dl {
-        border-bottom: 1px solid #ccc;
+        border-bottom: 1px solid #e1e5e7;
         dd,
-        dt {
-            //          height: 3rem;
-            //          line-height: 3rem;
+        dt {            
             padding: 1rem 0;
-            border-bottom: 1px solid #ccc;
+            border-bottom: 1px solid #e1e5e7;
             display: flex;
             align-items: center;
         }
@@ -87,7 +92,7 @@ body {
                 margin: 0 0.8rem;
                 content: "";
                 width: 0.2rem;
-                height: 1rem;
+                height: 1.4rem;
                 background: $themeColor;
             }
         }
@@ -102,7 +107,7 @@ body {
             .line {
                 width: 1px;
                 height: 1.5rem;
-                background: #ccc;
+                background: #e1e5e7;
                 margin: 0 1rem;
             }
             &:last-child {
@@ -135,6 +140,8 @@ body {
 
 .footer {
     @extend %maxWidth;
+    display: flex;
+    justify-content: space-between;
     height: $footerH;
     position: fixed;
     bottom: 0;
@@ -142,7 +149,7 @@ body {
 
     .btn {
         font-family: $fontStack2;
-        font-size: (34/32)*$fontSize;
+        font-size: 1.7rem;
         border-radius: 5px;
         border: 1px solid $themeColor;
         width: 44%;

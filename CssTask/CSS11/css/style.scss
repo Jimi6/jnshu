@@ -32,8 +32,8 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: $itemHeight;
-    line-height: $itemHeight;
+    height: .9*$itemHeight;
+    line-height: .9*$itemHeight;
     padding: 0 1.5rem;
     a {
         color: #fff;

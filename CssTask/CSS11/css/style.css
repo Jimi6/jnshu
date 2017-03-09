@@ -28,8 +28,8 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 5rem;
-  line-height: 5rem;
+  height: 4.5rem;
+  line-height: 4.5rem;
   padding: 0 1.5rem;
 }
 .top a {

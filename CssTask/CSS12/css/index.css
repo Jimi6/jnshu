@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body,
 html, .footer {
   width: 100%;
@@ -5,10 +6,14 @@ html, .footer {
   margin: 0 auto;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 .header {
   background: #5fc0cd;
-  height: 3rem;
-  line-height: 3rem;
+  height: 4.5rem;
+  line-height: 4.5rem;
   position: relative;
   display: flex;
   justify-content: center;
@@ -37,11 +42,11 @@ html, .footer {
 }
 .header .map {
   position: absolute;
-  right: 2rem;
-  top: 0;
+  right: 1.5rem;
+  top: 1rem;
 }
 .header .map img {
-  width: 1rem;
+  width: 2rem;
 }
 
 ul {
@@ -63,9 +68,9 @@ li {
   align-items: center;
 }
 .list-group ul li {
-  height: 3rem;
-  line-height: 3rem;
-  width: 33%;
+  height: 4rem;
+  line-height: 4rem;
+  width: calc((100/3)*100%);
   text-align: center;
   border-right: 1px solid #ccc;
 }
@@ -77,32 +82,64 @@ li {
   line-height: 2;
   border-bottom: 1px solid #ccc;
 }
+.list-group .list-group-item img {
+  height: 1.25rem;
+  vertical-align: middle;
+}
+.list-group .list-group-item .item-left {
+  font-size: 1.2rem;
+  color: #5d5d5d;
+}
 .list-group .list-group-item .item-left img {
-  width: 0.8rem;
   padding-right: 0.5rem;
 }
 .list-group .list-group-item .item-left .date {
-  margin-left: 1.4rem;
+  margin-left: 1.7rem;
 }
 .list-group .list-group-item .item-left .date span {
   font-weight: bold;
+  font-size: 1.4rem;
+  color: #333333;
 }
 .list-group .list-group-item .item-right {
   line-height: 6;
 }
 .list-group .list-group-item .item-right strong {
-  color: #e26163;
+  font-size: 1.5rem;
+  color: #e63b0e;
 }
-.list-group .list-group-item .item-right img {
-  width: 0.5rem;
+
+._服务日期_拷贝_4 {
+  font-size: 24px;
+  font-family: "HiraginoSansGB";
+  color: #5d5d5d;
+  line-height: 0.468;
+  position: absolute;
+  left: 71.408px;
+  top: 965.863px;
+  z-index: 63;
+}
+
+._2015_7_5_至_2015_7_12_拷贝_4 {
+  font-size: 28px;
+  font-family: "STHeitiSC";
+  color: #333333;
+  line-height: 0.401;
+  position: absolute;
+  left: 70.065px;
+  top: 1017.886px;
+  z-index: 65;
 }
 
 .footer {
+  position: fixed;
+  bottom: 0;
   background: #f8fafb;
-  height: 3rem;
+  height: 5rem;
 }
 .footer .footerWrap {
-  width: 60%;
+  width: 76%;
+  height: 100%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -110,26 +147,25 @@ li {
 }
 .footer .footerWrap a {
   display: flex;
-  height: 2.6rem;
-  width: 2.6rem;
+  height: 5rem;
+  width: 5rem;
   justify-content: center;
   align-items: flex-end;
   text-decoration: none;
+  background: transparent top center no-repeat;
+  background-size: 2rem;
 }
 .footer .footerWrap a span {
   display: block;
-  margin-top: 0.9rem;
   font-size: 0.8rem;
 }
 .footer .footerWrap .home {
-  background: url("../img/home.png") top center no-repeat;
-  background-size: 1.5rem;
+  background-image: url("../img/home.png");
   color: #5fc0cd;
+  height: 4rem;
 }
 .footer .footerWrap .edit {
   background: #5fc0cd;
-  height: 3rem;
-  width: 3rem;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -139,8 +175,8 @@ li {
   width: 1.5rem;
 }
 .footer .footerWrap .mine {
-  background: url("../img/mine.png") top center no-repeat;
-  background-size: 1.5rem;
+  height: 4rem;
+  background-image: url("../img/mine.png");
   color: #9b9b9b;
 }
 

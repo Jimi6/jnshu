@@ -1,12 +1,8 @@
 @charset "utf-8";
-
-$maxWidth: 640px;
-
+$maxWidth: 768px;
 $fontStack: "STHeitiSC";
 $fontStack2: "HiraginoSansGB";
-$fontSize: 1rem;
-
-
+$fontSize: 1.6rem;
 $themeColor: rgb(95, 192, 205);
 $white: rgb(255,255,255);
 $strongColor: rgb(226,97,99);
@@ -17,6 +13,9 @@ $mutedColor: rgb(153, 153, 153);
     width: 100%;
     max-width: $maxWidth;
     margin: 0 auto;
+}
+html{
+    font-size: 62.5%;
 }
 body,
 html {

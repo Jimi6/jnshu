@@ -1,13 +1,9 @@
 @charset "utf-8";
 @import "common";
-body,
-html {
-    @extend %maxWidth;
-}
 .header {
     background: $themeColor;
-    height: 3rem;
-    line-height: 3rem;
+    height: 4.5rem;
+    line-height: 4.5rem;
     position: relative;
     display: flex;
     justify-content: center;
@@ -35,10 +31,10 @@ html {
     }
     .map {
         position: absolute;
-        right: 2rem;
-        top: 0;
+        right: 1.5rem;
+        top: 1rem;
         img {
-            width: 1rem;
+            width: 2rem;
         }
     }
 }
@@ -57,9 +53,9 @@ li {
         justify-content: space-between;
         align-items: center;
         li {
-            height: 3rem;
-            line-height: 3rem;
-            width: 33%;
+            height: 4rem;
+            line-height: 4rem;
+            width: calc((100/3)*100%);
             text-align: center;
             border-right: 1px solid #ccc;
         }
@@ -71,63 +67,91 @@ li {
         padding: 1rem;
         line-height: 2;
         border-bottom: 1px solid #ccc;
+        img{
+            height: 1.25rem;
+            vertical-align: middle;
+        }
         .item-left {
+            font-size: 1.2rem;
+            color: rgb(93, 93, 93);
             img {
-                width: 0.8rem;
                 padding-right: 0.5rem;
             }
             .date {
-                margin-left: 1.4rem;
+                margin-left: 1.7rem;
                 span {
                     font-weight: bold;
+                    font-size: 1.4rem;
+                    color: rgb(51, 51, 51);
                 }
             }
         }
         .item-right {
             line-height: 6;
             strong {
-                color: $strongColor;
+                font-size: 1.5rem;
+                color: rgb(230, 59, 14);
             }
             img {
-                width: 0.5rem;
             }
         }
     }
 }
+._服务日期_拷贝_4 {
+  font-size: 24px;
+  font-family: "HiraginoSansGB";
+  color: rgb(93, 93, 93);
+  line-height: 0.468;
+  position: absolute;
+  left: 71.408px;
+  top: 965.863px;
+  z-index: 63;
+}
+._2015_7_5_至_2015_7_12_拷贝_4 {
+  font-size: 28px;
+  font-family: "STHeitiSC";
+  color: rgb(51, 51, 51);
+  line-height: 0.401;
+  position: absolute;
+  left: 70.065px;
+  top: 1017.886px;
+  z-index: 65;
+}
+
 .footer {
     @extend %maxWidth;
+    position: fixed;
+    bottom: 0;
     background: rgb(248,250,251);
-    height: 3rem;
-    //  line-height: 3rem;
+    height: 5rem;
     .footerWrap {
-        width: 60%;
+        width: 76%;
+        height: 100%;
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
         align-items: center;
         a {
             display: flex;
-            height: 2.6rem;
-            width: 2.6rem;
+            height: 5rem;
+            width: 5rem;
             justify-content: center;
             align-items: flex-end;
             text-decoration: none;
-
+            background: transparent top center no-repeat;
+            background-size: 2rem;
             span {
                 display: block;
-                margin-top: 0.9rem;
                 font-size: 0.8rem;
             }
         }
         .home {
-            background: url("../img/home.png") top center no-repeat;
-            background-size: 1.5rem;
+            background-image: url("../img/home.png");
             color: $themeColor;
+            height: 4rem;
         }
         .edit {
             background: $themeColor;
-            height: 3rem;
-            width: 3rem;
             border-radius: 50%;
             display: flex;
             justify-content: center;
@@ -137,8 +161,8 @@ li {
             }
         }
         .mine {
-            background: url("../img/mine.png") top center no-repeat;
-            background-size: 1.5rem;
+            height: 4rem;
+            background-image: url("../img/mine.png");
             color: rgb(155,155,155);
         }
     }
