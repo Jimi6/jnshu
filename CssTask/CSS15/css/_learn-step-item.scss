@@ -26,6 +26,17 @@
         color: rgb(153, 153, 153);
 
     }
-    .step-next-icon {display: block}
+
+}
+.step-next-icon {
+    visibility: visible;
+}
+@media screen and (max-width:992px) {
+    .learn-step-item {
+        padding: 20px 0;
+    }
+    .step-next-icon {
+        visibility: hidden;
+    }
 
 }

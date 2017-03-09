@@ -26,33 +26,6 @@ a {
   text-decoration: none;
 }
 
-/*----线性渐变----begin--*/
-/*----线性渐变----end--*/
-* {
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  /*set 1rem=10px*/
-  font-size: 62.5%;
-}
-
-body {
-  font-size: 16px;
-  font-family: "Microsoft YaHei";
-}
-
-ol,
-ul {
-  list-style: none;
-}
-
-a {
-  color: #000;
-  text-decoration: none;
-}
-
 /*响应式布局*/
 .container {
   clear: both;
@@ -133,7 +106,8 @@ a {
   height: 14rem;
 }
 .partner:hover {
-  margin: 10px;
+  margin: 10px 5px;
+  box-shadow: -2px 0 2px #ccc,2px 0 2px #ccc,0 1px 2px #ccc,0 -1px 2px #ccc;
 }
 
 /*# sourceMappingURL=partner.css.map */

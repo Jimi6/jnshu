@@ -496,10 +496,20 @@ a {
   font-size: 14px;
   color: #999999;
 }
-.learn-step-item .step-next-icon {
-  display: block;
+
+.step-next-icon {
+  visibility: visible;
 }
 
+@media screen and (max-width: 992px) {
+  .learn-step-item {
+    padding: 20px 0;
+  }
+
+  .step-next-icon {
+    visibility: hidden;
+  }
+}
 /*响应式布局*/
 .container {
   clear: both;
@@ -571,11 +581,8 @@ a {
     width: 40%;
   }
 }
-body {
-  background: #fafafa;
-}
-
-.stu-item {
+/*瀛︾敓鍗＄墖*/
+.stu-card {
   margin: 20px;
   padding: 20px 30px 30px;
   border: 1px solid #ddd;
@@ -584,7 +591,7 @@ body {
   background: white;
   text-align: center;
 }
-.stu-item .stu-thumbnail {
+.stu-card .stu-thumbnail {
   margin: 0 auto;
   width: 158px;
   height: 158px;
@@ -592,15 +599,15 @@ body {
   border: 1px solid #fafafa;
   border-radius: 50%;
 }
-.stu-item .stu-thumbnail img {
+.stu-card .stu-thumbnail img {
   width: 100%;
 }
-.stu-item h4 {
+.stu-card h4 {
   margin: 30px 0;
   font-size: 18px;
   color: #333333;
 }
-.stu-item p {
+.stu-card p {
   font-size: 16px;
   color: #999999;
 }
@@ -614,7 +621,8 @@ body {
   height: 14rem;
 }
 .partner:hover {
-  margin: 10px;
+  margin: 10px 5px;
+  box-shadow: -2px 0 2px #ccc,2px 0 2px #ccc,0 1px 2px #ccc,0 -1px 2px #ccc;
 }
 
 .friendLinks-wrap {
@@ -707,10 +715,10 @@ body {
   border: 1px solid #ff650e;
   background: transparent;
 }
-.sideBar dl dd:hover {
+.sideBar dl dd:hover a, .sideBar dl dd.active a {
   color: #ff650e;
 }
-.sideBar dl dd:hover .item-icon {
+.sideBar dl dd:hover .item-icon, .sideBar dl dd.active .item-icon {
   background-color: #fca36d;
 }
 
@@ -722,7 +730,6 @@ body {
   background: #fff;
 }
 .jobcard table {
-  border: 1px solid #ccc;
   border-collapse: collapse;
   font-size: 12px;
   color: #999999;
@@ -732,7 +739,7 @@ body {
   padding: 0 10px;
 }
 .jobcard table tr {
-  border-bottom: 1px solid #ccc;
+  border-bottom: 2px solid #fafafa;
 }
 .jobcard table tr:last-child {
   border: none;
@@ -740,7 +747,7 @@ body {
 .jobcard table tr td {
   width: 50%;
   padding: 10px 0;
-  border-right: 1px solid #ccc;
+  border-right: 2px solid #fafafa;
   text-indent: 10px;
 }
 .jobcard table tr td:last-child {
@@ -792,13 +799,13 @@ body {
 }
 .jobcard table tr td .inner-table .td-right {
   display: table-cell;
-  border-left: 1px solid #ccc;
+  border-left: 2px solid #fafafa;
 }
 .jobcard table tr td .inner-table .td-right .row {
   display: flex;
   justify-content: space-between;
   padding: 10px;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 2px solid #fafafa;
 }
 .jobcard table tr td .inner-table .td-right .row:last-child {
   border-bottom: none;
@@ -814,7 +821,7 @@ body {
   color: #fff;
   opacity: 0;
 }
-.jobcard .jobcard-mask:hover {
+.jobcard .jobcard-mask:hover, .jobcard .jobcard-mask.active {
   opacity: 1;
 }
 .jobcard .jobcard-mask .job {
@@ -942,12 +949,12 @@ body {
   }
 }
 .jobcard-mask:hover {
-  animation: jobcard-mask-animation 5s;
-  -moz-animation: jobcard-mask-animation 5s;
+  animation: jobcard-mask-animation 3s;
+  -moz-animation: jobcard-mask-animation 3s;
   /* Firefox */
-  -webkit-animation: jobcard-mask-animation 5s;
+  -webkit-animation: jobcard-mask-animation 3s;
   /* Safari and Chrome */
-  -o-animation: jobcard-mask-animation 5s;
+  -o-animation: jobcard-mask-animation 3s;
   /* Opera */
 }
 
@@ -1088,19 +1095,6 @@ body {
     width: 100%;
   }
 }
-.step-next-icon {
-  visibility: visible;
-}
-
-@media screen and (max-width: 992px) {
-  .learn-step-item {
-    padding: 20px 0;
-  }
-
-  .step-next-icon {
-    visibility: hidden;
-  }
-}
 /*浅色字体*/
 .muted {
   color: #999;
@@ -1125,6 +1119,7 @@ body {
   text-align: left;
 }
 
+/*面包屑导航*/
 .breadcrumb {
   padding: 10px 0;
 }
@@ -1142,6 +1137,7 @@ body {
   color: #29b078;
 }
 
+/*胶囊导航*/
 .nav-pills {
   overflow: hidden;
   border-top: 1px solid #ccc;

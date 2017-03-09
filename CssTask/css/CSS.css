@@ -1,7 +1,7 @@
 .task a {
 	float: left;
 	margin: 1%;
-	width: 23%;
+	padding: 0 2%;
 	line-height: 5rem;
 	text-align: center;
 	font-size: 2rem;
@@ -11,6 +11,7 @@
 	text-decoration: none;
 }
 .task a:hover{
-	color: #090000;
-	box-shadow: 3px 3px 0px rgba(80,80,80,0.5);
+	color: #29b078;
+    box-shadow: 3px 3px 0px rgba(80,80,80,0.5),-1px -1px 0px rgba(80,80,80,0.5);
+    background-color: #fff;
 }

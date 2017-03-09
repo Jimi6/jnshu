@@ -47,8 +47,10 @@
                 background: transparent;
 
             }
-            &:hover {
-                color: rgb(255, 101, 14);
+            &:hover,&.active {
+                a{
+                 color: rgb(255, 101, 14);   
+                }
                 .item-icon {
                     background-color: rgb(252,163,109);
                 }

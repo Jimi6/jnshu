@@ -26,33 +26,6 @@ a {
   text-decoration: none;
 }
 
-/*----线性渐变----begin--*/
-/*----线性渐变----end--*/
-* {
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  /*set 1rem=10px*/
-  font-size: 62.5%;
-}
-
-body {
-  font-size: 16px;
-  font-family: "Microsoft YaHei";
-}
-
-ol,
-ul {
-  list-style: none;
-}
-
-a {
-  color: #000;
-  text-decoration: none;
-}
-
 /*响应式布局*/
 .container {
   clear: both;
@@ -132,7 +105,6 @@ a {
   background: #fff;
 }
 .jobcard table {
-  border: 1px solid #ccc;
   border-collapse: collapse;
   font-size: 12px;
   color: #999999;
@@ -142,7 +114,7 @@ a {
   padding: 0 10px;
 }
 .jobcard table tr {
-  border-bottom: 1px solid #ccc;
+  border-bottom: 2px solid #fafafa;
 }
 .jobcard table tr:last-child {
   border: none;
@@ -150,7 +122,7 @@ a {
 .jobcard table tr td {
   width: 50%;
   padding: 10px 0;
-  border-right: 1px solid #ccc;
+  border-right: 2px solid #fafafa;
   text-indent: 10px;
 }
 .jobcard table tr td:last-child {
@@ -202,13 +174,13 @@ a {
 }
 .jobcard table tr td .inner-table .td-right {
   display: table-cell;
-  border-left: 1px solid #ccc;
+  border-left: 2px solid #fafafa;
 }
 .jobcard table tr td .inner-table .td-right .row {
   display: flex;
   justify-content: space-between;
   padding: 10px;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 2px solid #fafafa;
 }
 .jobcard table tr td .inner-table .td-right .row:last-child {
   border-bottom: none;
@@ -224,7 +196,7 @@ a {
   color: #fff;
   opacity: 0;
 }
-.jobcard .jobcard-mask:hover {
+.jobcard .jobcard-mask:hover, .jobcard .jobcard-mask.active {
   opacity: 1;
 }
 .jobcard .jobcard-mask .job {
@@ -352,12 +324,12 @@ a {
   }
 }
 .jobcard-mask:hover {
-  animation: jobcard-mask-animation 5s;
-  -moz-animation: jobcard-mask-animation 5s;
+  animation: jobcard-mask-animation 3s;
+  -moz-animation: jobcard-mask-animation 3s;
   /* Firefox */
-  -webkit-animation: jobcard-mask-animation 5s;
+  -webkit-animation: jobcard-mask-animation 3s;
   /* Safari and Chrome */
-  -o-animation: jobcard-mask-animation 5s;
+  -o-animation: jobcard-mask-animation 3s;
   /* Opera */
 }
 

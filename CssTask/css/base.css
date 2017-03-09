@@ -3,6 +3,7 @@
     font-size: 35%;
   }
 }
+
 body {
 	background-color: #29b078;
 }
@@ -12,7 +13,6 @@ body {
 }
 .navbar-inverse .navbar-brand {
     color: #fff;
-    margin-left: 10%; 
 }
 .navbar-inverse .navbar-toggle {
     border-color: #fff;
@@ -28,13 +28,16 @@ body {
 }
 .nav-1 {
 	padding: 2% 0;
-	font-size: 2rem;
-	text-align: center;
-	margin-right: 5%; 
+    font-size: 2rem;
+    text-align: center;
+    margin: 0 auto;
+    width: 90%;
 }
+
 .font-1 {
 	font-size: 4rem;
 }
+
 .main {
 	margin-top: 6rem;
 	padding: 10% 15%;
@@ -53,4 +56,8 @@ body {
 }
 .desc {
 	font-size: 3rem;
+}
+@media (min-width: 768px)
+.navbar-nav {
+    float: right;
 }

@@ -1,58 +1,4 @@
 @charset "UTF-8";
-/*----线性渐变----begin--*/
-/*----线性渐变----end--*/
-* {
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  /*set 1rem=10px*/
-  font-size: 62.5%;
-}
-
-body {
-  font-size: 16px;
-  font-family: "Microsoft YaHei";
-}
-
-ol,
-ul {
-  list-style: none;
-}
-
-a {
-  color: #000;
-  text-decoration: none;
-}
-
-/*----线性渐变----begin--*/
-/*----线性渐变----end--*/
-* {
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  /*set 1rem=10px*/
-  font-size: 62.5%;
-}
-
-body {
-  font-size: 16px;
-  font-family: "Microsoft YaHei";
-}
-
-ol,
-ul {
-  list-style: none;
-}
-
-a {
-  color: #000;
-  text-decoration: none;
-}
-
 /*响应式布局*/
 .container {
   clear: both;
@@ -124,11 +70,8 @@ a {
     width: 40%;
   }
 }
-body {
-  background: #fafafa;
-}
-
-.stu-item {
+/*瀛︾敓鍗＄墖*/
+.stu-card {
   margin: 20px;
   padding: 20px 30px 30px;
   border: 1px solid #ddd;
@@ -137,7 +80,7 @@ body {
   background: white;
   text-align: center;
 }
-.stu-item .stu-thumbnail {
+.stu-card .stu-thumbnail {
   margin: 0 auto;
   width: 158px;
   height: 158px;
@@ -145,17 +88,17 @@ body {
   border: 1px solid #fafafa;
   border-radius: 50%;
 }
-.stu-item .stu-thumbnail img {
+.stu-card .stu-thumbnail img {
   width: 100%;
 }
-.stu-item h4 {
+.stu-card h4 {
   margin: 30px 0;
   font-size: 18px;
   color: #333333;
 }
-.stu-item p {
+.stu-card p {
   font-size: 16px;
   color: #999999;
 }
 
-/*# sourceMappingURL=stu-item.css.map */
+/*# sourceMappingURL=stu-card.css.map */

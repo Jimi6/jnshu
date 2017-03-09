@@ -26,33 +26,6 @@ a {
   text-decoration: none;
 }
 
-/*----线性渐变----begin--*/
-/*----线性渐变----end--*/
-* {
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  /*set 1rem=10px*/
-  font-size: 62.5%;
-}
-
-body {
-  font-size: 16px;
-  font-family: "Microsoft YaHei";
-}
-
-ol,
-ul {
-  list-style: none;
-}
-
-a {
-  color: #000;
-  text-decoration: none;
-}
-
 /*响应式布局*/
 .container {
   clear: both;
@@ -149,8 +122,19 @@ a {
   font-size: 14px;
   color: #999999;
 }
-.learn-step-item .step-next-icon {
-  display: block;
+
+.step-next-icon {
+  visibility: visible;
+}
+
+@media screen and (max-width: 992px) {
+  .learn-step-item {
+    padding: 20px 0;
+  }
+
+  .step-next-icon {
+    visibility: hidden;
+  }
 }
 
 /*# sourceMappingURL=learn-step-item.css.map */

@@ -26,6 +26,77 @@ a {
   text-decoration: none;
 }
 
+/*响应式布局*/
+.container {
+  clear: both;
+  padding: 0 15px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+.percent20,
+.percent25 {
+  float: left;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .percent20 {
+    width: 50%;
+  }
+
+  .percent25 {
+    width: 50%;
+  }
+}
+@media (min-width: 768px) {
+  .percent20-reset {
+    width: 20%;
+  }
+}
+@media (min-width: 992px) {
+  .percent20 {
+    width: 20%;
+  }
+
+  .percent25 {
+    width: 25%;
+  }
+}
+.percent33 {
+  float: left;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .percent33 {
+    width: 50%;
+  }
+}
+@media (min-width: 992px) {
+  .percent33 {
+    width: 33.3%;
+  }
+}
+.percent40 {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .percent40 {
+    width: 40%;
+  }
+}
 .friendLinks-wrap {
   clear: both;
   overflow: hidden;

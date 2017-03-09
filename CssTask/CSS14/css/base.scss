@@ -1,12 +1,13 @@
 @charset "utf-8";
 @import "common";
 @import "layout";
+@import "mixin";
 @import "loginbar";
 @import "navbar";
 @import "carousel";
 @import "home-tag";
 @import "learn-step-item";
-@import "stu-item";
+@import "stu-card";
 @import "partner";
 @import "friendLink";
 @import "sidebar";
@@ -30,18 +31,7 @@
     }
 }
 
-.step-next-icon {
-    visibility: visible;
-}
-@media screen and (max-width:992px) {
-    .learn-step-item {
-        padding: 20px 0;
-    }
-    .step-next-icon {
-        visibility: hidden;
-    }
 
-}
 /*浅色字体*/
 .muted {
     color: #999;
@@ -64,7 +54,7 @@
     padding: 20px 0;
     text-align: left;
 }
-
+/*面包屑导航*/
 .breadcrumb {
     padding: 10px 0;
     li {
@@ -85,6 +75,7 @@
     }
 }
 
+/*胶囊导航*/
 .nav-pills {
     overflow: hidden;
     border-top: 1px solid #ccc;
