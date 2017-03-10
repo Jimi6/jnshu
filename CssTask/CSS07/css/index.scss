@@ -14,8 +14,6 @@ html {
     margin: 0 auto;
 }
 
-$unit: 0.45rem;
-
 body {
     font-family: "HiraginoSansGB W3";
     font-size: 1.6rem;
@@ -25,6 +23,7 @@ body {
 .body-wrap {
     background: #eff0f1;
     width: 100%;
+    height: 100%;
     margin: 0 auto;
     padding-bottom: 3rem;
 }
@@ -54,7 +53,7 @@ body {
     //main common style
     %main-common {
         background-color: #fff;
-        border: 0.1*$unit solid #ccc;
+        border: 0.1rem solid #ccc;
     }
 
     .recent {
@@ -146,7 +145,7 @@ body {
     }
     .game-option {
         width: 100%;
-        margin: 2*$unit 0;
+        margin: 1.5rem 0;
         opacity: 0.8;
         padding: 0;
         p {

@@ -30,7 +30,7 @@ body.active {
   background-color: #fff;
   width: 22rem;
   height:100%;
-  border-right:1rem solid #35bdde; 
+  border-right:.5rem solid #35bdde;  
   left: 0;
   top:0;
   z-index: 2;
@@ -53,16 +53,16 @@ body.active {
     .icon-left {
       margin-right:2rem;
       img {
-      width: 2.2rem;
+      height: 1.5rem;
     }
     }
    
     .icon-go img{
-      width:1.2rem;
+      height:1.2rem;
     }
   	a{
   		color:#35bdde;
-  		font-size:2rem;
+  		font-size:1.6rem;
   		&:hover{
   			text-decoration: none;
   		}

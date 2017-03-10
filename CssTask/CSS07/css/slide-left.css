@@ -28,7 +28,7 @@ body.active {
   background-color: #fff;
   width: 22rem;
   height: 100%;
-  border-right: 1rem solid #35bdde;
+  border-right: .5rem solid #35bdde;
   left: 0;
   top: 0;
   z-index: 2;
@@ -54,14 +54,14 @@ body.active {
   margin-right: 2rem;
 }
 .list-group-item .icon-left img {
-  width: 2.2rem;
+  height: 1.5rem;
 }
 .list-group-item .icon-go img {
-  width: 1.2rem;
+  height: 1.2rem;
 }
 .list-group-item a {
   color: #35bdde;
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
 .list-group-item a:hover {
   text-decoration: none;
