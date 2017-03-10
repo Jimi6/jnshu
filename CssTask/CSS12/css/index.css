@@ -94,7 +94,7 @@ li {
 }
 .list-group .list-group-item img {
   height: 1.25rem;
-  vertical-align: text-bottom;
+  vertical-align: sub;
 }
 .list-group .list-group-item .item-left {
   font-size: 1.2rem;
@@ -117,6 +117,9 @@ li {
 .list-group .list-group-item .item-right strong {
   font-size: 1.5rem;
   color: #e63b0e;
+}
+.list-group .list-group-item .item-right img {
+  margin-left: 1rem;
 }
 
 .footer {

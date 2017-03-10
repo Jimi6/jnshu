@@ -76,7 +76,7 @@ li {
         border-bottom: 1px solid #ccc;
         img{
             height: 1.25rem;
-            vertical-align: text-bottom;
+            vertical-align: sub;
         }
         .item-left {
             font-size: 1.2rem;
@@ -100,6 +100,7 @@ li {
                 color: rgb(230, 59, 14);
             }
             img {
+                margin-left: 1rem;
             }
         }
     }
