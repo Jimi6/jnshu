@@ -1,12 +1,15 @@
-html,
-body {
-  height: 100%;
+html {
+  font-size: 62.5%;
 }
 
-html,
 body,
-.wrap {
+html {
   width: 100%;
+}
+
+body, .footer {
+  max-width: 768px;
+  margin: 0 auto;
 }
 
 .left {
@@ -19,98 +22,80 @@ body,
 
 ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .header {
   width: 100%;
+  background-color: #5ac0ce;
+  height: 4.5rem;
+  line-height: 4.5rem;
+}
+.header .btn-group {
+  display: inline-block;
+  width: 40%;
+  margin-left: 30%;
+}
+.header .btn-group .btn {
+  height: 3.5rem;
+  line-height: 3.5rem;
+  width: 50%;
+  padding: 0;
+  margin: 0;
+  border-radius: 0.5rem;
+  font-size: 1.7rem;
+  color: #fff;
+  background-color: #51a8b4;
+}
+.header .btn-group .btn.active, .header .btn-group .btn:hover {
+  background-color: #fff;
+  color: #5ac0ce;
+}
+.header .find-map {
+  width: 2.2rem;
+  float: right;
+  margin-right: 1.5rem;
+}
+.header .find-map img {
+  width: 100%;
+}
+
+.find-user {
+  width: 100%;
+  padding-bottom: 5rem;
   border-bottom: 1px solid #ccc;
 }
-
-.nav-find {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  background-color: #5ac0ce;
-  position: relative;
-  vertical-align: center;
-  height: 5rem;
-  line-height: 5rem;
-}
-
-.btn-group-find {
-  position: absolute;
-  left: 30%;
-  top: .5rem;
-}
-
-.btn-employer,
-.btn-worker {
+.find-user .option {
+  padding: 0;
   height: 4rem;
   line-height: 4rem;
-  width: 10rem;
-  border-radius: .5rem;
-  font-size: 1.6rem;
-  padding: 0;
+}
+.find-user .option .row {
   margin: 0;
 }
-
-.btn-employer {
-  background-color: #51a8b4;
-  color: #fff;
+.find-user .option .row .col-reset {
+  border-right: 1px solid #ccc;
 }
-.btn-employer:hover {
-  background-color: #fff;
-  color: #5ac0ce;
+.find-user .option .row .col-reset:last-child {
+  border-right: none;
 }
-
-.btn-worker {
-  margin-left: .5rem;
-  z-index: 2;
-  background-color: #fff;
-  color: #5ac0ce;
-}
-.btn-worker:hover {
-  background-color: #51a8b4;
-  color: #fff;
-}
-
-.find-map {
-  padding: 0 1rem;
-  position: absolute;
-  right: 1rem;
-  top: 0;
-}
-
-.container-reset {
-  width: 100%;
-  padding: 0;
-  height: 5rem;
-  line-height: 5rem;
-}
-.container-reset .row {
-  margin: 0;
-}
-.container-reset .row .col-reset {
-  border: 1px solid #ccc;
-}
-
-.btn-reset {
+.find-user .option .row .col-reset .btn-reset {
   width: 100%;
   background-color: #fff;
   padding: 0;
   margin: 0;
-  font-size: 1.6rem;
+  font-size: 1rem;
   color: #999;
   height: 2rem;
   line-height: 2rem;
 }
-
-.find-user {
-  clear: both;
-}
 .find-user .list-group-item {
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   position: relative;
+  padding: 0;
+  border-left: none;
+  border-right: none;
 }
 .find-user .list-group-item li {
   line-height: 2;
@@ -123,55 +108,67 @@ ul {
   color: #000;
 }
 .find-user .list-group-item strong.date {
-  padding-left: 3rem;
+  padding-left: 2.5rem;
 }
 .find-user .list-group-item .price {
-  color: #e93900;
+  font-size: 1.5rem;
+  color: #e63b0e;
   padding-right: 3rem;
 }
 .find-user .list-group-item .next {
-  background: url(../img/next.png) no-repeat center center;
-  width: 2rem;
-  height: 4rem;
+  background: url("../img/next.png") no-repeat center center;
+  width: 1.5rem;
+  height: 1.5rem;
   position: absolute;
-  right: 2rem;
-  top: 30%;
+  right: 1.5rem;
+  top: 43%;
   border: none;
+  background-size: contain;
+}
+.find-user .list-group-item img {
+  height: 1.5rem;
 }
 
 .footer {
-  width: 100%;
-  background-color: #f8fafb;
-  border-top: 1px solid #eee;
   position: fixed;
   bottom: 0;
-  left: 0;
+  width: 100%;
+  height: 5rem;
+  line-height: 5rem;
+  background-color: #f8fafb;
+  border-top: 1px solid #eee;
+  font-family: "STHeitiSC";
 }
 .footer .navbar {
-  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   border: none;
   background-color: transparent;
   margin: 0 auto;
   padding: 0;
 }
 .footer .navbar .btn {
-  margin: 0 8%;
   background-color: transparent;
   border: none;
-  font-size: 1.6rem;
+  padding: 0;
+  font-size: 1rem;
+}
+.footer .navbar .btn img {
+  width: 2.5rem;
 }
 .footer .navbar span {
-  margin: 1rem;
+  margin-top: 0.75rem;
   display: inline-block;
 }
 .footer .navbar .btn-home {
   color: #5ac0ce;
 }
 .footer .navbar .btn-write {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
   background-color: #5ac0ce;
-  border-radius: 3.5rem;
-  width: 7rem;
-  height: 7rem;
 }
 .footer .navbar .btn-my {
   color: #a5a5a5;
