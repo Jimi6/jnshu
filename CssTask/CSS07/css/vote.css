@@ -85,6 +85,9 @@ body {
   color: #464646;
   text-indent: 2rem;
 }
+.prompt .prompt-main p {
+  margin: 0;
+}
 
 .prompt .prompt-main .btn-play {
   background: none;

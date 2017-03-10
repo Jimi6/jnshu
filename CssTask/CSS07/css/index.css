@@ -1,28 +1,50 @@
+html {
+  font-size: 62.5%;
+}
+
 * {
   margin: 0;
   padding: 0;
 }
 
-html,
-body {
-  max-width: 640px;
-  min-width: 320px;
+body,
+html {
+  max-width: 768px;
   margin: 0 auto;
 }
 
-.body {
+body {
   font-family: "HiraginoSansGB W3";
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 
 .body-wrap {
   background: #eff0f1;
   width: 100%;
   margin: 0 auto;
+  padding-bottom: 3rem;
+}
+
+.header {
+  text-align: center;
+  height: 4.5rem;
+  line-height: 4.5rem;
+  z-index: 1;
+  background-color: #34bede;
+}
+
+.header .btn-slide-bar {
+  float: left;
+  cursor: pointer;
+  width: 2rem;
+  margin-left: 1.5rem;
+}
+.header .btn-slide-bar img {
+  width: 100%;
 }
 
 .main-wrap {
-  margin: 0.9rem;
+  margin: 1.5rem 2rem;
   overflow: hidden;
 }
 .main-wrap .recent, .main-wrap #carousel-game-type {
@@ -30,34 +52,40 @@ body {
   border: 0.045rem solid #ccc;
 }
 .main-wrap .recent {
-  margin-bottom: 0.9rem;
-  height: 6.3rem;
-  line-height: 6.3rem;
+  position: relative;
+  margin-bottom: 1.5rem;
+  height: 5.5rem;
+  line-height: 5.5rem;
   text-align: center;
 }
 .main-wrap .recent a {
-  color: #a9a9a9;
-  font-size: 2.25rem;
+  color: #9a9a9a;
+  font-size: 1.7rem;
 }
 .main-wrap .recent a:hover {
   text-decoration: none;
 }
 .main-wrap .recent .back {
-  margin-right: 0.9rem;
-  float: right;
+  position: absolute;
+  right: .5rem;
+  height: 2rem;
 }
 .main-wrap .recent .back img {
-  width: 50%;
+  height: 100%;
 }
 
 #carousel-game-type {
   text-align: center;
 }
 #carousel-game-type .carousel-indicators li {
-  width: 1.35rem;
-  height: 1.35rem;
-  margin: 0.45rem;
-  border-radius: 1.35rem;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  border-color: #f0f0f0;
+  background: #f0f0f0;
+}
+#carousel-game-type .carousel-indicators li + li {
+  margin-left: .5rem;
 }
 #carousel-game-type .carousel-indicators .active {
   background-color: #34bede;
@@ -75,25 +103,24 @@ body {
 #carousel-game-type .control-icon {
   position: absolute;
   top: 50%;
-  width: 1.8rem;
-  height: 1.8rem;
+  height: 3rem;
 }
 #carousel-game-type .control-icon img {
-  width: 100%;
+  height: 100%;
 }
 #carousel-game-type .control-icon-left {
-  left: 0.45rem;
+  left: 15%;
 }
 #carousel-game-type .control-icon-right {
-  right: 0.45rem;
+  right: 15%;
 }
 #carousel-game-type .game-name {
   margin-top: 0;
-  font-size: 2.7rem;
+  font-size: 2rem;
   color: #fbb435;
-  height: 6.3rem;
-  line-height: 6.3rem;
-  border-bottom: 0.135rem solid #fbb435;
+  height: 4.5rem;
+  line-height: 4.5rem;
+  border-bottom: 0.1rem solid #fbb435;
 }
 #carousel-game-type .option-container {
   width: 80%;
@@ -102,20 +129,23 @@ body {
 #carousel-game-type .game-option {
   width: 100%;
   margin: 0.9rem 0;
-  opacity: .8;
+  opacity: 0.8;
+  padding: 0;
 }
 #carousel-game-type .game-option p {
-  font-color: #999;
-  font-size: 1.35rem;
-  line-height: 4;
+  margin-top: 1rem;
+  font-color: #787878;
+  font-size: 1.3rem;
 }
 #carousel-game-type .btn-option {
-  background-color: #34bede;
   width: 100%;
-  height: 8.1rem;
-  line-height: 8.1rem;
-  font-size: 2.7rem;
+  height: 6.5rem;
+  line-height: 6.5rem;
+  margin: 1.5rem 0 0;
+  padding: 0;
+  font-size: 1.7rem;
   color: #fff;
+  background-color: #34bede;
 }
 
 /*# sourceMappingURL=index.css.map */

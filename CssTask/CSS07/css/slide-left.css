@@ -1,3 +1,5 @@
+@charset "UTF-8";
+/*侧滑栏动画实现*/
 body {
   transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
@@ -19,24 +21,6 @@ body.active {
   -moz-transition: all 0.2s ease-in-out;
   -ms-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
-}
-
-.header {
-  text-align: center;
-  height: 4.5rem;
-  line-height: 4.5rem;
-  z-index: 1;
-  background-color: #34bede;
-}
-
-.header .btn-slide-bar {
-  float: left;
-  cursor: pointer;
-  width: 2rem;
-  margin: .1rem 0 0 .5rem;
-}
-.header .btn-slide-bar img {
-  width: 100%;
 }
 
 .slide-bar {
