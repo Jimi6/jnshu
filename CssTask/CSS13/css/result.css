@@ -8,6 +8,14 @@ a {
   text-decoration: none;
 }
 
+/*清除浮动*/
+.clearfix:after {
+  display: block;
+  content: "";
+  clear: both;
+  height: 0;
+}
+
 .header {
   display: flex;
   justify-content: space-between;

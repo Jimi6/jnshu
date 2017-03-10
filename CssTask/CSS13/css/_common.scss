@@ -7,3 +7,13 @@ $unit:(1/16)*.5rem;
 a {
     text-decoration: none;
 }
+/*清除浮动*/
+.clearfix{
+    &:after{
+        display: block;
+        content: "";
+        clear: both;
+        height: 0;
+        
+    }
+}

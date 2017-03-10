@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   font-size: 62.5%;
 }
@@ -63,6 +64,7 @@ body {
   padding: 0;
   height: 4.5rem;
   line-height: 4.5rem;
+  border-radius: 0;
   background-color: #f8b445;
   color: #fff;
   font-size: 2rem;
@@ -100,14 +102,26 @@ body {
 }
 
 .prompt .prompt-sub {
+  position: relative;
   width: 80%;
   margin: 0 auto;
   height: 3rem;
   line-height: 3rem;
-  background: url("../img/prompt.png") top left no-repeat;
   background-size: 1rem;
   color: #fff;
   font-size: 1.2rem;
+  text-indent: 2rem;
+  /*画尖三角形*/
+}
+.prompt .prompt-sub:before {
+  position: absolute;
+  top: 0;
+  left: 2rem;
+  display: block;
+  content: "";
+  border: .25rem solid transparent;
+  border-top-width: .5rem;
+  border-top-color: #bae9f4;
 }
 
 .row {
@@ -125,7 +139,7 @@ body {
 }
 .role .role-warap .role-name {
   padding: 20% 0;
-  background-color: #f8b445;
+  background-color: #f5c97b;
   color: #000;
   font-size: 1.5rem;
 }
@@ -156,7 +170,5 @@ body {
 .role:hover .role-tool {
   visibility: visible;
 }
-
-/*# sourceMappingURL=vote.css.map */
 
 /*# sourceMappingURL=vote.css.map */

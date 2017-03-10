@@ -28,6 +28,7 @@ body {
     .main-hint {
         display: flex;
         justify-content: space-between;
+        align-items: center;
         height: 82*$unit;
         line-height: 82*$unit;
         padding: 0 17*$unit;
@@ -42,22 +43,21 @@ body {
             height: 52*$unit;
             img {
                 width: 100%;
-                vertical-align: middle;
             }
         }
     }
     .sub-hint {
-            position: relative;
-    height: 3rem;
-    line-height: 3rem;
-    font-size: 0.75rem;
-    color: white;
-    text-indent: 10%;
-        &:before{
+        position: relative;
+        height: 3rem;
+        line-height: 3rem;
+        font-size: 0.75rem;
+        color: white;
+        text-indent: 10%;
+        &:before {
             display: block;
             content: "";
-            border: .25rem solid transparent;
-            border-top-width: .5rem;
+            border: 0.25rem solid transparent;
+            border-top-width: 0.5rem;
             border-top-color: #C4E3F3;
             position: absolute;
             top: 0;
@@ -75,7 +75,7 @@ body {
                 margin: 0 auto;
                 width: 20vw;
                 height: 20vw;
-                border: .2rem solid white;
+                border: 0.2rem solid white;
                 .role-name {
                     display: flex;
                     justify-content: center;
@@ -94,8 +94,12 @@ body {
                     background: rgb(131,176,154);
                     color: white;
                 }
+                &:hover+.role-tool {
+                    visibility: visible;
+                }
             }
             .role-tool {
+                visibility: hidden;
                 margin: 20*$unit auto;
                 width: 20vw;
                 overflow: hidden;

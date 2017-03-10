@@ -1,19 +1,22 @@
 @charset "utf-8";
-
+html{
+    font-size: 62.5%;
+}
 $unit:1rem;
 $theme-color:#34bede;
 $theme-color-sub:#f8b445;
 $font-white:#fff;
 $prompt-bg-c:#bae9f4;
 body{
+  font-family: "HiraginoSansGB";
+    
 	font-size: 1.3*$unit;
-	max-width: 640px;
-	min-width: 320px;
+	max-width: 768px;
 	margin:0 auto;
 }
 
 .body-wrap{
-	background-color:$theme-color; 
+	background-color:#fff; 
 	width:100%;
 	margin:0 auto;
 }
@@ -22,26 +25,23 @@ body{
 	background-color:$theme-color;
 	border-color: $theme-color+5;
 }
-.navbar-fixed-top,.navbar-fixed-bottom,.my-container{
-	max-width:640px;
-	min-width:320px;
+.navbar-fixed-top,.navbar-fixed-bottom,.result-main{
+	max-width:768px;
 	margin-left:auto;
 	margin-right:auto;
 }
 
 .navbar-fixed-top{
-	height:3*$unit;
-	line-height: 3*$unit;
+	height:4rem;
+	line-height: 4rem;
 	text-align: center;
-	padding:1rem 1rem 0;
 	.btn{
 		background-color: transparent;
 		font-size: 1.8*$unit;
 		color:$font-white;
-		width:2.5*$unit;
-		height:2.5*$unit;
-		line-height:1;
+		width:2rem;
 		padding: 0;
+		margin: .7rem 1.5rem;
 		img{
 			width:100%;
 		}
@@ -55,29 +55,37 @@ body{
 	.btn-info {
 	}
 }
-
-.container{
-	padding:0 2*$unit;
+.result-main{
+    padding: 4rem 0 6.5rem;
 }
-.game-result{
-	margin-top: 5*$unit;
-	width:100%;
+.result-info{
+    
+}
 
+.game-result{
+	width:100%;
+    padding: 1.5rem 4rem;
+    background: $theme-color;
 	.result-img{
-		width:100%;
-		margin:1rem;
-		color:#ecc779;
-		font-size: 1.8*$unit;
+		  font-size: 1.65rem;
+  color: rgb(255, 200, 101);
 		font-weight:bold;
+		
 		img{
-			width:50%;
-			margin:auto;
+			width:17.5rem;
+			margin:0 auto;
 			display: block;
 		}
 	}
+	p{
+	    margin: 1rem 0 3rem;
+	}
 	.result-detail{
 		color:#fff;
-		font-size:1.3*$unit;
+		font-size:1.3rem;
+		p{
+		    margin: 0 1rem 0;
+		}
 	}
 	.date-detail{
 		background-color:#fff;
@@ -85,7 +93,7 @@ body{
 	}
 }
 		.list-group-item{
-			padding:.5*$unit 3*$unit;
+		    padding: 0 4rem;
 			&:first-child{
 				border-radius: 0;
 			}
@@ -94,11 +102,12 @@ body{
 			font-size: 1.3*$unit;
 			line-height:2;
 			.use-time{
-				color:#dddd;
-				font-size:1*$unit;
+				color: rgb(199, 199, 199);
+				font-size:.85rem;
 				font-weight:normal;
 				
 			}
+
 		}
 		dd{
 			font-size: 1.3*$unit;
@@ -106,28 +115,29 @@ body{
 		}
 
 .navbar-fixed-bottom {
-    height: 6*$unit;
-    line-height: 6*$unit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 6.5rem;
+    line-height: 6.5rem;
 	width:100%;
 	background-color:rgba(154,223,239,.3);
 	.btn{
-    // margin: 0 auto 0 10%;
-    margin-top: .9*$unit;
-    width: 42%;
+    width: 40%;
     padding: 0;
-    height: 4*$unit;
-    line-height: 4*$unit;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    font-family: "STHeitiSC";
 	color: $font-white;
-    font-size: 2.5*$unit;
+    font-size: 2rem;
     font-weight: normal;
 	}
+
 	.btn-again{
 		background-color:#f37072;
-		margin-left:5%;
 	}
 	.btn-share{
 		background-color:#f8b445;
-		margin-right:5%;
 	}
 	
 }

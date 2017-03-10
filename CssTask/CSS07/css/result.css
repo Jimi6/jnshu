@@ -1,12 +1,16 @@
+html {
+  font-size: 62.5%;
+}
+
 body {
+  font-family: "HiraginoSansGB";
   font-size: 1.3rem;
-  max-width: 640px;
-  min-width: 320px;
+  max-width: 768px;
   margin: 0 auto;
 }
 
 .body-wrap {
-  background-color: #34bede;
+  background-color: #fff;
   width: 100%;
   margin: 0 auto;
 }
@@ -16,27 +20,24 @@ body {
   border-color: #39c3e3;
 }
 
-.navbar-fixed-top, .navbar-fixed-bottom, .my-container {
-  max-width: 640px;
-  min-width: 320px;
+.navbar-fixed-top, .navbar-fixed-bottom, .result-main {
+  max-width: 768px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .navbar-fixed-top {
-  height: 3rem;
-  line-height: 3rem;
+  height: 4rem;
+  line-height: 4rem;
   text-align: center;
-  padding: 1rem 1rem 0;
 }
 .navbar-fixed-top .btn {
   background-color: transparent;
   font-size: 1.8rem;
   color: #fff;
-  width: 2.5rem;
-  height: 2.5rem;
-  line-height: 1;
+  width: 2rem;
   padding: 0;
+  margin: .7rem 1.5rem;
 }
 .navbar-fixed-top .btn img {
   width: 100%;
@@ -46,29 +47,34 @@ body {
   color: #fff;
 }
 
-.container {
-  padding: 0 2rem;
+.result-main {
+  padding: 4rem 0 6.5rem;
 }
 
 .game-result {
-  margin-top: 5rem;
   width: 100%;
+  padding: 1.5rem 4rem;
+  background: #34bede;
 }
 .game-result .result-img {
-  width: 100%;
-  margin: 1rem;
-  color: #ecc779;
-  font-size: 1.8rem;
+  font-size: 1.65rem;
+  color: #ffc865;
   font-weight: bold;
 }
 .game-result .result-img img {
-  width: 50%;
-  margin: auto;
+  width: 17.5rem;
+  margin: 0 auto;
   display: block;
+}
+.game-result p {
+  margin: 1rem 0 3rem;
 }
 .game-result .result-detail {
   color: #fff;
   font-size: 1.3rem;
+}
+.game-result .result-detail p {
+  margin: 0 1rem 0;
 }
 .game-result .date-detail {
   background-color: #fff;
@@ -76,7 +82,7 @@ body {
 }
 
 .list-group-item {
-  padding: 0.5rem 3rem;
+  padding: 0 4rem;
 }
 .list-group-item:first-child {
   border-radius: 0;
@@ -87,8 +93,8 @@ dt {
   line-height: 2;
 }
 dt .use-time {
-  color: #dddd;
-  font-size: 1rem;
+  color: #c7c7c7;
+  font-size: .85rem;
   font-weight: normal;
 }
 
@@ -98,28 +104,29 @@ dd {
 }
 
 .navbar-fixed-bottom {
-  height: 6rem;
-  line-height: 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 6.5rem;
+  line-height: 6.5rem;
   width: 100%;
   background-color: rgba(154, 223, 239, 0.3);
 }
 .navbar-fixed-bottom .btn {
-  margin-top: 0.9rem;
-  width: 42%;
+  width: 40%;
   padding: 0;
-  height: 4rem;
-  line-height: 4rem;
+  height: 4.5rem;
+  line-height: 4.5rem;
+  font-family: "STHeitiSC";
   color: #fff;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: normal;
 }
 .navbar-fixed-bottom .btn-again {
   background-color: #f37072;
-  margin-left: 5%;
 }
 .navbar-fixed-bottom .btn-share {
   background-color: #f8b445;
-  margin-right: 5%;
 }
 
 /*# sourceMappingURL=result.css.map */
