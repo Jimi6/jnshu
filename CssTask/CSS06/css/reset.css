@@ -26,8 +26,8 @@ ul {
   padding: 0;
 }
 
-.btn {
-  outline: none;
+.btn:hover, .btn.active {
+  border-color: transparent;
 }
 
 .header {
@@ -72,6 +72,7 @@ ul {
 }
 .find-user .option {
   padding: 0;
+  width: 100%;
   height: 4rem;
   line-height: 4rem;
 }
@@ -93,6 +94,11 @@ ul {
   color: #999;
   height: 2rem;
   line-height: 2rem;
+}
+.find-user .option .btn .caret {
+  position: absolute;
+  top: 50%;
+  right: 1rem;
 }
 .find-user .list-group-item {
   font-size: 1.2rem;
