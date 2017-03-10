@@ -26,6 +26,10 @@ ul {
   padding: 0;
 }
 
+.btn {
+  outline: none;
+}
+
 .header {
   width: 100%;
   background-color: #5ac0ce;
@@ -150,7 +154,6 @@ ul {
 }
 .footer .navbar .btn {
   background-color: transparent;
-  border: none;
   padding: 0;
   font-size: 1rem;
 }
