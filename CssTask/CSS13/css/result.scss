@@ -1,7 +1,7 @@
 @charset "utf-8";
 @import "common";
 $themeColor:rgb(41,189,224);
-$maxWidth:640px;
+$maxWidth:768px;
 .header{
     display: flex;
     justify-content: space-between;
@@ -10,22 +10,17 @@ $maxWidth:640px;
     padding: 0 18*$unit;
     border-bottom: 2px solid rgba(141,189,224,.5);
     background: $themeColor;
-    .home{
-        img{
-            width: 52*$unit;
-        }
+    img{
+        height: 1.5rem;
     }
     .title{
         font-size: 34*$unit;
         color: white;
     }
-    .info{
-        img{
-            width: 40*$unit;
-        }
-    }
 }
-
+.result-main{
+    padding-bottom: 130*$unit;
+}
 
 .result-info{
     padding: 30*$unit 60*$unit;

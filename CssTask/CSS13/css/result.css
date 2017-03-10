@@ -17,15 +17,16 @@ a {
   border-bottom: 2px solid rgba(141, 189, 224, 0.5);
   background: #29bde0;
 }
-.header .home img {
-  width: 1.625rem;
+.header img {
+  height: 1.5rem;
 }
 .header .title {
   font-size: 1.0625rem;
   color: white;
 }
-.header .info img {
-  width: 1.25rem;
+
+.result-main {
+  padding-bottom: 4.0625rem;
 }
 
 .result-info {
@@ -85,7 +86,7 @@ a {
   bottom: 0;
   margin: 0 auto;
   width: 100%;
-  max-width: 640px;
+  max-width: 768px;
   display: flex;
   justify-content: space-between;
   align-items: center;

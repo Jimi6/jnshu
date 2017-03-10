@@ -1,220 +1,221 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1,maximum-scale=1,user-scalable=no">
-	<title>投票</title>
-	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="css/vote.css">
-	<script>	
-	function playPause() {
-		var audio = document.getElementById('sb-audio');
-		if (audio.paused){
-		    audio.play();
-		}
-		else{
-		    audio.pause();
-		}
-	}
 
-	</script>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1,maximum-scale=1,user-scalable=no">
+		<title>投票</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/vote.css">
+	</head>
+	<body>
+		<div class="body-wrap">
+			<header>
+				<div class="navbar navbar-default navbar-fixed-top">
+					<a class="btn btn-menu pull-left"><img alt="菜单" src="img/menu2.png"> </a><span>投票</span>
+					<a href="index.html" class="btn btn-close pull-right"><img alt="关闭" src="img/close.png"></a>
+				</div>
+			</header>
 
-</head>
-<body>
-<div class="body-wrap">
-<header>
-	<div class="navbar navbar-default navbar-fixed-top">
-		<a class="btn btn-menu pull-left"><img alt="菜单" src="img/menu2.png"> </a><span>投票</span><a href="index.html" class="btn btn-close pull-right"><img alt="关闭" src="img/close.png"></a>
-	</div>
-</header>
+			<div class="main">
 
-<section class="main">
-
-	<div class="prompt">
-		<div class="prompt-main">
-			<p>发言讨论结束，大家请投票 
-			<audio id="sb-audio" class="hidden"  controls="controls" src="media/sb.mp3" preload>您的浏览器不支持 audio 标签。</audio>
-			<button class="btn btn-play pull-right"><img src="img/play.png" onclick="playPause()">
+				<div class="prompt">
+					<div class="prompt-main">
+						<p>发言讨论结束，大家请投票
+							<audio id="sb-audio" class="hidden" controls="controls" src="media/sb.mp3" preload>您的浏览器不支持 audio 标签。</audio>
+							<button class="btn btn-play pull-right"><img src="img/play.png" onclick="playPause()">
 			</button>
-			</p>	
+						</p>
+					</div>
+					<div class="prompt-sub">
+						<p>点击得票数最多人的头像</p>
+					</div>
+				</div>
+				<div class="container my-container">
+					<div class="row">
+						<div class="role col-xs-4">
+							<div class="role-warap">
+								<p class="role-name">水民</p>
+								<p class="role-no">1号</p>
+							</div>
+							<div class="role-tool">
+								<a class="tool-option" href="#"><img alt="kill" src="img/kill.png"></a>
+								<a class="tool-option" href="#"><img alt="search" src="img/search.png"></a>
+								<a class="tool-option" href="#"><img alt="mark" src="img/mark.png"></a>
+								<a class="tool-option" href="#"><img alt="add" src="img/add.png"></a>
+							</div>
+						</div>
+						<div class="role col-xs-4">
+							<div class="role-warap">
+								<p class="role-name">水民</p>
+								<p class="role-no">1号</p>
+							</div>
+							<div class="role-tool">
+								<a class="tool-option" href="#"><img alt="kill" src="img/kill.png"></a>
+								<a class="tool-option" href="#"><img alt="search" src="img/search.png"></a>
+								<a class="tool-option" href="#"><img alt="mark" src="img/mark.png"></a>
+								<a class="tool-option" href="#"><img alt="add" src="img/add.png"></a>
+							</div>
+						</div>
+						<div class="role col-xs-4">
+							<div class="role-warap">
+								<p class="role-name">水民</p>
+								<p class="role-no">1号</p>
+							</div>
+							<div class="role-tool">
+								<a class="tool-option" href="#"><img alt="kill" src="img/kill.png"></a>
+								<a class="tool-option" href="#"><img alt="search" src="img/search.png"></a>
+								<a class="tool-option" href="#"><img alt="mark" src="img/mark.png"></a>
+								<a class="tool-option" href="#"><img alt="add" src="img/add.png"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="container my-container">
+					<div class="row">
+						<div class="role col-xs-4">
+							<div class="role-warap">
+								<p class="role-name">水民</p>
+								<p class="role-no">1号</p>
+							</div>
+							<div class="role-tool">
+								<a class="tool-option" href="#"><img alt="kill" src="img/kill.png"></a>
+								<a class="tool-option" href="#"><img alt="search" src="img/search.png"></a>
+								<a class="tool-option" href="#"><img alt="mark" src="img/mark.png"></a>
+								<a class="tool-option" href="#"><img alt="add" src="img/add.png"></a>
+							</div>
+						</div>
+						<div class="role col-xs-4">
+							<div class="role-warap">
+								<p class="role-name">水民</p>
+								<p class="role-no">1号</p>
+							</div>
+							<div class="role-tool">
+								<a class="tool-option" href="#"><img alt="kill" src="img/kill.png"></a>
+								<a class="tool-option" href="#"><img alt="search" src="img/search.png"></a>
+								<a class="tool-option" href="#"><img alt="mark" src="img/mark.png"></a>
+								<a class="tool-option" href="#"><img alt="add" src="img/add.png"></a>
+							</div>
+						</div>
+						<div class="role col-xs-4">
+							<div class="role-warap">
+								<p class="role-name">水民</p>
+								<p class="role-no">1号</p>
+							</div>
+							<div class="role-tool">
+								<a class="tool-option" href="#"><img alt="kill" src="img/kill.png"></a>
+								<a class="tool-option" href="#"><img alt="search" src="img/search.png"></a>
+								<a class="tool-option" href="#"><img alt="mark" src="img/mark.png"></a>
+								<a class="tool-option" href="#"><img alt="add" src="img/add.png"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="container my-container">
+					<div class="row">
+						<div class="role col-xs-4">
+							<div class="role-warap">
+								<p class="role-name">水民</p>
+								<p class="role-no">1号</p>
+							</div>
+							<div class="role-tool">
+								<a class="tool-option" href="#"><img alt="kill" src="img/kill.png"></a>
+								<a class="tool-option" href="#"><img alt="search" src="img/search.png"></a>
+								<a class="tool-option" href="#"><img alt="mark" src="img/mark.png"></a>
+								<a class="tool-option" href="#"><img alt="add" src="img/add.png"></a>
+							</div>
+						</div>
+						<div class="role col-xs-4">
+							<div class="role-warap">
+								<p class="role-name">水民</p>
+								<p class="role-no">1号</p>
+							</div>
+							<div class="role-tool">
+								<a class="tool-option" href="#"><img alt="kill" src="img/kill.png"></a>
+								<a class="tool-option" href="#"><img alt="search" src="img/search.png"></a>
+								<a class="tool-option" href="#"><img alt="mark" src="img/mark.png"></a>
+								<a class="tool-option" href="#"><img alt="add" src="img/add.png"></a>
+							</div>
+						</div>
+						<div class="role col-xs-4">
+							<div class="role-warap">
+								<p class="role-name">水民</p>
+								<p class="role-no">1号</p>
+							</div>
+							<div class="role-tool">
+								<a class="tool-option" href="#"><img alt="kill" src="img/kill.png"></a>
+								<a class="tool-option" href="#"><img alt="search" src="img/search.png"></a>
+								<a class="tool-option" href="#"><img alt="mark" src="img/mark.png"></a>
+								<a class="tool-option" href="#"><img alt="add" src="img/add.png"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="container my-container">
+					<div class="row">
+						<div class="role col-xs-4">
+							<div class="role-warap">
+								<p class="role-name">水民</p>
+								<p class="role-no">1号</p>
+							</div>
+							<div class="role-tool">
+								<a class="tool-option" href="#"><img alt="kill" src="img/kill.png"></a>
+								<a class="tool-option" href="#"><img alt="search" src="img/search.png"></a>
+								<a class="tool-option" href="#"><img alt="mark" src="img/mark.png"></a>
+								<a class="tool-option" href="#"><img alt="add" src="img/add.png"></a>
+							</div>
+						</div>
+						<div class="role col-xs-4">
+							<div class="role-warap">
+								<p class="role-name">水民</p>
+								<p class="role-no">1号</p>
+							</div>
+							<div class="role-tool">
+								<a class="tool-option" href="#"><img alt="kill" src="img/kill.png"></a>
+								<a class="tool-option" href="#"><img alt="search" src="img/search.png"></a>
+								<a class="tool-option" href="#"><img alt="mark" src="img/mark.png"></a>
+								<a class="tool-option" href="#"><img alt="add" src="img/add.png"></a>
+							</div>
+						</div>
+						<div class="role col-xs-4">
+							<div class="role-warap">
+								<p class="role-name">水民</p>
+								<p class="role-no">1号</p>
+							</div>
+							<div class="role-tool">
+								<a class="tool-option" href="#"><img alt="kill" src="img/kill.png"></a>
+								<a class="tool-option" href="#"><img alt="search" src="img/search.png"></a>
+								<a class="tool-option" href="#"><img alt="mark" src="img/mark.png"></a>
+								<a class="tool-option" href="#"><img alt="add" src="img/add.png"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<footer>
+				<div class="navbar navbar-default navbar-fixed-bottom">
+					<a href="result.html" class="btn">投死</a>
+				</div>
+
+			</footer>
+
 		</div>
-		<div class="prompt-sub"><p>点击得票数最多人的头像</p></div>
-	</div>
-	<div class="container my-container">
-		<div class="row">
-			<div class="role col-xs-4">
-				<div class="role-warap">
-					<p class="role-name">水民</p>
-					<p class="role-no">1号</p>
-				</div>
-				<div class="role-tool">
-					<a class="tool-option" href="#"><img alt="kill" src="img/kill.png"></a>
-					<a class="tool-option" href="#"><img alt="search" src="img/search.png"></a>
-					<a class="tool-option" href="#"><img alt="mark" src="img/mark.png"></a>
-					<a class="tool-option" href="#"><img alt="add" src="img/add.png"></a>
-				</div>
-			</div>
-			<div class="role col-xs-4">
-				<div class="role-warap">
-					<p class="role-name">水民</p>
-					<p class="role-no">1号</p>
-				</div>
-				<div class="role-tool">
-					<a class="tool-option" href="#"><img alt="kill" src="img/kill.png"></a>
-					<a class="tool-option" href="#"><img alt="search" src="img/search.png"></a>
-					<a class="tool-option" href="#"><img alt="mark" src="img/mark.png"></a>
-					<a class="tool-option" href="#"><img alt="add" src="img/add.png"></a>
-				</div>
-			</div>
-			<div class="role col-xs-4">
-				<div class="role-warap">
-					<p class="role-name">水民</p>
-					<p class="role-no">1号</p>
-				</div>
-				<div class="role-tool">
-					<a class="tool-option" href="#"><img alt="kill" src="img/kill.png"></a>
-					<a class="tool-option" href="#"><img alt="search" src="img/search.png"></a>
-					<a class="tool-option" href="#"><img alt="mark" src="img/mark.png"></a>
-					<a class="tool-option" href="#"><img alt="add" src="img/add.png"></a>
-				</div>
-			</div>
-		</div>	
-	</div>
-	<div class="container my-container">
-		<div class="row">
-			<div class="role col-xs-4">
-				<div class="role-warap">
-					<p class="role-name">水民</p>
-					<p class="role-no">1号</p>
-				</div>
-				<div class="role-tool">
-					<a class="tool-option" href="#"><img alt="kill" src="img/kill.png"></a>
-					<a class="tool-option" href="#"><img alt="search" src="img/search.png"></a>
-					<a class="tool-option" href="#"><img alt="mark" src="img/mark.png"></a>
-					<a class="tool-option" href="#"><img alt="add" src="img/add.png"></a>
-				</div>
-			</div>
-			<div class="role col-xs-4">
-				<div class="role-warap">
-					<p class="role-name">水民</p>
-					<p class="role-no">1号</p>
-				</div>
-				<div class="role-tool">
-					<a class="tool-option" href="#"><img alt="kill" src="img/kill.png"></a>
-					<a class="tool-option" href="#"><img alt="search" src="img/search.png"></a>
-					<a class="tool-option" href="#"><img alt="mark" src="img/mark.png"></a>
-					<a class="tool-option" href="#"><img alt="add" src="img/add.png"></a>
-				</div>
-			</div>
-			<div class="role col-xs-4">
-				<div class="role-warap">
-					<p class="role-name">水民</p>
-					<p class="role-no">1号</p>
-				</div>
-				<div class="role-tool">
-					<a class="tool-option" href="#"><img alt="kill" src="img/kill.png"></a>
-					<a class="tool-option" href="#"><img alt="search" src="img/search.png"></a>
-					<a class="tool-option" href="#"><img alt="mark" src="img/mark.png"></a>
-					<a class="tool-option" href="#"><img alt="add" src="img/add.png"></a>
-				</div>
-			</div>
-		</div>	
-	</div>
-	<div class="container my-container">
-		<div class="row">
-			<div class="role col-xs-4">
-				<div class="role-warap">
-					<p class="role-name">水民</p>
-					<p class="role-no">1号</p>
-				</div>
-				<div class="role-tool">
-					<a class="tool-option" href="#"><img alt="kill" src="img/kill.png"></a>
-					<a class="tool-option" href="#"><img alt="search" src="img/search.png"></a>
-					<a class="tool-option" href="#"><img alt="mark" src="img/mark.png"></a>
-					<a class="tool-option" href="#"><img alt="add" src="img/add.png"></a>
-				</div>
-			</div>
-			<div class="role col-xs-4">
-				<div class="role-warap">
-					<p class="role-name">水民</p>
-					<p class="role-no">1号</p>
-				</div>
-				<div class="role-tool">
-					<a class="tool-option" href="#"><img alt="kill" src="img/kill.png"></a>
-					<a class="tool-option" href="#"><img alt="search" src="img/search.png"></a>
-					<a class="tool-option" href="#"><img alt="mark" src="img/mark.png"></a>
-					<a class="tool-option" href="#"><img alt="add" src="img/add.png"></a>
-				</div>
-			</div>
-			<div class="role col-xs-4">
-				<div class="role-warap">
-					<p class="role-name">水民</p>
-					<p class="role-no">1号</p>
-				</div>
-				<div class="role-tool">
-					<a class="tool-option" href="#"><img alt="kill" src="img/kill.png"></a>
-					<a class="tool-option" href="#"><img alt="search" src="img/search.png"></a>
-					<a class="tool-option" href="#"><img alt="mark" src="img/mark.png"></a>
-					<a class="tool-option" href="#"><img alt="add" src="img/add.png"></a>
-				</div>
-			</div>
-		</div>	
-	</div>
-	<div class="container my-container">
-		<div class="row">
-			<div class="role col-xs-4">
-				<div class="role-warap">
-					<p class="role-name">水民</p>
-					<p class="role-no">1号</p>
-				</div>
-				<div class="role-tool">
-					<a class="tool-option" href="#"><img alt="kill" src="img/kill.png"></a>
-					<a class="tool-option" href="#"><img alt="search" src="img/search.png"></a>
-					<a class="tool-option" href="#"><img alt="mark" src="img/mark.png"></a>
-					<a class="tool-option" href="#"><img alt="add" src="img/add.png"></a>
-				</div>
-			</div>
-			<div class="role col-xs-4">
-				<div class="role-warap">
-					<p class="role-name">水民</p>
-					<p class="role-no">1号</p>
-				</div>
-				<div class="role-tool">
-					<a class="tool-option" href="#"><img alt="kill" src="img/kill.png"></a>
-					<a class="tool-option" href="#"><img alt="search" src="img/search.png"></a>
-					<a class="tool-option" href="#"><img alt="mark" src="img/mark.png"></a>
-					<a class="tool-option" href="#"><img alt="add" src="img/add.png"></a>
-				</div>
-			</div>
-			<div class="role col-xs-4">
-				<div class="role-warap">
-					<p class="role-name">水民</p>
-					<p class="role-no">1号</p>
-				</div>
-				<div class="role-tool">
-					<a class="tool-option" href="#"><img alt="kill" src="img/kill.png"></a>
-					<a class="tool-option" href="#"><img alt="search" src="img/search.png"></a>
-					<a class="tool-option" href="#"><img alt="mark" src="img/mark.png"></a>
-					<a class="tool-option" href="#"><img alt="add" src="img/add.png"></a>
-				</div>
-			</div>
-		</div>	
-	</div>
+		<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
 
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script>
+			function playPause() {
+				var audio = document.getElementById('sb-audio');
+				if(audio.paused) {
+					audio.play();
+				} else {
+					audio.pause();
+				}
+			}
+		</script>
 
-</section>
+	</body>
 
-<footer>
-	<div class="navbar navbar-default navbar-fixed-bottom">
-		<a href="result.html" class="btn">投死</a>
-	</div>
-
-</footer>
-
-</div>
-
-
-</body>
 </html>

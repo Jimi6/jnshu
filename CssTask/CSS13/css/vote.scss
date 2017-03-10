@@ -21,7 +21,8 @@ body {
     }
 }
 
-.container {
+.vote-main {
+    padding-bottom: 190*$unit;
     background: $themeColor;
     overflow: hidden;
     .main-hint {
@@ -46,11 +47,22 @@ body {
         }
     }
     .sub-hint {
-        height: 70*$unit;
-        line-height: 70*$unit;
-        font-size: 24*$unit;
-        color: white;
-        text-indent: 45*$unit;
+            position: relative;
+    height: 3rem;
+    line-height: 3rem;
+    font-size: 0.75rem;
+    color: white;
+    text-indent: 10%;
+        &:before{
+            display: block;
+            content: "";
+            border: .25rem solid transparent;
+            border-top-width: .5rem;
+            border-top-color: #C4E3F3;
+            position: absolute;
+            top: 0;
+            left: 10%;
+        }
     }
     .role-list-group {
         .list-group {
@@ -61,12 +73,9 @@ body {
             width: 33%;
             .role-info {
                 margin: 0 auto;
-                //              width: 126*$unit;
-                //              height: 126*$unit;
-
                 width: 20vw;
                 height: 20vw;
-                border: 5*$unit solid white;
+                border: .2rem solid white;
                 .role-name {
                     display: flex;
                     justify-content: center;
@@ -88,14 +97,13 @@ body {
             }
             .role-tool {
                 margin: 20*$unit auto;
-                //              width: 126*$unit;
-                //              height: 42*$unit; 
                 width: 20vw;
-
+                overflow: hidden;
                 .role-tool-item {
-                    display: inline-block;
+                    float: left;
                     background: white;
-                    width: 16%;
+                    margin: 0 1%;
+                    width: 23%;
                 }
                 img {
                     width: 100%;

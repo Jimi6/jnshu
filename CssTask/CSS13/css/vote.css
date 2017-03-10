@@ -27,11 +27,12 @@ body {
   width: 1.125rem;
 }
 
-.container {
+.vote-main {
+  padding-bottom: 5.9375rem;
   background: #29bdf4;
   overflow: hidden;
 }
-.container .main-hint {
+.vote-main .main-hint {
   display: flex;
   justify-content: space-between;
   height: 2.5625rem;
@@ -39,37 +40,48 @@ body {
   padding: 0 0.53125rem;
   background: #C4E3F3;
 }
-.container .main-hint .hint-txt {
+.vote-main .main-hint .hint-txt {
   font-size: 0.8125rem;
   color: #000;
   text-indent: 0.625rem;
 }
-.container .main-hint .music {
+.vote-main .main-hint .music {
   width: 1.625rem;
   height: 1.625rem;
 }
-.container .main-hint .music img {
+.vote-main .main-hint .music img {
   width: 100%;
   vertical-align: middle;
 }
-.container .sub-hint {
-  height: 2.1875rem;
-  line-height: 2.1875rem;
+.vote-main .sub-hint {
+  position: relative;
+  height: 3rem;
+  line-height: 3rem;
   font-size: 0.75rem;
   color: white;
-  text-indent: 1.40625rem;
+  text-indent: 10%;
 }
-.container .role-list-group .list-group-item {
+.vote-main .sub-hint:before {
+  display: block;
+  content: "";
+  border: .25rem solid transparent;
+  border-top-width: .5rem;
+  border-top-color: #C4E3F3;
+  position: absolute;
+  top: 0;
+  left: 10%;
+}
+.vote-main .role-list-group .list-group-item {
   float: left;
   width: 33%;
 }
-.container .role-list-group .list-group-item .role-info {
+.vote-main .role-list-group .list-group-item .role-info {
   margin: 0 auto;
   width: 20vw;
   height: 20vw;
-  border: 0.15625rem solid white;
+  border: .2rem solid white;
 }
-.container .role-list-group .list-group-item .role-info .role-name {
+.vote-main .role-list-group .list-group-item .role-info .role-name {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -78,7 +90,7 @@ body {
   font-size: 0.9375rem;
   color: #000000;
 }
-.container .role-list-group .list-group-item .role-info .role-no {
+.vote-main .role-list-group .list-group-item .role-info .role-no {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -87,16 +99,18 @@ body {
   background: #83b09a;
   color: white;
 }
-.container .role-list-group .list-group-item .role-tool {
+.vote-main .role-list-group .list-group-item .role-tool {
   margin: 0.625rem auto;
   width: 20vw;
+  overflow: hidden;
 }
-.container .role-list-group .list-group-item .role-tool .role-tool-item {
-  display: inline-block;
+.vote-main .role-list-group .list-group-item .role-tool .role-tool-item {
+  float: left;
   background: white;
-  width: 16%;
+  margin: 0 1%;
+  width: 23%;
 }
-.container .role-list-group .list-group-item .role-tool img {
+.vote-main .role-list-group .list-group-item .role-tool img {
   width: 100%;
 }
 
