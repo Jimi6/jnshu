@@ -159,7 +159,9 @@ ul {
   font-style: normal;
 }
 .info-detail dl .advantage {
-  line-height: 2;
+  display: flex;
+  align-items: center;
+  line-height: 1.2;
 }
 
 .footer {

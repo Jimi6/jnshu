@@ -24,7 +24,7 @@ body {
         font-size: $fontSize;
         img {
             width: 1rem;
-    vertical-align: middle;
+            vertical-align: middle;
         }
     }
     .title {
@@ -63,16 +63,15 @@ body {
                 font-size: 1.2rem;
             }
         }
-        .basicInfo{
+        .basicInfo {
             font-size: 1.4rem;
-            span+span{
+            span+span {
                 margin-left: 1.5rem;
             }
         }
-        
+
     }
 }
-
 
 .userDetail {
     font-size: $fontSize;
@@ -80,7 +79,7 @@ body {
     dl {
         border-bottom: 1px solid #e1e5e7;
         dd,
-        dt {            
+        dt {
             display: flex;
             align-items: center;
             justify-content: flex-start;
@@ -101,8 +100,8 @@ body {
             margin-left: 1rem;
             .star {
                 img {
-                    height: 0.8rem;
-                    margin: 0 0.2rem;
+                    width: 1.5rem;
+                    margin-right: 0.5rem;
                 }
             }
             .line {

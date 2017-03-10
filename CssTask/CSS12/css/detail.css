@@ -109,8 +109,8 @@ body {
   margin-left: 1rem;
 }
 .userDetail dl dd .star img {
-  height: 0.8rem;
-  margin: 0 0.2rem;
+  width: 1.5rem;
+  margin-right: 0.5rem;
 }
 .userDetail dl dd .line {
   width: 1px;

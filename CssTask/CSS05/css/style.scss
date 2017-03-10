@@ -163,7 +163,9 @@ ul {
             font-style: normal;
         }
         .advantage {
-            line-height: 2;
+            display: flex;
+            align-items: center;
+            line-height: 1.2;
         }
     }
 
