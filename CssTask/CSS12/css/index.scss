@@ -45,6 +45,9 @@ ul {
 li {
     list-style: none;
 }
+.home-main{
+    padding-bottom: 5rem;
+}
 .list-group {
     margin: 0;
     ul {
@@ -56,9 +59,13 @@ li {
             height: 4rem;
             line-height: 4rem;
             width: calc((100/3)*100%);
+            font-family: "HiraginoSansGB";
+            font-size: 1.4rem;
             text-align: center;
+            color: $mutedColor;
             border-right: 1px solid #ccc;
         }
+
     }
     .list-group-item {
         display: flex;
@@ -97,27 +104,6 @@ li {
         }
     }
 }
-._服务日期_拷贝_4 {
-  font-size: 24px;
-  font-family: "HiraginoSansGB";
-  color: rgb(93, 93, 93);
-  line-height: 0.468;
-  position: absolute;
-  left: 71.408px;
-  top: 965.863px;
-  z-index: 63;
-}
-._2015_7_5_至_2015_7_12_拷贝_4 {
-  font-size: 28px;
-  font-family: "STHeitiSC";
-  color: rgb(51, 51, 51);
-  line-height: 0.401;
-  position: absolute;
-  left: 70.065px;
-  top: 1017.886px;
-  z-index: 65;
-}
-
 .footer {
     @extend %maxWidth;
     position: fixed;

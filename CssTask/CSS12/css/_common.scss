@@ -21,3 +21,6 @@ body,
 html {
     @extend %maxWidth;
 }
+body{
+    font-family:$fontStack;
+}
