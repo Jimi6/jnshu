@@ -3,6 +3,9 @@ $unit:1px;
 $white:rgb(255,255,255);
 $black:rgb(0,0,0);
 $theme-color:rgb(41, 176, 120);
+html{
+    font-size: 62.5%;
+}
 body{
   font-size: 16px;
   font-family: "Microsoft YaHei";
@@ -15,7 +18,7 @@ h3{
 	  color: rgb(51, 51, 51);
 
 }
-
+            
 
 .container{
 	margin:30px auto;

@@ -1,0 +1,48 @@
+@charset "utf-8";
+/*学习步骤*/
+.step {
+    .step-item{
+        height:75px;
+        line-height:75px;
+        margin:40px 0;
+        &>div{
+            float:left;
+        }
+    }
+}
+.step-no{
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 25px;
+    background-color: white;
+    box-shadow: 0 2px 1px #eee,-2px 0 1px #eee,2px 0 1px #eee;
+    color: #29b078;
+    font-size: 18px;
+    margin: -8px 10px 0;
+}
+.step-detail{
+    font-size:12px;
+    color:#999;
+}
+
+/*响应处理*/
+.step-detail{
+    width:70%;    
+}
+.step-to{
+    margin:0 10px;
+    line-height:2.5;
+}
+.step-to{
+    display: none;
+}
+@media screen and (min-width:992px){
+    .step-detail{
+    width:44%;    
+}
+ .step-to{
+    display: inline-block;
+}   
+}

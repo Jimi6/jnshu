@@ -1,0 +1,48 @@
+@charset "utf-8";
+/*友情链接*/
+.friendly-links {
+   background: #fff;
+   .container{
+       margin-bottom: 0;
+   }
+    h3 {
+        text-align: center;
+    }
+    ul li {
+        margin: 10px 0;
+        color: rgb(153, 153, 153);
+        list-style: none;
+        text-align: center;
+        //          &:hover a{
+        //
+        //      }
+        a {
+            display: inline-block;
+            color: rgb(153, 153, 153);
+            line-height: 1.625;
+            font-size: 1.4px;
+            border-bottom: 1px solid transparent;
+            &:hover,&.active {
+                border-bottom-color: $theme-color;
+
+                text-decoration: none;
+            }
+            .dot {
+                display: inline-block;
+                width: 5px;
+                height: 5px;
+                border-radius: 50%;
+                margin-right: 5px;
+                vertical-align: middle;
+                background: rgb(153, 153, 153);
+            }
+        }
+    }
+
+}
+@media screen and (min-width:992px) {
+    .col-link-reset {
+        width: 10%;
+
+    }
+}

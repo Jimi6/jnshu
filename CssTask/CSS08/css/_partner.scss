@@ -1,0 +1,21 @@
+@charset "utf-8";
+/*合作企业*/
+.partner-wrap{
+        &>.col-sm-6,&>.col-xs-12{
+                padding-left: 0;
+    padding-right: 0;
+        }
+}
+.partner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    margin: 10px 0;
+    height: 14rem;
+    &:hover {
+        margin: 10px 3px;
+        box-shadow: -2px 0 2px rgba(200,200,200,.3),2px 0 2px rgba(200,200,200,.3),0 1px 2px rgba(200,200,200,.3),0 -1px 2px rgba(200,200,200,.3);
+        
+    }
+}

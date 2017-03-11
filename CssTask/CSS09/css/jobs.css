@@ -1,4 +1,8 @@
 @charset "UTF-8";
+html {
+  font-size: 62.5%;
+}
+
 body {
   font-size: 16px;
   font-family: "Microsoft YaHei";
@@ -100,7 +104,7 @@ body {
   color: white;
   opacity: 0;
 }
-.job-group-item .item-wrap .job-detail.active {
+.job-group-item .item-wrap .job-detail:hover, .job-group-item .item-wrap .job-detail.active {
   opacity: 1;
 }
 .job-group-item .item-wrap .job-detail h4 {
@@ -128,7 +132,7 @@ body {
   width: 100%;
 }
 .job-group-item table tr td {
-  border: 1px solid #ccc;
+  border: 2px solid #fafafa;
 }
 .job-group-item table tr .col-left {
   width: 35%;
@@ -150,10 +154,10 @@ body {
   line-height: 1.5;
 }
 .job-group-item table tr .col-right2 {
-  border-left: 1px solid #ccc;
+  border-left: 2px solid #fafafa;
 }
 .job-group-item table tr .col-right2 .col-right2-row {
-  border-bottom: 1px solid #ccc;
+  border-bottom: 2px solid #fafafa;
   width: 100%;
 }
 .job-group-item table tr .col-right2 .col-right2-row3 {
@@ -269,12 +273,12 @@ body {
   }
 }
 .job-detail:hover {
-  animation: job-detail-animation 5s;
-  -moz-animation: job-detail-animation 5s;
+  animation: job-detail-animation 3s;
+  -moz-animation: job-detail-animation 3s;
   /* Firefox */
-  -webkit-animation: job-detail-animation 5s;
+  -webkit-animation: job-detail-animation 3s;
   /* Safari and Chrome */
-  -o-animation: job-detail-animation 5s;
+  -o-animation: job-detail-animation 3s;
   /* Opera */
 }
 

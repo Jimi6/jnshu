@@ -64,7 +64,7 @@ $theme-color:rgb(41, 176, 120);
 	  		border-radius:5px;
 	  		color:white;
 	  		opacity:0;
-	  		&.active{
+	  		&:hover,&.active{
 	  			opacity:1;
 	  		}
 	  		h4{
@@ -97,7 +97,7 @@ $theme-color:rgb(41, 176, 120);
 		  	tr{
 		  		width:100%;
 		  		td{
-		  			border: 1px solid #ccc;
+		  			border: 2px solid #fafafa;
 		  		}
 		  		.col-left{
 				    width: 35%;
@@ -121,9 +121,9 @@ $theme-color:rgb(41, 176, 120);
 		  			}
 		  		}
 		  		.col-right2{
-					border-left: 1px solid #ccc;
+					border-left: 2px solid #fafafa;
 					.col-right2-row{
-						border-bottom:1px solid #ccc;
+						border-bottom:2px solid #fafafa;
 						width:100%;
 					}
 					.col-right2-row3{
@@ -176,10 +176,10 @@ $theme-color:rgb(41, 176, 120);
 // 动画调用
 
 .job-detail:hover{
-	animation:job-detail-animation 5s;
-	-moz-animation:job-detail-animation 5s; /* Firefox */
-	-webkit-animation:job-detail-animation 5s; /* Safari and Chrome */
-	-o-animation:job-detail-animation 5s; /* Opera */
+	animation:job-detail-animation 3s;
+	-moz-animation:job-detail-animation 3s; /* Firefox */
+	-webkit-animation:job-detail-animation 3s; /* Safari and Chrome */
+	-o-animation:job-detail-animation 3s; /* Opera */
 }
 
 	  		

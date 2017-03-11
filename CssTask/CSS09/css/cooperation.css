@@ -1,3 +1,7 @@
+html {
+  font-size: 62.5%;
+}
+
 body {
   font-size: 16px;
   font-family: "Microsoft YaHei";
@@ -71,21 +75,19 @@ h3 {
   padding-left: 30%;
 }
 .sideBar .list-group-item a .item-icon {
+  display: inline-block;
   width: 10px;
   height: 10px;
-  display: block;
-  background: url("../img/circle.png") 0 0 no-repeat;
-  background-size: cover;
-  position: absolute;
-  top: 6px;
-  left: 40px;
+  margin-right: 10px;
+  border-radius: 50%;
+  border: 1px solid #ff6500;
 }
 .sideBar .list-group-item a:hover, .sideBar .list-group-item a.active {
   text-decoration: none;
   color: #ff6500;
 }
 .sideBar .list-group-item a:hover .item-icon, .sideBar .list-group-item a.active .item-icon {
-  background-image: url("../img/active.png");
+  background: #f9a372;
 }
 
 .detailBar {
