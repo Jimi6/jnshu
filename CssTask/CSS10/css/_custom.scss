@@ -1,0 +1,78 @@
+@charset "utf-8";
+.custom-content {
+    clear: both;
+    margin-top: 4rem;
+}
+ .custom-tip{
+        line-height: 2;
+        font-size: 2.2rem;
+        font-weight: normal;   
+                color: rgb(51, 51, 51);
+                &:before{
+                    
+                    display: inline-block;
+                    content: "";
+                    width: .3rem;
+                    height: 1.8rem;
+                    margin-right: 1rem;
+                    vertical-align: middle;
+                    border-radius:.3rem ;
+                    background: #1d7ad9;
+                }
+    }
+.custom-form{
+    .panel-heading{
+        color: rgb(29, 122, 217);        
+        line-height: 1;
+        img{
+            padding-right: 1rem;
+            margin-bottom:.3rem;
+        }
+    }
+   
+
+
+    label{
+        height: 3rem;
+        line-height: 3rem;
+        font-weight: normal;   
+    }
+    .checkbox-inline{
+        margin-bottom: 10px;
+        span{
+            padding-left: 1.5rem;
+        }
+    }
+    .checkbox-inline+.checkbox-inline, .radio-inline+.radio-inline {
+    margin-left: 0;
+    }
+    .diameter-number{
+        padding-left: 20px;
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+    .input-number{
+        height: 2rem;
+        line-height: 1.5;
+        width: 6rem;
+        padding: 5px;
+        font-size:12px;
+        margin: 0 1rem;
+    }
+    .btn-group{
+     padding-left: 20px;   
+    }
+}
+.next-step{
+    padding-left: 3rem;
+    padding-right: 3rem;
+    margin: 5rem 0 5rem 45%;
+}
+
+
+@media screen and (min-width:768px){
+ .custom-form .btn-group{
+      float: right;  
+    }
+       
+}

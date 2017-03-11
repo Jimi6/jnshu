@@ -1,0 +1,33 @@
+@charset "utf-8";
+.header-nav{
+    background: rgb(249,249,249);
+    .row{
+        display:flex;
+        justify-content: flex-end;
+
+    }
+    .nav {
+        padding: 2.5rem 0;
+        li{
+            height: 5rem;  
+            line-height: 5rem;
+            text-align: center;          
+        }
+    }
+    .nav-pills>li+li {
+        margin-left: 0;
+    }
+    .nav-pills>li>a {
+        padding: 20px;
+        border-radius: 4px;
+        background-color: rgb(255,255,255);     
+        color: rgb(0,0,0);
+        line-height: 1;
+
+    }
+    .nav-pills>li>a:hover,.nav-pills>li.active>a {
+        color: #fff;
+        background-color: #337ab7;        
+    }
+}
+

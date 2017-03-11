@@ -1,0 +1,46 @@
+@charset "utf-8";
+.loginbar {
+    background-color: rgb(29, 122, 217);
+    width: 100%;
+    .loginbar-tel {
+        height: 40px;
+        line-height: 40px;
+        font-size: 10px;
+            color: rgb(255,255,255);
+
+    }
+    .loginbar-login {
+        height: 40px;
+        line-height: 40px;
+        .nav-tabs {
+            border-bottom: none;
+            li {
+                a {
+                    border-radius: 0;
+                    border-color: transparent rgb(255,255,255) transparent rgb(255,255,255);
+                    padding: 0 1rem;
+                    height: 40px;
+                    line-height: 40px;
+                    margin-right: 0;
+                    font-size: 16px;
+                    color: rgb(255,255,255);
+                }
+                &.active a,
+                &:hover a {
+                    padding: 0 2rem;
+                    color: rgb(0,0,0);
+                }
+            }
+
+        }
+    }
+}
+
+.loginbar-tel {
+    display: none;
+}
+@media screen and (min-width:768px) {
+    .loginbar-tel {
+        display: block;
+    }
+}
