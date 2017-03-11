@@ -124,19 +124,33 @@ h3 {
 }
 .thumbnail.stu .caption h3 {
   text-align: center;
+  margin: 0 auto;
   color: #333333;
 }
 .thumbnail.stu .caption p {
   text-indent: 2em;
 }
 
-.thumbnail.stu p {
+.thumbnail.stu .caption h3 {
+  width: 1rem;
+}
+.thumbnail.stu .caption p {
+  display: none;
+}
+.thumbnail.stu .caption .colon {
   display: none;
 }
 
 @media screen and (min-width: 768px) {
-  .thumbnail.stu p {
+  .thumbnail.stu .caption h3 {
+    width: 100%;
+  }
+  .thumbnail.stu .caption p {
     display: block;
+  }
+  .thumbnail.stu .caption .colon {
+    display: block;
+    padding: 5px;
   }
 }
 /*友情链接*/

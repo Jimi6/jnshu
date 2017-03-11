@@ -30,6 +30,7 @@
         padding: 1rem 2rem;
         h3 {
             text-align: center;
+            margin: 0 auto;
             color: rgb(51, 51, 51);
         }
         p {
@@ -38,13 +39,34 @@
     }
 }
 
-.thumbnail.stu p {
-    display: none;
+.thumbnail.stu {
+    .caption {
+        h3 {
+            width: 1rem;
+        }
+        p {
+            display: none;
+        }
+        .colon {
+            display: none;
+        }
+    }
+
 }
 @media screen and (min-width:768px) {
     .thumbnail.stu {
-        p {
-            display: block;
+        .caption {
+            h3 {
+                width: 100%;
+            }
+            p {
+                display: block;
+            }
+            .colon {
+                display: block;
+                padding: 5px;
+            }
         }
+
     }
 }
