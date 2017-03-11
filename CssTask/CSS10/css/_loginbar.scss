@@ -12,11 +12,13 @@
     .loginbar-login {
         height: 40px;
         line-height: 40px;
-        .nav-tabs {
-            border-bottom: none;
+        .nav {
+//          border-bottom: none;
             li {
+                float: left;
                 a {
                     border-radius: 0;
+                    border: 1px solid;
                     border-color: transparent rgb(255,255,255) transparent rgb(255,255,255);
                     padding: 0 1rem;
                     height: 40px;
@@ -25,10 +27,10 @@
                     font-size: 16px;
                     color: rgb(255,255,255);
                 }
-                &.active a,
                 &:hover a {
                     padding: 0 2rem;
                     color: rgb(0,0,0);
+                    background: #fff;
                 }
             }
 

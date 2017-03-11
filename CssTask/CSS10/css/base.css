@@ -28,11 +28,12 @@ li {
   height: 40px;
   line-height: 40px;
 }
-.loginbar .loginbar-login .nav-tabs {
-  border-bottom: none;
+.loginbar .loginbar-login .nav li {
+  float: left;
 }
-.loginbar .loginbar-login .nav-tabs li a {
+.loginbar .loginbar-login .nav li a {
   border-radius: 0;
+  border: 1px solid;
   border-color: transparent white transparent white;
   padding: 0 1rem;
   height: 40px;
@@ -41,9 +42,10 @@ li {
   font-size: 16px;
   color: white;
 }
-.loginbar .loginbar-login .nav-tabs li.active a, .loginbar .loginbar-login .nav-tabs li:hover a {
+.loginbar .loginbar-login .nav li:hover a {
   padding: 0 2rem;
   color: black;
+  background: #fff;
 }
 
 .loginbar-tel {
@@ -63,9 +65,10 @@ li {
   justify-content: flex-end;
 }
 .header-nav .nav {
-  padding: 2.5rem 0;
+  padding: 2rem 0;
 }
 .header-nav .nav li {
+  margin: .5rem 0;
   height: 5rem;
   line-height: 5rem;
   text-align: center;
@@ -149,7 +152,7 @@ li {
 .custom-tip:before {
   display: inline-block;
   content: "";
-  width: .3rem;
+  width: 0.3rem;
   height: 1.8rem;
   margin-right: 1rem;
   vertical-align: middle;
@@ -163,7 +166,7 @@ li {
 }
 .custom-form .panel-heading img {
   padding-right: 1rem;
-  margin-bottom: .3rem;
+  margin-bottom: 0.3rem;
 }
 .custom-form label {
   height: 3rem;
@@ -176,7 +179,8 @@ li {
 .custom-form .checkbox-inline span {
   padding-left: 1.5rem;
 }
-.custom-form .checkbox-inline + .checkbox-inline, .custom-form .radio-inline + .radio-inline {
+.custom-form .checkbox-inline + .checkbox-inline,
+.custom-form .radio-inline + .radio-inline {
   margin-left: 0;
 }
 .custom-form .diameter-number {
@@ -186,11 +190,12 @@ li {
 }
 .custom-form .input-number {
   height: 2rem;
-  line-height: 1.5;
+  line-height: 2rem;
   width: 6rem;
-  padding: 5px;
-  font-size: 12px;
   margin: 0 1rem;
+  border: 1px solid #ccc;
+  font-size: 12px;
+  text-indent: .5rem;
 }
 .custom-form .btn-group {
   padding-left: 20px;
