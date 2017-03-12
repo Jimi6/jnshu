@@ -82,6 +82,7 @@ li {
   background-color: white;
   color: black;
   line-height: 1;
+  box-shadow: 1px 1px #ccc,-1px -1px #ccc;
 }
 .header-nav .nav-pills > li > a:hover, .header-nav .nav-pills > li.active > a {
   color: #fff;
@@ -195,7 +196,7 @@ li {
   margin: 0 1rem;
   border: 1px solid #ccc;
   font-size: 12px;
-  text-indent: .5rem;
+  text-indent: 0.5rem;
 }
 .custom-form .btn-group {
   padding-left: 20px;
@@ -207,9 +208,16 @@ li {
   margin: 5rem 0 5rem 45%;
 }
 
+.custom-form label .checkbox-inline {
+  display: block;
+}
+
 @media screen and (min-width: 768px) {
   .custom-form .btn-group {
     float: right;
+  }
+  .custom-form label .checkbox-inline {
+    display: inline-block;
   }
 }
 .footer {
