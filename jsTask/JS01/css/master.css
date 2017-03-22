@@ -4,14 +4,14 @@ html {
 
 body {
   width: 100%;
-  max-width: 300px;
+  max-width: 320px;
   margin: 0 auto;
 }
 
-.grid-wrap {
+.gridWrap {
   width: 100%;
 }
-.grid-wrap .grid {
+.gridWrap .grid {
   float: left;
   width: 30%;
   padding: 15% 0;
@@ -20,10 +20,10 @@ body {
   background: #ffa500;
 }
 
-.btn-wrap {
+.btnWrap {
   width: 100%;
 }
-.btn-wrap .btn {
+.btnWrap .btn {
   width: 96%;
   padding: 5% 0;
   margin: 4% 2% 0;
@@ -31,12 +31,12 @@ body {
   border: 1px solid #ffa500;
   outline-style: none;
   font-size: 1.6rem;
-  color: orange;
+  color: #ffa500;
   text-align: center;
   cursor: pointer;
   background: white;
 }
-.btn-wrap .btn:hover, .btn-wrap .btn:focus {
+.btnWrap .btn:hover, .btnWrap .btn:focus {
   color: white;
   background: #ffa500;
 }

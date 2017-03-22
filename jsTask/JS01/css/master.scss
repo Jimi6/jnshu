@@ -6,10 +6,10 @@ html{
 }
 body{
     width: 100%;
-    max-width: 300px;
+    max-width: 320px;
     margin: 0 auto;
 }
-.grid-wrap{
+.gridWrap{
     width: 100%;
     .grid{
         float: left;
@@ -20,7 +20,7 @@ body{
         background: $gridColor;
     }
 }
-.btn-wrap{
+.btnWrap{
     width: 100%;
     .btn{
         width: 96%;
@@ -30,7 +30,7 @@ body{
         border: 1px solid $gridColor;
         outline-style: none;
         font-size: 1.6rem;
-        color: orange;
+        color: $gridColor;
         text-align: center;
         cursor: pointer;
         background: white;

@@ -1,18 +1,20 @@
-//获取九宫格的格子,并赋值给数组grid
-var grid = document.getElementsByClassName("grid");
-
+//获取九宫格的格子,并赋值给数组grids
+var grids = document.getElementsByClassName("grid");
+//获取格子默认颜色
+var defaultColor=grids[0].style.backgroundColor;
 //创建数组,用于存放3个随机获取格子
 var gridTemp = [];
 //创建数组，用于存放3个随机获取的颜色
 var colorTemp=[];
+
 //	取随机色
 function randomColor() {
-	return "#" + Math.floor(Math.random() * 256).toString();
+	return "#" + Math.floor(Math.random() * 0xffffff).toString(16);
 }
 
-//取0-8随机数
+//取随机数(本例0-8)
 function randomNumber() {
-	return Math.floor(Math.random() * 9);
+	return Math.floor(Math.random() * grids.length);
 }
 
 //随机获取3个不重复格子
@@ -22,8 +24,8 @@ function getGrid() {
 
 		var temp = randomNumber();
 		//	判断随机获取的格子是否存在数组gridTemp中,若不存在,就把获取的随机格子元素复制到其中.
-		if(gridTemp.indexOf(grid[temp]) < 0) {
-			gridTemp.push(grid[temp]);
+		if(gridTemp.indexOf(grids[temp]) < 0) {
+			gridTemp.push(grids[temp]);
 		}
 	}while (gridTemp.length < 3)
 	
@@ -34,7 +36,7 @@ function getColor(){
 	colorTemp.length=0;
 	do{
 		var temp=randomColor();
-		if(colorTemp.indexOf(temp)<0&&temp!="#ffa500"){
+		if((colorTemp.indexOf(temp)<0)&&(temp!=defaultColor)){
 			colorTemp.push(temp);
 		}
 	}while(colorTemp.length<3)
@@ -50,14 +52,14 @@ function changeColor() {
 }
 //重置所有格子颜色为初始颜色（黄色）
 function resetColor() {
-	for(var i = 0; i < 9; i++) {
-		grid[i].style.backgroundColor = "orange";
+	for(var i = 0; i < grids.length; i++) {
+		grids[i].style.backgroundColor = defaultColor;
 	}
 }
 var t;
 //开始闪
 function flash(){
-t=setInterval(function(){resetColor();changeColor();},1000);
+t=setInterval(function(){resetColor();changeColor();},500);
 
 	
 }
