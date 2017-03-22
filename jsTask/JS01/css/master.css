@@ -1,0 +1,44 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.grid-wrap {
+  width: 100%;
+}
+.grid-wrap .grid {
+  float: left;
+  width: 30%;
+  padding: 15% 0;
+  margin: 2.5% 0 0 2.5%;
+  border-radius: 5%;
+  background: #ffa500;
+}
+
+.btn-wrap {
+  width: 100%;
+}
+.btn-wrap .btn {
+  width: 96%;
+  padding: 5% 0;
+  margin: 4% 2% 0;
+  border-radius: 2%;
+  border: 1px solid #ffa500;
+  outline-style: none;
+  font-size: 1.6rem;
+  color: orange;
+  text-align: center;
+  cursor: pointer;
+  background: white;
+}
+.btn-wrap .btn:hover, .btn-wrap .btn:focus {
+  color: white;
+  background: #ffa500;
+}
+
+/*# sourceMappingURL=master.css.map */

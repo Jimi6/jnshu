@@ -1,0 +1,63 @@
+ @media screen and (max-width: 768px) {
+  html {
+    font-size: 35%;
+  }
+}
+
+body {
+	background-color: #29b078;
+}
+.navbar-inverse {
+    background-color: #29B0A2;
+    border-color: #29AFFF;
+}
+.navbar-inverse .navbar-brand {
+    color: #fff;
+}
+.navbar-inverse .navbar-toggle {
+    border-color: #fff;
+}
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
+    background-color: #29AFFF;
+}
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    border-color: #29AFFF;
+}
+.navbar-inverse .navbar-nav>li>a {
+    color: white;
+}
+.nav-1 {
+	padding: 2% 0;
+    font-size: 2rem;
+    text-align: center;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.font-1 {
+	font-size: 4rem;
+}
+
+.main {
+	margin-top: 6rem;
+	padding: 10% 15%;
+	color: #ffffff;
+}
+.title {
+	text-align: center;
+	font-size: 3.5rem;
+	margin-bottom: 1rem;
+}
+.center-1 {
+	text-align: center;
+}
+.center-2 {
+	text-align: right;
+}
+.desc {
+	font-size: 3rem;
+}
+@media (min-width: 768px)
+.navbar-nav {
+    float: right;
+}
