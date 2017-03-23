@@ -1,25 +1,24 @@
 @charset "utf-8";
 @import "common";
-$themeColor: rgb(41,189,244);
+//背景色
 $bgColor: rgb(240,240,240);
 
 body {
-    font-size: 34*$unit;
     background: $bgColor;
 }
 
 .header {
     display: flex;
     align-items: center;
-    height: 120*$unit;
-    padding: 0 22*$unit;
+    height: 6rem;
+    padding: 0 1.1rem;
 
     background: $themeColor;
     .btn-menu {
-        width: 40*$unit;
-        height: 40*$unit;
+        width: 2rem;
+        height: 2rem;
         img{
-            width: 34*$unit;
+            width: 1.7rem;
         }
 
     }
@@ -27,13 +26,13 @@ body {
 
 .container {
     .wraper {
-        padding: 0 35*$unit;
+        padding: 0 1.8rem;
     }
     .last-game {
-        height: 118*$unit;
-        line-height: 118*$unit;
+        height: 6rem;
+        line-height: 6rem;
         border: 1px solid #ccc;
-        margin: 30*$unit 0;
+        margin: 1.5rem 0;
         text-align: center;
         background: white;
         a {
@@ -41,24 +40,24 @@ body {
         }
         .last {
             float: right;
-            margin-right: 14*$unit;
+            margin-right: .7rem;
             img {
-                width: 24*$unit;
+                width: 1.2rem;
                 vertical-align: middle;
             }
         }
 
     }
     .game {
-        padding-bottom: 30*$unit;
+        padding-bottom: 1.5rem;
         border: 1px solid #ccc;
         background: white;
 
         .list-group-tittle {
-            height: 90*$unit;
-            line-height: 90*$unit;
+            height: 4.5rem;
+            line-height: 4.5rem;
             border-bottom: 2px solid rgb(251,180,53);
-            font-size: 40*$unit;
+            font-size: 2rem;
             text-align: center;
             color: rgb(251,180,53);
         }
@@ -69,17 +68,17 @@ body {
         }
         .btn-game {
             display: block;
-            margin: 20*$unit 0;
+            margin: 1rem 0;
             width: 100%;
-            height: 136*$unit;
-            line-height: 136*$unit;
+            height: 6.8rem;
+            line-height: 6.8rem;
             color: white;
-            font-size: 34*$unit;
+            font-size: 1.7rem;
             border: none;
             background: $themeColor;
         }
         .state {
-            font-size: 26*$unit;
+            font-size: 1.3rem;
             color: rgb(120,120,120);
         }
     }

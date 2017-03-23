@@ -4,8 +4,25 @@
   padding: 0;
 }
 
+body,
+footer,
+html {
+  width: 100%;
+  max-width: 768px;
+  margin: 0 auto;
+}
+
 html {
   font-size: 62.5%;
+}
+
+body {
+  font-family: "HiraginoSansGB";
+  font-size: 1.7rem;
+}
+
+ul, li {
+  list-style: none;
 }
 
 a {
@@ -27,7 +44,7 @@ a {
   height: 6rem;
   padding: 0 .9rem;
   border-bottom: 2px solid rgba(141, 189, 224, 0.5);
-  background: #29bde0;
+  background: #29bdf4;
 }
 .header img {
   height: 1.5rem;
@@ -43,7 +60,7 @@ a {
 
 .result-info {
   padding: 1.5rem 3rem;
-  background: #29bde0;
+  background: #29bdf4;
 }
 .result-info .result-win {
   margin: 0 auto;

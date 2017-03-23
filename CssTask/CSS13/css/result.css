@@ -4,6 +4,27 @@
   padding: 0;
 }
 
+body,
+footer,
+html {
+  width: 100%;
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "HiraginoSansGB";
+  font-size: 1.7rem;
+}
+
+ul, li {
+  list-style: none;
+}
+
 a {
   text-decoration: none;
 }
@@ -20,55 +41,55 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 3.75rem;
-  padding: 0 0.5625rem;
+  height: 6rem;
+  padding: 0 .9rem;
   border-bottom: 2px solid rgba(141, 189, 224, 0.5);
-  background: #29bde0;
+  background: #29bdf4;
 }
 .header img {
   height: 1.5rem;
 }
 .header .title {
-  font-size: 1.0625rem;
+  font-size: 1.7rem;
   color: white;
 }
 
 .result-main {
-  padding-bottom: 4.0625rem;
+  padding-bottom: 6.5rem;
 }
 
 .result-info {
-  padding: 0.9375rem 1.875rem;
-  background: #29bde0;
+  padding: 1.5rem 3rem;
+  background: #29bdf4;
 }
 .result-info .result-win {
   margin: 0 auto;
 }
 .result-info .result-win img {
   display: block;
-  margin: 0 auto 0.9375rem;
+  margin: 0 auto 1.5rem;
   width: 60%;
 }
 .result-info .result-win .txt-win {
-  font-size: 1.03125rem;
+  font-size: 1.7rem;
   color: #ffc865;
-  line-height: 1.28125rem;
+  line-height: 2.1rem;
   font-weight: bold;
 }
 .result-info .result-info-detail {
-  line-height: 1.28125rem;
-  font-size: 0.8125rem;
+  line-height: 2.1rem;
+  font-size: 1.3rem;
   color: white;
 }
 .result-info .result-info-detail .row span + span {
-  margin-left: 1.5625rem;
+  margin-left: 2.5rem;
 }
 
 .result-detail {
   background: white;
 }
 .result-detail .list-group .list-group-item {
-  padding: 0 1.875rem;
+  padding: 0 3rem;
   border-bottom: 1px solid #dddddd;
   line-height: 2;
 }
@@ -77,15 +98,15 @@ a {
   justify-content: space-between;
 }
 .result-detail .list-group .list-group-item .time-wrapper .date {
-  font-size: 0.875rem;
+  font-size: 1.4rem;
   color: #515151;
 }
 .result-detail .list-group .list-group-item .time-wrapper .time {
-  font-size: 0.59375rem;
+  font-size: 1rem;
   color: #c7c7c7;
 }
 .result-detail .list-group .list-group-item .muted {
-  font-size: 0.78125rem;
+  font-size: 1.3rem;
   color: #a6a6a6;
 }
 
@@ -98,17 +119,17 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 4.0625rem;
+  height: 6.5rem;
   background: rgba(41, 189, 224, 0.5);
 }
 .footer .btn {
   margin: 0 4%;
   width: 40%;
-  height: 2.6875rem;
-  line-height: 2.6875rem;
+  height: 4.3rem;
+  line-height: 4.3rem;
   border-radius: 5px;
   font-family: "微软雅黑";
-  font-size: 1.25rem;
+  font-size: 2rem;
   color: white;
   text-align: center;
 }

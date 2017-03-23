@@ -1,12 +1,9 @@
 @charset "utf-8";
 @import "common";
-//主题色
-$themeColor: rgb(41,189,244);
 //背景色
 $bgColor: rgb(240,240,240);
 
 body {
-    font-size: 1.7rem;
     background: $bgColor;
 }
 

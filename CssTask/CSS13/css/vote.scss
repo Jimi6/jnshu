@@ -1,46 +1,41 @@
 @charset "utf-8";
 @import "common";
-$themeColor: rgb(41,189,244);
-body {
-    //  background: $themeColor;
-    font-size: 30*$unit;
-}
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 118*$unit;
-    padding: 0 24*$unit;
+    height: 6rem;
+    padding: 0 1.2rem;
     background: $themeColor;
     .title {
-        font-size: 34*$unit;
+        font-size: 1.7rem;
         color: white;
     }
     img {
-        width: 36*$unit;
+        width: 1.6rem;
     }
 }
 
 .vote-main {
-    padding-bottom: 190*$unit;
+    padding-bottom: 9.5rem;
     background: $themeColor;
     overflow: hidden;
     .main-hint {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        height: 82*$unit;
-        line-height: 82*$unit;
-        padding: 0 17*$unit;
+        height: 4.1rem;
+        line-height: 4.1rem;
+        padding: 0 .9rem;
         background: #C4E3F3;
         .hint-txt {
-            font-size: 26*$unit;
+            font-size: 1.3rem;
             color: #000;
-            text-indent: 20*$unit;
+            text-indent: 1rem;
         }
         .music {
-            width: 52*$unit;
-            height: 52*$unit;
+            width: 2.6rem;
+            height: 2.6rem;
             img {
                 width: 100%;
             }
@@ -82,7 +77,7 @@ body {
                     align-items: center;
                     height: 70%;
                     background: rgb(245,201,123);
-                    font-size: 30*$unit;
+                    font-size: 1.5rem;
                     color: #000000;
                 }
                 .role-no {
@@ -90,7 +85,7 @@ body {
                     justify-content: center;
                     align-items: center;
                     height: 30%;
-                    font-size: 24*$unit;
+                    font-size: 1.2rem;
                     background: rgb(131,176,154);
                     color: white;
                 }
@@ -100,7 +95,7 @@ body {
             }
             .role-tool {
                 visibility: hidden;
-                margin: 20*$unit auto;
+                margin: 1rem auto;
                 width: 20vw;
                 overflow: hidden;
                 .role-tool-item {
@@ -123,18 +118,18 @@ body {
     bottom: 0;
     display: flex;
     align-items: center;
-    height: 192*$unit;
+    height: 9.5rem;
     border-top: 1px solid #29cDCD;
     background: $themeColor;
     .btn-vote {
         display: block;
         margin-left: 6%;
         width: 88%;
-        height: 72*$unit;
-        line-height: 72*$unit;
+        height: 3.6rem;
+        line-height: 3.6rem;
         border: none;
         font-family: "STHeitiSC";
-        font-size: 40*$unit;
+        font-size: 2rem;
         color: white;
         text-align: center;
         background: rgb(252,180,53);
