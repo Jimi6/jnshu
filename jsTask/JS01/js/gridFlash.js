@@ -1,3 +1,5 @@
+//本脚本适用于：任意总数格子，任意数量格子变色（不大于总格子数）；只需对应修改变色格子数变量changeNumber数值即可
+
 //将获取所有格子对象赋值给数组grids
 var grids = document.getElementsByClassName("grid");
 //获取格子默认颜色
@@ -6,37 +8,45 @@ var defaultColor = grids[0].style.backgroundColor;
 var gridTemp = [];
 //创建数组，用于存放随机获取的颜色
 var colorTemp = [];
-//变色格数3
+//设置变色格子数变量
 var changeNumber = 3;
 
-//随机获取3个不重复格子
+//变色格子数若超过格子总数，则设为格子总数。
+
+//下句效果同此句：(changeNumber>grids.length)?changeNumber=grids.length:changeNumber=changeNumber;
+
+changeNumber=(changeNumber>grids.length)?grids.length:changeNumber;
+
+//随机获取不重复格子
 function getGrid() {
 	gridTemp.length = 0;
 	do {
-		//取格子数(此处9)范围内随机数
+		//取格子总数范围内随机数
 		var randomNumber = Math.floor(Math.random() * grids.length);;
-		//	判断随机获取的格子是否存在数组gridTemp中,若不存在,就把所取格子push其后。
+		//	将未取过的格子push至暂存数组gridTemp后面。
 		if(gridTemp.indexOf(grids[randomNumber]) < 0) {
 			gridTemp.push(grids[randomNumber]);
 		}
+		
+		//以下代码效果同上if代码段：(gridTemp.indexOf(grids[randomNumber]) < 0) &&gridTemp.push(grids[randomNumber]);
 	} while (gridTemp.length < changeNumber) //取够之前一直执行
 
 }
-//随机取3个不重复且不是黄色的颜色
+//随机取不重复颜色，且不能是格子默认颜色。
 
 function getColor() {
 	colorTemp.length = 0;
 	do {
 		//		取随机颜色
 		var randomColor = "#" + Math.floor(Math.random() * 0xffffff).toString(16);
-		//若所取随机颜色不存在数组colorTemp中，在把索取颜色push到该数组后面，以此避免重复；同时所取颜色不能和默认颜色相同。	
+		//将未取过的颜色push到暂存数组colorTemp后；且该颜色不是格子默认颜色。	
 		if((colorTemp.indexOf(randomColor) < 0) && (randomColor != defaultColor)) {
 			colorTemp.push(randomColor);
 		}
 	} while (colorTemp.length < changeNumber)
 
 }
-//改变格子颜色
+//所取格子变色
 function changeColor() {
 	getGrid();
 	getColor();
@@ -44,7 +54,7 @@ function changeColor() {
 		gridTemp[j].style.backgroundColor = colorTemp[j];
 	}
 }
-//重置格子颜色
+//重置所有格子颜色
 function resetColor() {
 	for(var i = 0; i < grids.length; i++) {
 		grids[i].style.backgroundColor = defaultColor;

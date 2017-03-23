@@ -1,0 +1,110 @@
+@charset "utf-8";
+@import "common";
+//主题色
+$themeColor:rgb(41,189,224);
+//背景色
+$maxWidth:768px;
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 6rem;
+    padding: 0 .9rem;
+    border-bottom: 2px solid rgba(141,189,224,.5);
+    background: $themeColor;
+    img{
+        height: 1.5rem;
+    }
+    .title{
+        font-size: 1.7rem;
+        color: white;
+    }
+}
+.result-main{
+    padding-bottom: 6.5rem;
+}
+
+.result-info{
+    padding: 1.5rem 3rem;
+    background: $themeColor;
+    .result-win{
+        margin: 0 auto;
+        img{
+            display: block;
+            margin: 0 auto 1.5rem;
+            width: 60%;
+        }
+        .txt-win{
+            font-size: 1.7rem;
+            color: rgb(255, 200, 101);
+            line-height: 2.1rem;
+            font-weight: bold;
+        }
+    }
+    
+    .result-info-detail{
+        line-height: 2.1rem;
+        font-size: 1.3rem;
+        color: white;
+        .row{
+            span+span{
+                margin-left: 2.5rem;
+            }
+        }
+    }
+}
+.result-detail{
+    background: white;
+    .list-group{
+        .list-group-item{
+            padding: 0 3rem;
+            border-bottom: 1px solid rgb(221,221,221);
+            line-height: 2;
+            .time-wrapper{
+                display: flex;
+                justify-content: space-between;
+                .date{
+                    font-size: 1.4rem;
+                    color: rgb(81,81,81);
+                }
+                .time{
+                    font-size: 1rem;
+                    color: rgb(199,199,199);
+                }
+            }
+            .muted{
+                font-size: 1.3rem;
+                color: rgb(166,166,166);
+            }
+        }
+    }
+}
+.footer{
+    position: fixed;
+    bottom: 0;
+    margin: 0 auto;
+    width: 100%;
+    max-width: $maxWidth;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 6.5rem;
+    background: rgba(41,189,224,.5);
+    .btn{
+        margin: 0 4%;
+        width: 40%;
+        height: 4.3rem;
+        line-height: 4.3rem;;
+        border-radius: 5px;
+        font-family: "微软雅黑";
+        font-size: 2rem;
+        color: white;
+        text-align: center;
+    }
+    .btn-again{
+        background: rgb(246,111,111);
+    }
+    .btn-share{
+        background: rgb(251,180,53);
+    }
+}
