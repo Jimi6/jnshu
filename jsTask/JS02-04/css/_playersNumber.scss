@@ -1,0 +1,64 @@
+@charset "utf-8";
+//玩家人数
+.playersNumber {
+    margin-top: 0.5rem;
+    background: #fff;
+    .sum {
+        display: inline-block;
+        width: 90%;
+        margin: 1rem 5%;
+        font-size: 1.4rem;
+        color: rgb(68, 68, 68);
+    }
+    .sumNumber {
+        margin: 0 1rem;
+        height: 2rem;
+        line-height: 2rem;
+        width: 3rem;
+        border: none;
+        font-size: 1.7rem;
+        color: rgb(250, 179, 68);
+        text-align: center;
+        background: #f4f5f5;
+    }
+    .sum-set {
+        width: 88%;
+        margin: 1.5rem 6%;
+        .btn{
+            width: 2rem;
+            height: 2rem;
+        }
+        .roll{
+            position: relative;
+            display: inline-block;
+                width: 70%;
+            height: 3rem;
+            .bar{
+                display: inline-block;
+                width: 100%;
+                height: .5rem;
+                background: #F0AD4E;
+            }
+            .slide-bar{
+                position: absolute;
+                left: 5%;
+                top: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 3rem;
+                height: 2rem;
+                border: .2rem solid #F0AD4E;
+                border-radius: 10%;
+                background: #fff;
+                .bar{
+                    display: inline-block;
+                    width: .2rem;
+                    height: 1.5rem;
+                    background: #F0AD4E;
+                    margin: 0 .2rem;
+                }
+            }
+        }
+    }
+}

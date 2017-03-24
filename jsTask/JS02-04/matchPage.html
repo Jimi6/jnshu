@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/matchPage.css" />
+		<title>桌游精灵|玩家匹配</title>
+	</head>
+
+	<body>
+		<!--页头-->
+		<header class="header">
+			<a class="btn" href=""><img alt="返回" src="img/icon-back.png" /></a>
+			<span class="title">参数设置</span>
+			<a class="btn" href=""><img alt="帮助" src="img/circled-help.png" /></a>
+		</header>
+		<!--主体内容外包裹-->
+		<div class="mainWrap">
+			<!--玩家匹配模块-->
+			<div class="playersMatch">
+				<!--标题-->
+				<div class="matchTitle">
+					<!--加一层标签，用CSS设置对应宽度，使其竖向显示-->
+					<span>玩家匹配</span>
+				</div>
+				<!--设置区域-->
+				<div class="setArea">
+					<!--匹配结果-->
+					<div class="matchResult" name="" rows="" cols="">
+						<ul>
+						<li class="item"><i class="square"></i>杀&nbsp;&nbsp;手<span class="roleNumber">1</span>人</li>
+						<li class="item"><i class="square"></i>杀&nbsp;&nbsp;手<span class="roleNumber">1</span>人</li>
+						<li class="item"><i class="square"></i>医&nbsp;&nbsp;生<span class="roleNumber">1</span>人</li>
+						<li class="item"><i class="square"></i>医&nbsp;&nbsp;生<span class="roleNumber">1</span>人</li>
+						<li class="item"><i class="square"></i>狙击手<span class="roleNumber">1</span>人</li>
+						<li class="item"><i class="square"></i>狙击手<span class="roleNumber">1</span>人</li>
+						<li class="item"><i class="square"></i>警&nbsp;&nbsp;察<span class="roleNumber">1</span>人</li>
+						<li class="item"><i class="square"></i>警&nbsp;&nbsp;察<span class="roleNumber">1</span>人</li>
+						<li class="item"><i class="square"></i>警&nbsp;&nbsp;察<span class="roleNumber">1</span>人</li>
+						<li class="item"><i class="square"></i>警&nbsp;&nbsp;察<span class="roleNumber">1</span>人</li>
+					</ul>
+					</div>
+					<!--设置-->
+					<div class="set">
+						<!--设置按钮-->
+						<a class="btn-set" href="">点击设置<img src="img/pencil.png"/></a>
+					</div>
+
+				</div>
+			</div>
+			<!--玩家词组模块-->
+			<div class="wordGroup">
+				<input type="text" name="" id="" value="" placeholder="平民词组" />
+				<input type="text" name="" id="" value="" placeholder="杀手词组" />
+			</div>
+			<!--玩家人数模块-->
+			<div class="playersNumber">
+				<label class="sum">玩家人数<input class="sumNumber" type="text" name="sumNumber" id="" value="" placeholder="18"/>人</label> 
+				<!--控制滑块-->
+				<div class="sum-set">
+					<!--自减按钮-->
+					<button class="btn"><span class="icon-minus">-</span></button>
+					<!--滑块-->
+					<div class="roll">
+						<span class="bar"></span>
+						<div class="slide-bar"><span class="bar"></span><span class="bar"></span><span class="bar"></span></div>
+					</div>
+					<!--自增按钮-->
+					<button class="btn"><span class="icon-add">+</span></button>
+				</div>
+			</div>
+			<footer class="footer"><button class="btn-footer" value="">去发牌</button></footer>
+		</div>
+	</body>
+	<script src="js/matchPage.js" type="text/javascript" charset="utf-8"></script>
+
+</html>

@@ -1,0 +1,15 @@
+@charset "utf-8";
+//用户词组
+.wordGroup{
+    background: #fff;
+    width: 100%;
+    input{
+        width: 90%;
+        line-height: 2;
+        margin:  1rem 5%;
+        border: none;
+        border-bottom:.1rem solid #ccc ;
+        font-size: 1.3rem;
+          color: rgb(215, 215, 215);
+    }
+}
