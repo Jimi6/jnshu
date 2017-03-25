@@ -35,6 +35,10 @@ a {
   text-decoration: none;
 }
 
+button {
+  cursor: pointer;
+}
+
 /*清除浮动*/
 .clearfix:after {
   display: block;
@@ -49,11 +53,16 @@ a {
   align-items: center;
   width: 100%;
   height: 4rem;
+  border-bottom: .1rem solid #74d4eb;
   background: #29bdf4;
 }
 .header .btn {
   margin: 0 .8rem;
-  height: 2.3rem;
+  height: 2rem;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  background: transparent;
 }
 .header .btn img {
   height: 100%;
@@ -96,15 +105,14 @@ a {
   float: left;
   display: inline-flex;
   align-items: center;
-  margin: 1rem 0;
-  width: 50%;
+  margin: 1rem 0 1rem 1.8rem;
   text-align: left;
   font-size: 1.3rem;
   color: #a1a1a1;
 }
 .playersMatch .matchResult ul li .square {
   display: inline-block;
-  margin: 0 1.1rem 0 1.8rem;
+  margin-right: 1.1rem;
   width: 0.5rem;
   height: 0.5rem;
   background: #ee9f1b;
@@ -178,6 +186,7 @@ a {
   width: 1.5rem;
   height: 1.5rem;
   border: 0.1rem solid #ccc;
+  cursor: pointer;
   background: transparent;
 }
 .playersNumber .sum-set .btn .icon-add,

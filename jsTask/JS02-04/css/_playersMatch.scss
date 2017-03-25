@@ -34,14 +34,13 @@ $match-border-color: #d9d9d9;
             float: left;
             display: inline-flex;
             align-items: center;
-            margin: 1rem 0;
-            width: 50%;
+            margin: 1rem 0 1rem 1.8rem;
             text-align: left;
             font-size: 1.3rem;
             color: rgb(161, 161, 161);
             .square {
                 display: inline-block;
-                margin: 0 1.1rem 0 1.8rem;
+                margin-right: 1.1rem;
                 width: 0.5rem;
                 height: 0.5rem;
                 background: #ee9f1b;

@@ -39,6 +39,9 @@ ul {
 a {
     text-decoration: none;
 }
+button{
+    cursor: pointer;
+}
 /*清除浮动*/
 .clearfix {
     &:after {

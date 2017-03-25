@@ -1,4 +1,4 @@
 function jumpurl(){
 				window.location.href="index.html";
 			}
-setTimeout(jumpurl,2000);
+setTimeout(jumpurl,3000);

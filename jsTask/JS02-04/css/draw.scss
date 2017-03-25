@@ -1,0 +1,22 @@
+@charset "utf-8";
+//翻牌页面
+
+//引人入公告样式
+@import "common";
+//引入页头样式
+@import "header";
+//引入角色卡样式
+@import "roleCard";
+//引入页脚样式
+@import "footer";
+body{
+    background: $themeColor;
+}
+.footer{
+    position: relative;
+    .btn-footer{
+        margin:0 12% 3rem;
+        width: 76%;
+        height: 4.3rem;
+    }
+}

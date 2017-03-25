@@ -52,8 +52,14 @@ setRole.onclick=function (){
 	//玩家匹配结果数组
 	var rolesResult=[];
 	for(var m in roles){
-		rolesResult[m]=m+"号&emsp;"+roles[m];
+		rolesResult[m]=m+"号:"+roles[m];
 	}
 	matchResult.innerHTML='<ul><li><i class="square"></i>' + rolesResult.join('</li><li><i class="square"></i>') + '</li></ul>';
 	
+}
+
+//点击发牌按钮，跳转至翻牌页面
+var deal=document.getElementById("deal");
+deal.onclick=function(){
+	window.location.href="draw.html";
 }

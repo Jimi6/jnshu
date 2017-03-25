@@ -35,6 +35,10 @@ a {
   text-decoration: none;
 }
 
+button {
+  cursor: pointer;
+}
+
 /*清除浮动*/
 .clearfix:after {
   display: block;
@@ -88,7 +92,7 @@ a {
   color: white;
 }
 .result-info .result-info-detail .row span + span {
-  margin-left: 2.5rem;
+  margin-left: 2rem;
 }
 
 .result-detail {
