@@ -12,8 +12,10 @@
 body{
     background: $themeColor;
 }
+.mainWrap{
+    padding-bottom: 4.3rem;
+}
 .footer{
-    position: relative;
     .btn-footer{
         margin:0 12% 3rem;
         width: 76%;

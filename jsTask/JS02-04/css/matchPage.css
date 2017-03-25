@@ -75,7 +75,7 @@ button {
 .playersMatch {
   display: flex;
   justify-content: space-between;
-  margin: 1rem auto .5rem auto;
+  margin: 1rem auto 0.5rem;
   height: 22.5rem;
 }
 .playersMatch .matchTitle {
@@ -117,7 +117,7 @@ button {
   height: 0.5rem;
   background: #ee9f1b;
 }
-.playersMatch .set {
+.playersMatch .btn-set {
   position: absolute;
   bottom: 0;
   display: block;
@@ -125,13 +125,13 @@ button {
   height: 3rem;
   line-height: 3rem;
   text-align: center;
+  border: 0;
   border-top: 0.1rem solid #d9d9d9;
-}
-.playersMatch .set .btn-set {
   font-size: 1.4rem;
   color: #29bde0;
+  background: transparent;
 }
-.playersMatch .set .btn-set img {
+.playersMatch .btn-set img {
   width: 0.9rem;
   margin-left: 0.8rem;
 }

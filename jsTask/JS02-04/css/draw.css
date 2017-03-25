@@ -159,9 +159,10 @@ body {
   background: #29bdf4;
 }
 
-.footer {
-  position: relative;
+.mainWrap {
+  padding-bottom: 4.3rem;
 }
+
 .footer .btn-footer {
   margin: 0 12% 3rem;
   width: 76%;

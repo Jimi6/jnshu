@@ -5,7 +5,7 @@ $match-border-color: #d9d9d9;
 .playersMatch {
     display: flex;
     justify-content: space-between;
-    margin: 1rem auto .5rem auto;
+    margin: 1rem auto 0.5rem;
     height: 22.5rem;
     .matchTitle {
         display: flex;
@@ -27,30 +27,29 @@ $match-border-color: #d9d9d9;
         background: #fbfbfb;
     }
     .matchResult {
-                height: 19rem;
-                overflow-y: scroll;
-        ul{
-          li {
-            float: left;
-            display: inline-flex;
-            align-items: center;
-            margin: 1rem 0 1rem 1.8rem;
-            text-align: left;
-            font-size: 1.3rem;
-            color: rgb(161, 161, 161);
-            .square {
-                display: inline-block;
-                margin-right: 1.1rem;
-                width: 0.5rem;
-                height: 0.5rem;
-                background: #ee9f1b;
+        height: 19rem;
+        overflow-y: scroll;
+        ul {
+            li {
+                float: left;
+                display: inline-flex;
+                align-items: center;
+                margin: 1rem 0 1rem 1.8rem;
+                text-align: left;
+                font-size: 1.3rem;
+                color: rgb(161, 161, 161);
+                .square {
+                    display: inline-block;
+                    margin-right: 1.1rem;
+                    width: 0.5rem;
+                    height: 0.5rem;
+                    background: #ee9f1b;
+                }
             }
-        }  
         }
-        
 
     }
-    .set {
+    .btn-set {
         position: absolute;
         bottom: 0;
         display: block;
@@ -58,14 +57,14 @@ $match-border-color: #d9d9d9;
         height: 3rem;
         line-height: 3rem;
         text-align: center;
+        border: 0;
         border-top: 0.1rem solid $match-border-color;
-        .btn-set {
-            font-size: 1.4rem;
-            color: rgb(41, 189, 224);
-            img {
-                width: 0.9rem;
-                margin-left: 0.8rem;
-            }
+        font-size: 1.4rem;
+        color: rgb(41, 189, 224);
+        background: transparent;
+        img {
+            width: 0.9rem;
+            margin-left: 0.8rem;
         }
     }
 }
