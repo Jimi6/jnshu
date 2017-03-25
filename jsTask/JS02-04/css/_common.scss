@@ -3,11 +3,10 @@
 $themeColor: rgb(41,189,244);
 
 //最大宽度
-$maxWidth:768px;
+$maxWidth: 768px;
 
 //页面字体
 $fontStack: "HiraginoSansGB";
-
 
 * {
     margin: 0;
@@ -18,19 +17,22 @@ body,
 footer,
 html {
     width: 100%;
-    height: 100%;
     max-width: $maxWidth;
     margin: 0 auto;
 }
-
-html{
+body,
+html {
+    height: 100%;
+}
+html {
     font-size: 62.5%;
 }
-body{
+body {
     font-family: $fontStack;
     font-size: 1.7rem;
 }
-ul,li{
+li,
+ul {
     list-style: none;
 }
 
@@ -38,12 +40,12 @@ a {
     text-decoration: none;
 }
 /*清除浮动*/
-.clearfix{
-    &:after{
+.clearfix {
+    &:after {
         display: block;
         content: "";
         clear: both;
         height: 0;
-        
+
     }
 }

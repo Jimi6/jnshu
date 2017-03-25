@@ -1,14 +1,17 @@
 @charset "utf-8";
 //页脚
 .footer{
-    margin: 1rem auto;
+    position: fixed;
+    bottom: 0;
     .btn-footer{
-        width: 100%;
+        margin: 0 2.5% 1rem;
+        width: 95%;
         height: 4.5rem;
         line-height: 4.5rem;
         text-align: center;
         color: #fff;
         font-size: 2rem;
+        cursor: pointer;
         border: 0;
         background: #Fab344;
     }

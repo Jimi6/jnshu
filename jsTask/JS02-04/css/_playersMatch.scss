@@ -27,8 +27,13 @@ $match-border-color: #d9d9d9;
         background: #fbfbfb;
     }
     .matchResult {
-        .item {
+                height: 19rem;
+                overflow-y: scroll;
+        ul{
+          li {
             float: left;
+            display: inline-flex;
+            align-items: center;
             margin: 1rem 0;
             width: 50%;
             text-align: left;
@@ -41,7 +46,9 @@ $match-border-color: #d9d9d9;
                 height: 0.5rem;
                 background: #ee9f1b;
             }
+        }  
         }
+        
 
     }
     .set {
