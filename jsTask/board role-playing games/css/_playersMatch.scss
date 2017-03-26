@@ -45,6 +45,10 @@ $match-border-color: #d9d9d9;
                     height: 0.5rem;
                     background: #ee9f1b;
                 }
+                .square2{
+                    @extend .square;
+                    background:#29bdf4;
+                }
             }
         }
 

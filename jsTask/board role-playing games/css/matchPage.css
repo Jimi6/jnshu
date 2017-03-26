@@ -110,12 +110,15 @@ button {
   font-size: 1.3rem;
   color: #a1a1a1;
 }
-.playersMatch .matchResult ul li .square {
+.playersMatch .matchResult ul li .square, .playersMatch .matchResult ul li .square2 {
   display: inline-block;
   margin-right: 1.1rem;
   width: 0.5rem;
   height: 0.5rem;
   background: #ee9f1b;
+}
+.playersMatch .matchResult ul li .square2 {
+  background: #29bdf4;
 }
 .playersMatch .btn-set {
   position: absolute;
@@ -177,13 +180,13 @@ button {
   background: #f4f5f5;
   color: #fab344;
 }
-.playersNumber .sum-set {
-  display: inline-block;
+.playersNumber .sumSet {
+  display: inline-flex;
+  align-items: center;
   width: 88%;
   margin: 1.5rem 6%;
 }
-.playersNumber .sum-set .btn {
-  float: left;
+.playersNumber .sumSet .btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -194,18 +197,18 @@ button {
   cursor: pointer;
   background: transparent;
 }
-.playersNumber .sum-set .btn .icon-add,
-.playersNumber .sum-set .btn .icon-minus {
+.playersNumber .sumSet .btn .icon-add,
+.playersNumber .sumSet .btn .icon-minus {
   display: inline-block;
   width: 1rem;
   height: 0.3rem;
   vertical-align: middle;
   background: #fab344;
 }
-.playersNumber .sum-set .btn .icon-add {
+.playersNumber .sumSet .btn .icon-add {
   position: relative;
 }
-.playersNumber .sum-set .btn .icon-add:before {
+.playersNumber .sumSet .btn .icon-add:before {
   position: absolute;
   top: -112%;
   left: 34%;
@@ -215,10 +218,21 @@ button {
   content: "";
   background: #fab344;
 }
-.playersNumber .sum-set .range {
-  float: left;
-  width: 64%;
+.playersNumber .sumSet input[type=range] {
+  width: 80%;
+  height: .5rem;
+  -webkit-appearance: none;
+  background-color: #ffe6be;
   vertical-align: middle;
+  outline: none;
+}
+.playersNumber .sumSet input[type=range]::-webkit-slider-thumb {
+  width: 3rem;
+  height: 1.6rem;
+  -webkit-appearance: none;
+  cursor: pointer;
+  background: url(../img/slider-thumb.png) no-repeat;
+  background-size: contain;
 }
 
 .footer {

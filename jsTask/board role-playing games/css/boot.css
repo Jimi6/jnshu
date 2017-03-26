@@ -68,6 +68,7 @@ body {
   margin-top: 4.4rem;
   font-size: 2rem;
   color: #fff;
+  text-align: center;
 }
 .welcome .welcome-txt .dot {
   display: inline-block;
