@@ -64,6 +64,17 @@ playersNumber.onfocus = function() {
 	var civilianNumber = sumNumber - killerNumber;
 	matchResult.innerHTML='<ul>	<li><i class="square"></i>' + '杀&emsp;手'+killerNumber+'人' + '</li><li><i class="square"></i>' + '平&emsp;民'+civilianNumber+'人' + '</li></ul>';
 }
+
+window.onload=function(){
+	//玩家总人数
+	var sumNumber = playersNumber.value;
+	//杀手人数
+	var killerNumber = Math.floor(sumNumber / 4);
+	//平民人数
+	var civilianNumber = sumNumber - killerNumber;
+	matchResult.innerHTML='<ul>	<li><i class="square"></i>' + '杀&emsp;手'+killerNumber+'人' + '</li><li><i class="square"></i>' + '平&emsp;民'+civilianNumber+'人' + '</li></ul>';
+}
+
 //点击发牌按钮，跳转至翻牌页面
 var deal = document.getElementById("deal");
 deal.onclick = function() {

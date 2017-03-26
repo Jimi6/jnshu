@@ -101,7 +101,7 @@ a {
         text-indent: 1rem;
         color: rgb(228,229,231);
         &:focus {
-            border: 0.1rem solid $theme-color;
+            border: 0;
             color: #000;
         }
     }

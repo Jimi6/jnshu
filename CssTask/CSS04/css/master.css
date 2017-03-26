@@ -93,7 +93,7 @@ a {
   color: #e4e5e7;
 }
 .field-log .input-txt:focus {
-  border: 0.1rem solid #5ec0cd;
+  border: 0;
   color: #000;
 }
 
