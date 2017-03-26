@@ -127,6 +127,7 @@ button {
   text-align: center;
   border: 0;
   border-top: 0.1rem solid #d9d9d9;
+  outline: none;
   font-size: 1.4rem;
   color: #29bde0;
   background: transparent;
@@ -146,8 +147,12 @@ button {
   margin: 1rem 5%;
   border: none;
   border-bottom: 0.1rem solid #ccc;
+  outline: none;
   font-size: 1.3rem;
   color: #d7d7d7;
+}
+.wordGroup input:focus {
+  border-bottom-color: #74d4eb;
 }
 
 .playersNumber {

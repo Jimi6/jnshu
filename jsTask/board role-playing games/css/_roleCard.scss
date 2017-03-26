@@ -35,17 +35,21 @@
     }
     .roleInfo {
         padding: 1.5rem 0;
-        border-bottom: 0.1rem solid #fff;
-        img {
-            display: block;
+        .role-pic {
+            display: flex;
+            justify-content: center;
+            align-items: center;
             margin: 2rem auto;
             width: 10rem;
             height: 10rem;
             overflow: hidden;
             border-radius: 50%;
-            text-align: center;
             background-color: #fbb435;
+            img {
+                height: 80%;
+            }
         }
+
         span {
             display: block;
             text-align: center;
@@ -62,8 +66,13 @@
 
     }
     .tip {
-        margin: 1rem;
+        position: absolute;
+        bottom: 0;
+        border-top: 0.1rem solid #fff;
         font-size: 1.3rem;
         color: rgb(252, 160, 0);
+        p{
+        margin: 1rem;
+        }
     }
 }

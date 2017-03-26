@@ -9,7 +9,11 @@
         margin:  1rem 5%;
         border: none;
         border-bottom:.1rem solid #ccc ;
+        outline: none;
         font-size: 1.3rem;
           color: rgb(215, 215, 215);
+          &:focus{
+            border-bottom-color: #74d4eb;
+          }
     }
 }

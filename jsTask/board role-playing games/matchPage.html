@@ -28,21 +28,21 @@
 				<div class="setArea">
 					<!--匹配结果-->
 					<div id="matchResult" class="matchResult" >
-						<ul>
-						<li><i class="square"></i>杀&emsp;手<span class="roleNumber">1</span>人</li>
-						<li><i class="square"></i>杀&emsp;手<span class="roleNumber">1</span>人</li>
-						<li><i class="square"></i>医&emsp;生<span class="roleNumber">1</span>人</li>
-						<li><i class="square"></i>医&emsp;生<span class="roleNumber">1</span>人</li>
-						<li><i class="square"></i>狙击手<span class="roleNumber">1</span>人</li>
-						<li><i class="square"></i>狙击手<span class="roleNumber">1</span>人</li>
-						<li><i class="square"></i>警&emsp;察<span class="roleNumber">1</span>人</li>
-						<li><i class="square"></i>警&emsp;察<span class="roleNumber">1</span>人</li>
-						<li><i class="square"></i>警&emsp;察<span class="roleNumber">1</span>人</li>
-						<li><i class="square"></i>警&emsp;察<span class="roleNumber">1</span>人</li>
-					</ul>
+						<!--<ul>
+							<li><i class="square"></i>杀&emsp;手<span class="roleNumber">1</span>人</li>
+							<li><i class="square"></i>杀&emsp;手<span class="roleNumber">1</span>人</li>
+							<li><i class="square"></i>医&emsp;生<span class="roleNumber">1</span>人</li>
+							<li><i class="square"></i>医&emsp;生<span class="roleNumber">1</span>人</li>
+							<li><i class="square"></i>狙击手<span class="roleNumber">1</span>人</li>
+							<li><i class="square"></i>狙击手<span class="roleNumber">1</span>人</li>
+							<li><i class="square"></i>警&emsp;察<span class="roleNumber">1</span>人</li>
+							<li><i class="square"></i>警&emsp;察<span class="roleNumber">1</span>人</li>
+							<li><i class="square"></i>警&emsp;察<span class="roleNumber">1</span>人</li>
+							<li><i class="square"></i>警&emsp;察<span class="roleNumber">1</span>人</li>
+						</ul>-->
 					</div>
 						<!--设置按钮-->
-						<button id="setRole" class="btn-set">点击设置<img src="img/pencil.png"/></button>
+						<button id="set" class="btn-set">点击设置<img src="img/pencil.png"/></button>
 
 				</div>
 			</div>
@@ -53,15 +53,15 @@
 			</div>
 			<!--玩家人数模块-->
 			<div class="playersNumber">
-				<div class="sum">玩家人数<input id="playersNumber" class="sumNumber" type="text" />人</div> 
+				<div class="sum">玩家人数<input id="sum" class="sumNumber" type="text" value="4" />人</div> 
 				<!--控制滑块-->
 				<div class="sum-set">
-					<!--自减按钮-->
-					<button class="btn"><span class="icon-minus"></span></button>
+					<!--增加按钮-->
+					<button id="reduce" class="btn"><span class="icon-minus"></span></button>
 					<!--滑块-->
-					<input class="range" type="range" />
-					<!--自增按钮-->
-					<button class="btn"><span class="icon-add"></span></button>
+					<input id="range" class="range" type="range" min="4" max="18" step="1" value="4" />
+					<!--减少按钮-->
+					<button id="increase" class="btn"><span class="icon-add"></span></button>
 				</div>
 			</div>
 
