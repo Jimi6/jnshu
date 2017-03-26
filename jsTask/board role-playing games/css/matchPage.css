@@ -182,6 +182,7 @@ button {
 }
 .playersNumber .sumSet {
   display: inline-flex;
+  justify-content: space-between;
   align-items: center;
   width: 88%;
   margin: 1.5rem 6%;
@@ -194,8 +195,12 @@ button {
   width: 1.5rem;
   height: 1.5rem;
   border: 0.1rem solid #ccc;
+  outline: none;
   cursor: pointer;
   background: transparent;
+}
+.playersNumber .sumSet .btn:focus {
+  border-color: #fab344;
 }
 .playersNumber .sumSet .btn .icon-add,
 .playersNumber .sumSet .btn .icon-minus {
@@ -219,8 +224,8 @@ button {
   background: #fab344;
 }
 .playersNumber .sumSet input[type=range] {
-  width: 80%;
-  height: .5rem;
+  width: 65%;
+  height: .3rem;
   -webkit-appearance: none;
   background-color: #ffe6be;
   vertical-align: middle;
@@ -228,11 +233,11 @@ button {
 }
 .playersNumber .sumSet input[type=range]::-webkit-slider-thumb {
   width: 3rem;
-  height: 1.6rem;
+  height: 1.9rem;
   -webkit-appearance: none;
   cursor: pointer;
   background: url(../img/slider-thumb.png) no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 
 .footer {
