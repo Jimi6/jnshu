@@ -16,7 +16,7 @@ $(document).ready(function() { //页面载入时执行
 
 	function showRole() { //	显示各角色人数
 		rolesCreate();
-		$("#matchResult").html('<ul><li><i class="square2"></i>' + killers[0] + killers.length + '人' + '</li><li><i class="square"></i>' + civilians[0] + civilians.length + '人' + '</li></ul>');
+		$("#matchResult").html('<ul><li><i class="square2"></i>' + killers[0] + killers.length + '人' + '</li><li><i class="square"></i>' + civilians[0] + civilians.length + '人' + '</li></ul>');//显示具体角色人数
 	}
 
 	function sumChange(x) { //点击增/减按钮发生的动作
@@ -32,7 +32,7 @@ $(document).ready(function() { //页面载入时执行
 		var sum = parseInt($("#sum").val()); //获取总人数
 		var max = 18; //	最大数
 		var min = 4; //最小人数
-		$("#tip").html((sum > max && "最多支持" + max + "人同时游戏！") || (sum < min && "亲！至少" + min + "个人才能进行游戏哦！") || "配比玩家后进行游戏！");
+		$("#tip").html((sum > max && "最多支持" + max + "人同时游戏！") || (sum < min && "亲！至少" + min + "个人才能进行游戏哦！") || "配比玩家后进行游戏！");//效果参照下句注释
 		$("#sum").val(sum = (sum > max && max) || (sum < min && min) || sum); //	输入框和滑块值等于sum；超过最大则等于最大，小于最小则等于最小；
 		//sum = (sum > max && max) || (sum < min && min) || sum  此句效果等同于   
 		//if(sum>max){sum=max;}else if(sum<min){sum=min;}else{sum=sum;}
@@ -52,15 +52,10 @@ $(document).ready(function() { //页面载入时执行
 		roles.sort(function(a, b) { return Math.random() > .5 ? -1 : 1; }); //数组乱序
 		for(var m in roles) {
 			var role = $("<li></li>"); //		创建角色整体标签
-			var content = $("<span></span>"); //		创建角色内容标签
-			content.html(parseInt(m) + 1 + "号:" + roles[m]);
+			var content = $("<span></span>").html((parseInt(m) + 1) + "号:" + roles[m]); //		创建角色内容标签  此句效果等同于  var content = $("<span>"+(parseInt(m) + 1) + "号:" + roles[m]+"</span>") 
+			var square = $("<i></i>").addClass((roles[m] == killers[0] && "square2") || "square"); //		创建正方形图标标签。如果是杀手，i标签的类名是"square2",平民则为"square"。                             添加类名 方法一：addClass 方法二.attr("class", (roles[m] == killers[0] && "square2") || "square")
+			roleList.append(role.append(square).append(content)); //添加正方形,内容至角色标签后;添加角色至角色列表标签后。
 			console.log(content.html()); //控制台打印角色配比内容
-			var square = $("<i></i>"); //		创建正方形图标标签
-			square.addClass((roles[m] == killers[0] && "square2") || "square") //方法一：如果是杀手，i标签的类名是"square2",平民则为"square"；
-			//方法二square.attr("class", (roles[m] == killers[0] && "square2") || "square")
-			role.append(square) //添加正方形标签至角色标签后
-			role.append(content) //添加内容标签至角色标签后
-			roleList.append(role); //添加角色标签至角色列表标签后
 		}
 		$("#matchResult").append(roleList); //	设置玩家后显示内容
 	})
