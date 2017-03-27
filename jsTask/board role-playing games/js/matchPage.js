@@ -18,6 +18,7 @@ function sumChange(x) { //点击增/减按钮发生的动作
 	getSum.value = sum;
 	getRange.value = getSum.value;
 	checkNum();
+	showRole();
 }
 
 function inputChange() {
@@ -50,12 +51,8 @@ function checkNum() { //检查玩家人数是否符合要求(4-18)；并进行�
 function rolesCreate() { //角色数组初始化
 	var killersNum = Math.floor(sum / 4);
 	var civiliansNum = sum - killersNum;
-	console.log("玩家总人数" + sum);
-	console.log("杀手人数" + killersNum);
-	console.log("平民人数" + civiliansNum);
-	killers.length = 0;
-	civilians.length = 0;
-	roles.length = 0;
+	console.log("玩家总人数" + sum+"杀手人数" + killersNum+"平民人数" + civiliansNum);
+	roles.length = civilians.length =killers.length = 0;//清空数组
 	for(var i = 0; i < killersNum; i++) {
 		killers.push("杀手");
 	}
@@ -106,11 +103,9 @@ getSum.onblur = function() {
 getSetBtn.onclick = setRole; //设置具体角色
 getIncrease.onclick = function() { //点击增加按钮值加1；
 	sumChange(1);
-	showRole();
 }
 getReduce.onclick = function() { //点击减少按钮值减1;
 	sumChange(-1);
-	showRole();
 }
 getRange.onchange = function rangeChange() { //滑动滑块
 	getSum.value = getRange.value;
