@@ -18,20 +18,22 @@ var matchResult = document.getElementById("matchResult");
 //点击发牌按钮，跳转至翻牌页面
 var deal = document.getElementById("deal");
 //玩家总人数
+//最大人数
+var maxNum=18;
+//最小人数
+var minNum=4;
 var sum = parseInt(getSum.value);
 //杀手人数
-var killerNumber;
+var killersNum;
 //平民人数
-var civilianNumber;
+var civiliansNum;
 //杀手数组
 var killers = [];
 
 //平民数组
-var civilian = [];
+var civilians = [];
 //角色存放数组
 var roles = [];
-//显示结果HTMl
-var resultHTML = "";
 
 //点击增/减按钮发生的动作
 function sumChange(x) {
@@ -41,93 +43,98 @@ function sumChange(x) {
 	checkNum();
 }
 
-////数字输入框失焦时执行。onfocus，oninput,onchange
-//getSum.onblur=function (){
-//sum = getSum.value;
-//	sum = (sum > 18 && 18) || (sum < 4 && 4) || sum;
-//	getSum.value = sum;
-//	getRange.value = getSum.value;
-//	showRole();	
-//}
-
 function inputChange (){
-	getSum.value=getSum.value.replace(/\D/g, '');
-//	sum=getSum.value;
+//	getSum.value=getSum.value.replace(/\D/g, '');
 //	checkNum();
+	getRange.value=getSum.value;
 	showRole();	
 }
 
 //检查玩家人数是否符合要求(4-18)；并进行重置和提示。
 function checkNum(){
-//	if(sum>18){
-//		tip.innerHTML="亲！本游戏最多支持18人哦！建议分队进行！";
-//		sum=18;
-//	}else if(sum<4){
-//		tip.innerHTML="亲！至少4个人才能进行游戏哦！";
-//		sum=4;
+//	if(sum>maxNum){
+//		tip.innerHTML="亲！本游戏最多支持"+maxNum+"人哦！建议分队进行！";
+//		sum=maxNum;
+//	}else if(sum<minNum){
+//		tip.innerHTML="亲！至少"+minNum+"个人才能进行游戏哦！";
+//		sum=minNum;
 //	}else{
 //		tip.innerHTML="亲！你所选择的玩家人数为"+sum+"人。设置后可进行游戏！";
 //		sum=sum;
 //	}
 //以下2句效果同上if语句；
-	tip.innerHTML=(sum>18&&"亲！超过最大同时游戏人数18人！建议分队进行！")||(sum<4&&"亲！至少4个人才能进行游戏哦！")||"设置具体角色后可进行游戏！";
-	sum=(sum>18&&18)||(sum<4&&4)||sum;
+	tip.innerHTML=(sum>maxNum&&"最多支持"+maxNum+"人同时游戏！")||(sum<minNum&&"亲！至少"+minNum+"个人才能进行游戏哦！")||"配比玩家后进行游戏！";
+	sum=(sum>maxNum&&maxNum)||(sum<minNum&&minNum)||sum;
 	getSum.value = sum;
 	getRange.value = getSum.value;
 }
-
+////数字输入框输入时执行。onfocus，oninput,onchange，onblur。
 getSum.oninput=inputChange;
-getSum.onpropertychange=inputChange;
-
-
+//getSum.onpropertychange=inputChange;
 //角色数组初始化
 function rolesCreate() {
 	sum = parseInt(getSum.value);
-	killerNumber = Math.floor(sum / 4);
-	civilianNumber = sum - killerNumber;
+	killersNum = Math.floor(sum / 4);
+	civiliansNum = sum - killersNum;
 	console.log("玩家总人数" + sum);
-	console.log("杀手人数" + killerNumber);
-	console.log("平民人数" + civilianNumber);
+	console.log("杀手人数" + killersNum);
+	console.log("平民人数" + civiliansNum);
 	killers.length = 0;
-	civilian.length = 0;
+	civilians.length = 0;
 	roles.length = 0;
-	for(var i = 0; i < killerNumber; i++) {
+	for(var i = 0; i < killersNum; i++) {
 		killers.push("杀手");
 	}
-	for(var j = 0; j < civilianNumber; j++) {
-		civilian.push("平民");
+	for(var j = 0; j < civiliansNum; j++) {
+		civilians.push("平民");
 	}
 	//	组合杀手数组和平民数组给角色数组
-	roles = killers.concat(civilian);
-}
-//匹配结果显示区域
-function showHTML() {
-	matchResult.innerHTML = resultHTML;
+	roles = killers.concat(civilians);
 }
 //显示角色各自人数
 function showRole() {
 	rolesCreate();
-	resultHTML = '<ul>	<li><i class="square2"></i>' + killers[0] + killers.length + '人' + '</li><li><i class="square"></i>' + civilian[0] + civilian.length + '人' + '</li></ul>';
-	showHTML();
+	matchResult.innerHTML = '<ul><li><i class="square2"></i>' + killers[0] + killers.length + '人' + '</li><li><i class="square"></i>' + civilians[0] + civilians.length + '人' + '</li></ul>';
 }
 
 //设置角色
 function setRole() {
+//	清空配比结果内容
+	matchResult.innerHTML="";
 	//玩家匹配结果数组
 	var rolesResult = [];
+//	创建角色列表标签
+    var roleList=document.createElement("ul");
 	rolesCreate();
 	//数组乱序
 	roles.sort(function(a, b) { return Math.random() > .5 ? -1 : 1; });
 	for(var m in roles) {
-		console.log(m + "号是：" + roles[m]);
-		rolesResult[m] = parseInt(m) + 1 + "号:" + roles[m];
+//		创建角色整体标签
+		var role=document.createElement("li");
+//		创建角色内容标签
+		var content=document.createElement("span");
+		content.innerHTML=parseInt(m) + 1 + "号:" + roles[m];
+		console.log(content.innerHTML);
+//		创建正方形图标标签
+		var square=document.createElement("i");
+//如果是杀手，i标签的类名是"square2",平民则为"square"；
+		square.className=(roles[m]==killers[0]&&"square2")||"square";
+//		添加正方形标签至角色标签后
+		role.appendChild(square);
+		//添加内容标签至角色标签后
+		role.appendChild(content);
+		//添加角色标签至角色列表标签后
+  		roleList.appendChild(role);
+    //		rolesResult[m] = parseInt(m) + 1 + "号:" + roles[m];
 	}
 	//	设置玩家后显示内容
-	resultHTML = '<ul><li><i class="square2"></i>' + rolesResult.join('</li><li><i class="square2"></i>') + '</li></ul>';
-	showHTML();
+//	resultHTML = '<ul><li><i class="square2"></i>' + rolesResult.join('</li><li><i class="square2"></i>') + '</li></ul>';
+    matchResult.appendChild(roleList);
 }
+
+
 //当页面加载时，显示默认玩家配比
-window.onload = showRole();
+window.onload = showRole;
 //点击返回按钮，返回上一页
 back.onclick = function() {
 	window.history.back();
@@ -150,6 +157,7 @@ getReduce.onclick = function() {
 //滑动滑块
 getRange.onchange=function rangeChange(){
 	getSum.value=getRange.value;
+	showRole();
 }
 //发牌按钮
 deal.onclick = function() {
