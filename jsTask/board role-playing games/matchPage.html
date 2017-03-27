@@ -29,16 +29,10 @@
 					<!--匹配结果-->
 					<div id="matchResult" class="matchResult" >
 						<!--<ul>
-							<li><i class="square"></i>杀&emsp;手<span class="roleNumber">1</span>人</li>
-							<li><i class="square"></i>杀&emsp;手<span class="roleNumber">1</span>人</li>
-							<li><i class="square"></i>医&emsp;生<span class="roleNumber">1</span>人</li>
-							<li><i class="square"></i>医&emsp;生<span class="roleNumber">1</span>人</li>
-							<li><i class="square"></i>狙击手<span class="roleNumber">1</span>人</li>
-							<li><i class="square"></i>狙击手<span class="roleNumber">1</span>人</li>
-							<li><i class="square"></i>警&emsp;察<span class="roleNumber">1</span>人</li>
-							<li><i class="square"></i>警&emsp;察<span class="roleNumber">1</span>人</li>
-							<li><i class="square"></i>警&emsp;察<span class="roleNumber">1</span>人</li>
-							<li><i class="square"></i>警&emsp;察<span class="roleNumber">1</span>人</li>
+							<li><i class="square"></i>杀&emsp;手1人</li>
+							<li><i class="square"></i>医&emsp;生1人</li>
+							<li><i class="square"></i>狙击手1人</li>
+							<li><i class="square"></i>警&emsp;察1人</li>
 						</ul>-->
 					</div>
 						<!--设置按钮-->
@@ -48,20 +42,24 @@
 			</div>
 			<!--玩家词组模块-->
 			<div class="wordGroup">
-				<input type="text" placeholder="平民词组" />
-				<input type="text" placeholder="杀手词组" />
+				<input id="civilianWord" type="text" placeholder="平民词组" />
+				<input id="killersWord" type="text" placeholder="杀手词组" />
 			</div>
 			<!--玩家人数模块-->
 			<div class="playersNumber">
+				<!--总人数输入框-->
 				<div class="sum">玩家人数<input id="sum" class="sumNumber" type="text" value="4" />人</div> 
+				<p id="tip" class="tip">
+					支持4-18人同时游戏！
+				</p>
 				<!--控制滑块-->
 				<div class="sumSet">
 					<!--增加按钮-->
-					<button id="reduce" class="btn"><span class="icon-minus"></span></button>
+					<button id="reduce" class="btn">-</button>
 					<!--滑块-->
 					<input id="range" type="range" min="4" max="18" step="1" value="4" />
 					<!--减少按钮-->
-					<button id="increase" class="btn"><span class="icon-add"></span></button>
+					<button id="increase" class="btn">+</button>
 				</div>
 			</div>
 

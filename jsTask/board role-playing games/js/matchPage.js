@@ -2,6 +2,8 @@
 var back = document.getElementById("back");
 //获取玩家总人数输入框
 var getSum = document.getElementById("sum");
+//获取提示区
+var tip=document.getElementById("tip");
 //获取增加按钮
 var getIncrease = document.getElementById("increase");
 //获取减少按钮
@@ -34,32 +36,48 @@ var resultHTML = "";
 //点击增/减按钮发生的动作
 function sumChange(x) {
 	sum += x;
-	//总人数大于18时，置为18；小于4时，置为4；	
-	//	if(sum > 18) {
-	//		sum = 18;
-	//	} else if(sum < 4) {
-	//		sum = 18;
-	//	}
-	sum = (sum > 18 && 18) || (sum < 4 && 4) || sum;
 	getSum.value = sum;
 	getRange.value = getSum.value;
+	checkNum();
 }
 
-//getSum.onfocus=function sumOnChange() {
-//	sum = getSum.value;
+////数字输入框失焦时执行。onfocus，oninput,onchange
+//getSum.onblur=function (){
+//sum = getSum.value;
 //	sum = (sum > 18 && 18) || (sum < 4 && 4) || sum;
 //	getSum.value = sum;
 //	getRange.value = getSum.value;
-//	showRole();
+//	showRole();	
 //}
-getSum.onblur=function (){
-sum = getSum.value;
-	sum = (sum > 18 && 18) || (sum < 4 && 4) || sum;
-	getSum.value = sum;
-	getRange.value = getSum.value;
+
+function inputChange (){
+	getSum.value=getSum.value.replace(/\D/g, '');
+//	sum=getSum.value;
+//	checkNum();
 	showRole();	
 }
 
+//检查玩家人数是否符合要求(4-18)；并进行重置和提示。
+function checkNum(){
+//	if(sum>18){
+//		tip.innerHTML="亲！本游戏最多支持18人哦！建议分队进行！";
+//		sum=18;
+//	}else if(sum<4){
+//		tip.innerHTML="亲！至少4个人才能进行游戏哦！";
+//		sum=4;
+//	}else{
+//		tip.innerHTML="亲！你所选择的玩家人数为"+sum+"人。设置后可进行游戏！";
+//		sum=sum;
+//	}
+//以下2句效果同上if语句；
+	tip.innerHTML=(sum>18&&"亲！超过最大同时游戏人数18人！建议分队进行！")||(sum<4&&"亲！至少4个人才能进行游戏哦！")||"设置具体角色后可进行游戏！";
+	sum=(sum>18&&18)||(sum<4&&4)||sum;
+	getSum.value = sum;
+	getRange.value = getSum.value;
+}
+
+getSum.oninput=inputChange;
+getSum.onpropertychange=inputChange;
 
 
 //角色数组初始化
@@ -137,16 +155,4 @@ getRange.onchange=function rangeChange(){
 deal.onclick = function() {
 	window.location.href = "draw.html";
 }
-//window.onload = function() {
-//	//监听总人数输入框	
-//	if("\v" == "v") { //true为IE浏览器，感兴趣的同学可以去搜下，据说是现有最流行的判断浏览器的方法
-//		getSum.attachEvent("onporpertychange", function(e) {
-//			sumOnChange();
-//		});
-//	} else {
-//		getSum.addEventListener("onporpertychange", function(e) {
-//			sumOnChange();
-//		});
-//	}
-//}
 

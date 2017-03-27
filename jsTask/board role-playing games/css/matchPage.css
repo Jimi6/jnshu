@@ -164,7 +164,6 @@ button {
 }
 .playersNumber .sum {
   display: inline-block;
-  width: 90%;
   margin: 1rem 5%;
   font-size: 1.4rem;
   color: #444444;
@@ -180,6 +179,12 @@ button {
   background: #f4f5f5;
   color: #fab344;
 }
+.playersNumber .tip {
+  display: inline-block;
+  margin-left: 1rem;
+  color: #F01400;
+  font-size: 1rem;
+}
 .playersNumber .sumSet {
   display: inline-flex;
   justify-content: space-between;
@@ -188,40 +193,21 @@ button {
   margin: 1.5rem 6%;
 }
 .playersNumber .sumSet .btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin: 0 4%;
   width: 1.5rem;
   height: 1.5rem;
+  line-height: 1.5rem;
   border: 0.1rem solid #ccc;
   outline: none;
   cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fab344;
+  text-align: center;
   background: transparent;
 }
 .playersNumber .sumSet .btn:focus {
   border-color: #fab344;
-}
-.playersNumber .sumSet .btn .icon-add,
-.playersNumber .sumSet .btn .icon-minus {
-  display: inline-block;
-  width: 1rem;
-  height: 0.3rem;
-  vertical-align: middle;
-  background: #fab344;
-}
-.playersNumber .sumSet .btn .icon-add {
-  position: relative;
-}
-.playersNumber .sumSet .btn .icon-add:before {
-  position: absolute;
-  top: -112%;
-  left: 34%;
-  display: inline-block;
-  width: 0.3rem;
-  height: 1rem;
-  content: "";
-  background: #fab344;
 }
 .playersNumber .sumSet input[type=range] {
   width: 65%;
