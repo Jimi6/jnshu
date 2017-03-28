@@ -4,6 +4,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
 		<link rel="stylesheet" type="text/css" href="css/draw.css" />
 		<title>桌游精灵|翻牌</title>
 	</head>
@@ -13,7 +14,7 @@
 		<header class="header">
 			<button id="back" class="btn"><img alt="返回" src="img/icon-back.png" /></button>
 			<span class="title">查看身份</span>
-			<button class="btn"><img alt="关闭" src="img/close.png" /></button>
+			<button id="close" class="btn"><img alt="关闭" src="img/close.png" /></button>
 		</header>
 		<div class="mainWrap">
 			<!--角色卡片-->
@@ -22,29 +23,32 @@
 				<div class="roleNumber">
 					3
 				</div>
-				<!--头像-->
-				<!--<div class="thumbnail">
-				<img src="img/draw.png"/>
-			</div>-->
-
-				<!--角色信息-->
-				<div class="roleInfo">
-					<div class="role-pic">
-						<img class="img" alt="图片" src="img/wow.png" />
+				<div id="role">
+							<!--头像-->
+					<div class="thumbnail">
+					<img src="img/draw.png"/>
+				</div>
+					<div class="roleInfo">
+						<div class="role-pic">
+							<img class="img" alt="图片" src="img/wow.png" />
+						</div>
+						<span class="identity">角色：杀手</span>
+						<span class="wordGroup">词组：西伯利亚</span>
 					</div>
-					<span class="identity">角色：杀手</span>
-					<span class="wordGroup">词组：西伯利亚</span>
+					<!--提示信息-->
+					<div class="tip">
+						<p>想办法猜到别人的词，同时注意不要暴露自己哦！</p>
+					</div>
 				</div>
-				<!--提示信息-->
-				<div class="tip">
-					<p>想办法猜到别人的词，同时注意不要暴露自己哦！</p>
-				</div>
+				<!--角色信息-->
+
 			</div>
 		</div>
 
 		<!--页脚-->
-		<footer class="footer"><button class="btn-footer" value="">查看3号身份</button></footer>
+		<footer class="footer"><button id="footerBtn" class="btn btn-2" value="">查看3号身份</button></footer>
 	</body>
-	<script src="js/draw.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/draw.jquery.js" type="text/javascript" charset="utf-8"></script>
 
 </html>

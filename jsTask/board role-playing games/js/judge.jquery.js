@@ -1,0 +1,9 @@
+//法官日记
+$(document.ready=function(){
+	$("#back").click(function(){//返回按钮
+		history.back();
+	})
+	$("#close").click(function(){
+		location.href="index.html"
+	})
+})

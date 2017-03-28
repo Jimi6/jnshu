@@ -47,31 +47,6 @@ button {
   height: 0;
 }
 
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  height: 4rem;
-  border-bottom: .1rem solid #74d4eb;
-  background: #29bdf4;
-}
-.header .btn {
-  margin: 0 .8rem;
-  height: 2rem;
-  border: 0;
-  outline: none;
-  cursor: pointer;
-  background: transparent;
-}
-.header .btn img {
-  height: 100%;
-}
-.header .title {
-  font-size: 1.7rem;
-  color: #fff;
-}
-
 .roleCard {
   position: relative;
   width: 23.5rem;
@@ -107,6 +82,7 @@ button {
   width: 100%;
 }
 .roleCard .roleInfo {
+  display: none;
   padding: 1.5rem 0;
 }
 .roleCard .roleInfo .role-pic {
@@ -136,6 +112,7 @@ button {
   color: #f56b81;
 }
 .roleCard .tip {
+  display: none;
   position: absolute;
   bottom: 0;
   border-top: 0.1rem solid #fff;
@@ -146,35 +123,12 @@ button {
   margin: 1rem;
 }
 
-.footer {
-  position: fixed;
-  bottom: 0;
-}
-.footer .btn-footer {
-  margin: 0 2.5% 1rem;
-  width: 95%;
-  height: 4.5rem;
-  line-height: 4.5rem;
-  text-align: center;
-  color: #fff;
-  font-size: 2rem;
-  cursor: pointer;
-  border: 0;
-  background: #Fab344;
-}
-
 body {
   background: #29bdf4;
 }
 
 .mainWrap {
   padding-bottom: 4.3rem;
-}
-
-.footer .btn-footer {
-  margin: 0 12% 3rem;
-  width: 76%;
-  height: 4.3rem;
 }
 
 /*# sourceMappingURL=draw.css.map */

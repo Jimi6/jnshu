@@ -47,31 +47,6 @@ button {
   height: 0;
 }
 
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  height: 4rem;
-  border-bottom: .1rem solid #74d4eb;
-  background: #29bdf4;
-}
-.header .btn {
-  margin: 0 .8rem;
-  height: 2rem;
-  border: 0;
-  outline: none;
-  cursor: pointer;
-  background: transparent;
-}
-.header .btn img {
-  height: 100%;
-}
-.header .title {
-  font-size: 1.7rem;
-  color: #fff;
-}
-
 .playersMatch {
   display: flex;
   justify-content: space-between;
@@ -224,23 +199,6 @@ button {
   cursor: pointer;
   background: url(../img/slider-thumb.png) no-repeat;
   background-size: cover;
-}
-
-.footer {
-  position: fixed;
-  bottom: 0;
-}
-.footer .btn-footer {
-  margin: 0 2.5% 1rem;
-  width: 95%;
-  height: 4.5rem;
-  line-height: 4.5rem;
-  text-align: center;
-  color: #fff;
-  font-size: 2rem;
-  cursor: pointer;
-  border: 0;
-  background: #Fab344;
 }
 
 body {

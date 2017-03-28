@@ -11,9 +11,9 @@ var deal = document.getElementById("deal"); //点击发牌按钮，跳转至翻�
 var killers = []; //杀手数组
 var civilians = []; //平民数组
 var roles = []; //角色存放数组
-var sum = parseInt(getSum.value);
 
 function sumChange(x) { //点击增/减按钮发生的动作
+	var sum = parseInt(getSum.value);
 	sum += x;
 	getSum.value = sum;
 	getRange.value = getSum.value;
@@ -29,6 +29,7 @@ function inputChange() {
 }
 
 function checkNum() { //检查玩家人数是否符合要求(4-18)；并进行重置和提示。
+	var sum = parseInt(getSum.value);
 	var maxNum = 18; //最大人数
 	var minNum = 4; //最小人数
 	//	if(sum>maxNum){
@@ -49,10 +50,11 @@ function checkNum() { //检查玩家人数是否符合要求(4-18)；并进行�
 }
 
 function rolesCreate() { //角色数组初始化
+	var sum = parseInt(getSum.value);
 	var killersNum = Math.floor(sum / 4);
 	var civiliansNum = sum - killersNum;
-	console.log("玩家总人数" + sum+"杀手人数" + killersNum+"平民人数" + civiliansNum);
-	roles.length = civilians.length =killers.length = 0;//清空数组
+	console.log("玩家总人数" + sum + "杀手人数" + killersNum + "平民人数" + civiliansNum);
+	roles.length = civilians.length = killers.length = 0; //清空数组
 	for(var i = 0; i < killersNum; i++) {
 		killers.push("杀手");
 	}

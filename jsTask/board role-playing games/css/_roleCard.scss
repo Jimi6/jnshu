@@ -34,6 +34,7 @@
         }
     }
     .roleInfo {
+        display: none;
         padding: 1.5rem 0;
         .role-pic {
             display: flex;
@@ -66,6 +67,7 @@
 
     }
     .tip {
+        display: none;
         position: absolute;
         bottom: 0;
         border-top: 0.1rem solid #fff;

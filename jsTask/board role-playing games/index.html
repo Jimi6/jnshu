@@ -1,15 +1,25 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
-		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<script type="text/javascript">
+			window.onload = function() {//点击“简化版”按钮跳转至玩家配比页
+				var game = document.getElementById("game-simple")
+				game.onclick = function() {
+					window.location.href = "matchPage.html";
+				}
+			}
+		</script>
 		<title>桌游精灵|首页</title>
 	</head>
+
 	<body>
 		<header class="header">
 			<a class="btn-menu" href="#">
-				<img src="img/menu-home.png"/>
+				<img src="img/menu-home.png" />
 			</a>
 		</header>
 		<div class="container">
@@ -19,7 +29,7 @@
 				</div>
 				<div class="game">
 					<dl class="list-group">
-						<dt class="list-group-tittle">捉鬼游戏</dt>
+						<dt class="list-group-tittle">杀人游戏</dt>
 						<dd class="list-group-item">
 							<button id="game-simple" class="btn-game">简化版</button>
 							<p class="state">有1234个用户正在玩此款游戏</p>
@@ -35,8 +45,8 @@
 					</dl>
 				</div>
 			</div>
-			
+
 		</div>
 	</body>
-	<script src="js/go-match.js" type="text/javascript" charset="utf-8"></script>
+
 </html>

@@ -46,18 +46,17 @@ $(document).ready(function() { //页面载入时执行
 		showRole();
 	})
 	$("#set").click(function setRole() { //点击设置具体角色
-		$("#matchResult").html(""); //	清空配比结果内容
-		var roleList = $("<ul></ul>"); //	创建角色列表标签
+		$("#matchResult ul li").remove();//	清空配比结果内容  $("#matchResult").html("");//		var roleList = $("<ul></ul>"); //	创建角色列表标签
 		rolesCreate();
 		roles.sort(function(a, b) { return Math.random() > .5 ? -1 : 1; }); //数组乱序
 		for(var m in roles) {
 			var role = $("<li></li>"); //		创建角色整体标签
 			var content = $("<span></span>").html((parseInt(m) + 1) + "号:" + roles[m]); //		创建角色内容标签  此句效果等同于  var content = $("<span>"+(parseInt(m) + 1) + "号:" + roles[m]+"</span>") 
 			var square = $("<i></i>").addClass((roles[m] == killers[0] && "square2") || "square"); //		创建正方形图标标签。如果是杀手，i标签的类名是"square2",平民则为"square"。                             添加类名 方法一：addClass 方法二.attr("class", (roles[m] == killers[0] && "square2") || "square")
-			roleList.append(role.append(square).append(content)); //添加正方形,内容至角色标签后;添加角色至角色列表标签后。
+			$("#matchResult ul").append(role.append(square).append(content)); //			roleList.append(role.append(square).append(content)); //添加正方形,内容至角色标签后;添加角色至角色列表标签后。
 			console.log(content.html()); //控制台打印角色配比内容
 		}
-		$("#matchResult").append(roleList); //	设置玩家后显示内容
+//		$("#matchResult").append(roleList); //	设置玩家后显示内容
 	})
 	//点击增加按钮值加1；
 	$("#increase").click(function() {
@@ -71,7 +70,7 @@ $(document).ready(function() { //页面载入时执行
 		$("#sum").val($("#range").val()); //	$("#sum").attr("value", $("#range").val());此句输入框输入后再滑动滑块不生效；不知何故
 		showRole(); //显示角色人数
 	})
-	$("#back").click(function() { history.back(); }) //返回上一页
+	$("#back").click(function() { history.back();}) //返回上一页;若无访问历史，则无反应
 	$("#deal").click(function() { location.href = "draw.html"; }) //发牌按钮跳转
 	showRole();
 })
