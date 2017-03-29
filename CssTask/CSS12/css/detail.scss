@@ -128,7 +128,7 @@ body {
     .muted {
         color: $mutedColor;
         font-weight: bold;
-        white-space: nowrap;
+        white-space: pre;
     }
     .strong {
         color: $strongColor;

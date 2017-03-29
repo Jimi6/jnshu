@@ -143,13 +143,15 @@ ul {
             }
             span {
                 color: #999;
-                white-space: nowrap;
             }
             img {
                 width: 1.2rem;
                 margin-right: 0.5rem;
             }
 
+        }
+        .type{
+            white-space: pre;
         }
         .type:after {
             width: 1px;

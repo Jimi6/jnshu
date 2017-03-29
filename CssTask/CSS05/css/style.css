@@ -142,11 +142,13 @@ ul {
 }
 .info-detail dl dd span {
   color: #999;
-  white-space: nowrap;
 }
 .info-detail dl dd img {
   width: 1.2rem;
   margin-right: 0.5rem;
+}
+.info-detail dl .type {
+  white-space: pre;
 }
 .info-detail dl .type:after {
   width: 1px;
