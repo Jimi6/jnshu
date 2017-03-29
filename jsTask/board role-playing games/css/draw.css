@@ -71,21 +71,24 @@ button {
   text-align: center;
   background: #fff;
 }
-.roleCard .thumbnail {
+.roleCard .backface {
+  display: none;
   margin: 8rem auto;
   width: 15rem;
   height: 15rem;
   overflow: hidden;
   border-radius: 50%;
 }
-.roleCard .thumbnail img {
+.roleCard .backface img {
   width: 100%;
 }
-.roleCard .roleInfo {
+.roleCard .front {
   display: none;
+}
+.roleCard .front .roleInfo {
   padding: 1.5rem 0;
 }
-.roleCard .roleInfo .role-pic {
+.roleCard .front .roleInfo .role-pic {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -96,30 +99,29 @@ button {
   border-radius: 50%;
   background-color: #fbb435;
 }
-.roleCard .roleInfo .role-pic img {
+.roleCard .front .roleInfo .role-pic img {
   height: 80%;
 }
-.roleCard .roleInfo span {
+.roleCard .front .roleInfo span {
   display: block;
   text-align: center;
   font-size: 2rem;
   line-height: 1.5;
 }
-.roleCard .roleInfo .identity {
+.roleCard .front .roleInfo .identity {
   color: #29bde0;
 }
-.roleCard .roleInfo .wordGroup {
+.roleCard .front .roleInfo .wordGroup {
   color: #f56b81;
 }
-.roleCard .tip {
-  display: none;
+.roleCard .front .tip {
   position: absolute;
   bottom: 0;
   border-top: 0.1rem solid #fff;
   font-size: 1.3rem;
   color: #fca000;
 }
-.roleCard .tip p {
+.roleCard .front .tip p {
   margin: 1rem;
 }
 

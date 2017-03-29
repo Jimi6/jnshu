@@ -3,6 +3,7 @@ $(document).ready(function() { //页面载入时执行
 	var killers = []; //杀手数组
 	var civilians = []; //平民数组
 	var roles = []; //角色存放数组
+	var matched=false;//配比状态
 	function rolesCreate() { //角色数组初始化
 		var sum = parseInt($("#sum").val()); //获取总人数
 		var killersNum = Math.floor(sum / 4); //杀手人数
@@ -26,13 +27,14 @@ $(document).ready(function() { //页面载入时执行
 		$("#range").val(sum);
 		checkNum();
 		showRole();
+		matched=false;
 	}
 
 	function checkNum() { //检查玩家人数是否符合要求(4-18)；并进行重置和提示。
 		var sum = parseInt($("#sum").val()); //获取总人数
 		var max = 18; //	最大数
 		var min = 4; //最小人数
-		$("#tip").html((sum > max && "最多支持" + max + "人同时游戏！") || (sum < min && "亲！至少" + min + "个人才能进行游戏哦！") || "配比玩家后进行游戏！");//效果参照下句注释
+		$("#tip").html((sum > max && "最多支持" + max + "人同时游戏！") || (sum < min && "亲！至少" + min + "个人才能进行游戏哦！") || "可以配比玩家！");//效果参照下句注释
 		$("#sum").val(sum = (sum > max && max) || (sum < min && min) || sum); //	输入框和滑块值等于sum；超过最大则等于最大，小于最小则等于最小；
 		//sum = (sum > max && max) || (sum < min && min) || sum  此句效果等同于   
 		//if(sum>max){sum=max;}else if(sum<min){sum=min;}else{sum=sum;}
@@ -41,6 +43,7 @@ $(document).ready(function() { //页面载入时执行
 	$("#sum").bind("input propertychange", function() { //数字输入框输入时执行。效果等同于原生oninput
 		$("#range").val($("#sum").val()); //	滑块值=输入框值
 		showRole();
+		matched=false;//配比状态设为否
 	}).blur(function() { //输入框失去焦点时检查输入是否合法,并显示角色配比人数
 		checkNum();
 		showRole();
@@ -56,6 +59,8 @@ $(document).ready(function() { //页面载入时执行
 			$("#matchResult ul").append(roleTag.append(square).append(content)); //			roleList.append(role.append(square).append(content)); //添加正方形,内容至角色标签后;添加角色至角色列表标签后。
 			console.log(content.html()); //控制台打印角色配比内容
 		}//		$("#matchResult").append(roleList); //	设置玩家后显示内容
+		matched=!matched;//配比状态设为是
+		$("#tip").text("完成配比！");
 	})
 	//点击增加按钮值加1；
 	$("#increase").click(function() {
@@ -68,11 +73,29 @@ $(document).ready(function() { //页面载入时执行
 	$("#range").change(function() { //	数字输入框至等于滑块值。
 		$("#sum").val($("#range").val()); //	$("#sum").attr("value", $("#range").val());此句输入框输入后再滑动滑块不生效；不知何故
 		showRole(); //显示角色人数
+		matched=false;
+		$("#tip").text("可以配比玩家!");
 	})
 	$("#back").click(function() { history.back();}) //返回上一页;若无访问历史，则无反应
 	$("#deal").click(function() { //去发牌按钮
-		location.href = "draw.html"; 
 		var $word=$(".playerWrods");//获取用户词组
+		var wordInput=true;//玩家词组设置状态
+		if(matched){//检测配比状态
+			for(var i=0;i<$word.length;i++){
+				if($word[i].value==""){//检测玩家词组设置状态
+					wordInput=false;
+					$("#tip").text("请先设置"+$word[i].placeholder);//玩家词组若未设置完成，给出提示
+				}else{
+					wordInput=true;
+				}
+				console.log($word[i].placeholder+"："+$word[i].value);
+			}
+			if(wordInput){
+				location.href = "draw.html"; 
+			}
+		}else{
+			$("#tip").text("请先配比角色，才能发牌！");
+		}
 	}) //发牌按钮跳转
-	showRole();
+	showRole();//页面载入时，显示默认玩家配置信息
 })

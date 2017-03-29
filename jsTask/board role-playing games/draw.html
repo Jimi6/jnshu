@@ -18,19 +18,20 @@
 		</header>
 		<div class="mainWrap">
 			<!--角色卡片-->
-			<div class="roleCard">
+			<div id="role" class="roleCard">
 				<!--角色编号-->
 				<div id="roleNum" class="roleNumber"></div>
-				<div id="role">
-							<!--头像-->
-					<div class="thumbnail">
-					<img src="img/draw.png"/>
-				</div>
+				<!--角色详细信息显示区-->
+				<!--正面-->
+				<div class="front">
 					<div class="roleInfo">
 						<div class="role-pic">
 							<img class="img" alt="图片" src="img/wow.png" />
+							<!--图片-->
 						</div>
+						<!--用户身份-->
 						<span id="identify" class="identity"></span>
+						<!--用户词组-->
 						<span id="words" class="wordGroup"></span>
 					</div>
 					<!--提示信息-->
@@ -38,9 +39,14 @@
 						<p>想办法猜到别人的词，同时注意不要暴露自己哦！</p>
 					</div>
 				</div>
-				<!--角色信息-->
+				<!--背面-->
+				<div class="backface">
+					<!--头像-->
+					<img src="img/draw.png" />
+				</div>
 
 			</div>
+			<!--角色信息-->
 		</div>
 
 		<!--页脚-->

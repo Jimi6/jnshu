@@ -2,10 +2,12 @@
 //玩家人数
 .playersNumber {
     margin-top: 0.5rem;
+    overflow: hidden;
     background: #fff;
     .sum {
         display: inline-block;
         margin: 1rem 5%;
+        width: 100%;
         font-size: 1.4rem;
         color: rgb(68, 68, 68);
     }
@@ -21,17 +23,18 @@
         color: rgb(250, 179, 68);
     }
     .tip{
-        display: inline-block;
-        margin-left: 1rem;
+        display:block;
+        width: 80%;
+        margin: 0 auto;
         color: #F01400;
         font-size: 1rem;
     }
     .sumSet {
-        display: inline-flex;
+        display: flex;
         justify-content: space-between;
         align-items: center;
         width: 88%;
-        margin: 1.5rem 6%;
+        margin: .5rem auto 1.5rem;
         .btn {
             margin: 0 4%;
             width: 1.5rem;

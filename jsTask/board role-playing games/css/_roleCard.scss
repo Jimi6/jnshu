@@ -23,58 +23,64 @@
         text-align: center;
         background: #fff;
     }
-    .thumbnail {
+    .backface {
+        //背面默认隐藏
+        display: none;
         margin: 8rem auto;
         width: 15rem;
         height: 15rem;
         overflow: hidden;
         border-radius: 50%;
         img {
+            //头像
             width: 100%;
         }
     }
-    .roleInfo {
+    .front {
+        //正面默认隐藏
         display: none;
-        padding: 1.5rem 0;
-        .role-pic {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 2rem auto;
-            width: 10rem;
-            height: 10rem;
-            overflow: hidden;
-            border-radius: 50%;
-            background-color: #fbb435;
-            img {
-                height: 80%;
+        .roleInfo {
+            padding: 1.5rem 0;
+            .role-pic {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 2rem auto;
+                width: 10rem;
+                height: 10rem;
+                overflow: hidden;
+                border-radius: 50%;
+                background-color: #fbb435;
+                img {
+                    height: 80%;
+                }
+            }
+
+            span {
+                display: block;
+                text-align: center;
+                font-size: 2rem;
+                line-height: 1.5;
+            }
+            .identity {
+
+                color: rgb(41, 189, 224);
+            }
+            .wordGroup {
+                color: rgb(245, 107, 129);
+            }
+
+        }
+        .tip {
+            position: absolute;
+            bottom: 0;
+            border-top: 0.1rem solid #fff;
+            font-size: 1.3rem;
+            color: rgb(252, 160, 0);
+            p {
+                margin: 1rem;
             }
         }
-
-        span {
-            display: block;
-            text-align: center;
-            font-size: 2rem;
-            line-height: 1.5;
-        }
-        .identity {
-
-            color: rgb(41, 189, 224);
-        }
-        .wordGroup {
-            color: rgb(245, 107, 129);
-        }
-
     }
-    .tip {
-        display: none;
-        position: absolute;
-        bottom: 0;
-        border-top: 0.1rem solid #fff;
-        font-size: 1.3rem;
-        color: rgb(252, 160, 0);
-        p{
-        margin: 1rem;
-        }
-    }
+
 }

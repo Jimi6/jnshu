@@ -88,6 +88,7 @@ button {
   font-size: 2rem;
   cursor: pointer;
   border: 0;
+  outline: none;
   background: #Fab344;
 }
 .footer .btn.btn-2 {
