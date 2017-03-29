@@ -1,7 +1,7 @@
 @charset "utf-8";
 $themeColor: rgb(41,189,244);
 //页头
-.header{
+.header{//头部有2个按钮时
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -18,11 +18,23 @@ $themeColor: rgb(41,189,244);
         background: transparent;
         img{
             height: 100%;
+            vertical-align: middle;
         }
     }
     .title{
         font-size: 1.7rem;
         color: #fff;
+    }
+    &.header2{//头部只有左边一个按钮时
+        display: block;
+        text-align: center;
+        .btn{
+            float: left;
+            line-height: 4.5rem;
+        }
+        .title{
+            line-height: 4.5rem;
+        }
     }
     
 }

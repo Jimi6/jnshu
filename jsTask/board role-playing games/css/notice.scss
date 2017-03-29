@@ -1,0 +1,29 @@
+@charset "utf-8";
+@import "common";
+.main1 {
+    .notice {
+        border-bottom: 0.1rem solid #ccc;
+        margin: 1.5rem 0;
+        padding: 2rem 0;
+        h3 {
+            text-indent: 2.5rem;
+            background: url("../img/sound2.png") no-repeat left center;
+            background-size: 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 1.8rem;
+            color: rgb(78, 78, 78);
+        }
+        .time {
+            font-size: 1.2rem;
+            color: rgb(176, 176, 176);
+        }
+        p {
+            font-size: 1.3rem;
+            color: rgb(134, 134, 134);
+            text-indent: 2rem;
+        }
+    }
+
+}

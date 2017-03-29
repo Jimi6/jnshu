@@ -1,11 +1,5 @@
 //翻牌页
 $(document.ready = function() {
-	$("#back").click(function() { //返回按钮
-		history.back();
-	})
-	$("#close").click(function() { //点击关闭按钮跳回主页
-		location.href = "index.html";
-	})
 	var str1=localStorage.getItem("role");//从本地存储获取角色配比字符串   //传值前测试用 	var roles = ["平民", "杀手", "平民", "平民", "平民", "杀手", "平民", "平民"]; //玩家配比数组
 	var roles=str1.split(",");//角色数组   将字符串分割成数组
     var str2=localStorage.getItem("word");//获取玩家词组   //传值前测试用 	var words = ["康熙", "乾隆"];
@@ -31,7 +25,7 @@ $(document.ready = function() {
 	}
 	$("#look").click(function() { //点击按钮
 		if(complete) { //检若所有玩家完成查看；则跳转至法官日志页
-			location.href = "judge.html";
+			location.href = "notes.html";
 		} else {
 			if(look) { //若已查看，则显示背面
 				showBackFace(); //显示正面
@@ -48,5 +42,6 @@ $(document.ready = function() {
 			}
 		}
 	})
+	localStorage.setItem("history",$("title").text());//将页面标题存入本地
 	showBackFace(); //页面加载默认显示背面
 })

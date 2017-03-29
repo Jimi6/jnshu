@@ -1,86 +1,33 @@
 @charset "utf-8";
 @import "common";
-//背景色
-$bgColor: rgb(240,240,240);
-
-body {
-    background: $bgColor;
+$welcome-txt-color:#fff;
+body{
+    overflow: hidden;
 }
-
-.header {
-    display: flex;
-    align-items: center;
-    height: 6rem;
-    padding: 0 1.1rem;
-
+.welcomeWrap{
+    height: 100%;
     background: $themeColor;
-    .btn-menu {
-        width: 2rem;
-        height: 2rem;
-        img{
-            width: 1.7rem;
-        }
-
-    }
 }
-
-.container {
-    .wraper {
-        padding: 0 1.8rem;
+.welcome{
+    width: 66.6%;
+    padding: 9.5rem 0;
+    margin: 0 auto;
+    .welcome-img{
+        width: 100%;
     }
-    .last-game {
-        height: 6rem;
-        line-height: 6rem;
-        border: 1px solid #ccc;
-        margin: 1.5rem 0;
+    .welcome-txt{
+        margin-top: 4.4rem;
+        font-size: 2rem;
+        color: $welcome-txt-color;
         text-align: center;
-        background: white;
-        a {
-            color: rgb(154,154,154);
-        }
-        .last {
-            float: right;
-            margin-right: .7rem;
-            img {
-                width: 1.2rem;
-                vertical-align: middle;
-            }
-        }
-
-    }
-    .game {
-        padding-bottom: 1.5rem;
-        border: 1px solid #ccc;
-        background: white;
-
-        .list-group-tittle {
-            height: 4.5rem;
-            line-height: 4.5rem;
-            border-bottom: 2px solid rgb(251,180,53);
-            font-size: 2rem;
-            text-align: center;
-            color: rgb(251,180,53);
-        }
-        .list-group-item {
-            width: 80%;
-            margin: 0 auto;
-            text-align: center;
-        }
-        .btn-game {
-            display: block;
-            margin: 1rem 0;
-            width: 100%;
-            height: 6.8rem;
-            line-height: 6.8rem;
-            color: white;
-            font-size: 1.7rem;
-            border: none;
-            background: $themeColor;
-        }
-        .state {
-            font-size: 1.3rem;
-            color: rgb(120,120,120);
+        .dot{
+            display: inline-block;
+            margin: 0 1rem;
+            vertical-align: middle;
+            width: .5rem;
+            height: .5rem;
+            border-radius: 50%;
+            background: $welcome-txt-color;
         }
     }
-
 }

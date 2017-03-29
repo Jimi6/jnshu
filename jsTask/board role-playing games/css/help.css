@@ -59,37 +59,36 @@ button {
   color: #4e4e4e;
 }
 
-body {
-  overflow: hidden;
+.main1 ul li {
+  position: relative;
+  margin: .5rem 0;
 }
-
-.welcomeWrap {
-  height: 100%;
-  background: #29bdf4;
-}
-
-.welcome {
-  width: 66.6%;
-  padding: 9.5rem 0;
-  margin: 0 auto;
-}
-.welcome .welcome-img {
-  width: 100%;
-}
-.welcome .welcome-txt {
-  margin-top: 4.4rem;
-  font-size: 2rem;
-  color: #fff;
-  text-align: center;
-}
-.welcome .welcome-txt .dot {
+.main1 ul li:before {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  left: -1rem;
+  top: .5rem;
   display: inline-block;
-  margin: 0 1rem;
-  vertical-align: middle;
+  content: "";
   width: .5rem;
   height: .5rem;
-  border-radius: 50%;
-  background: #fff;
+  background: #Fab344;
+}
+.main1 p {
+  font-size: 1.3rem;
+  color: #868686;
 }
 
-/*# sourceMappingURL=index.css.map */
+.footer {
+  background: transparent;
+}
+.footer .btn {
+  margin: 1rem auto;
+  width: 80%;
+}
+.footer .btn:last-child {
+  margin-bottom: 3rem;
+}
+
+/*# sourceMappingURL=help.css.map */

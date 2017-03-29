@@ -1,0 +1,37 @@
+@charset "utf-8";
+@import "common";
+.main1{
+    ul{
+        
+        li{
+           position: relative;
+           margin: .5rem 0;
+           &:before{
+               position: absolute;
+               display: flex;
+               align-items: center;
+               left: -1rem;
+               top: .5rem;
+               display: inline-block;
+               content: "";
+               width: .5rem;
+               height: .5rem;
+               background: $orange;
+           }
+        }
+    }
+    p{
+        font-size: 1.3rem;
+        color: rgb(134, 134, 134);  
+    }
+}
+.footer{
+    background: transparent;
+    .btn{
+        margin: 1rem auto;
+        width:80%; 
+        &:last-child{
+            margin-bottom: 3rem;
+        }
+    }
+}

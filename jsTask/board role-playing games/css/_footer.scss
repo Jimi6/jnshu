@@ -1,5 +1,5 @@
 @charset "utf-8";
-$themeColor:#29bdf4;
+@import "common";
 //页脚
 .footer {
     position: fixed;
@@ -17,7 +17,7 @@ $themeColor:#29bdf4;
         cursor: pointer;
         border: 0;
         outline:none;
-        background: #Fab344;
+        background: $orange;
         &.btn-2 {
             margin: 0 auto 3rem;
             width: 24rem;

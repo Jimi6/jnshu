@@ -48,7 +48,7 @@ $(document).ready(function() { //页面载入时执行
 		checkNum();
 		showRole();
 	})
-	$("#set").click(function setRole() { //点击设置具体角色
+	$("#match").click(function setRole() { //点击设置具体角色
 		$("#matchResult ul li").remove();//	清空配比结果内容  $("#matchResult").html("");//		var roleList = $("<ul></ul>"); //	创建角色列表标签
 		rolesCreate();
 		roles.sort(function(a, b) { return Math.random() > .5 ? -1 : 1; }); //数组乱序
@@ -101,5 +101,6 @@ $(document).ready(function() { //页面载入时执行
 			$("#tip").text("请先配比角色，才能发牌！");
 		}
 	}) //发牌按钮跳转
+	localStorage.setItem("history",$("title").text());//将页面标题存入本地
 	showRole();//页面载入时，显示默认玩家配置信息
 })

@@ -59,37 +59,29 @@ button {
   color: #4e4e4e;
 }
 
-body {
-  overflow: hidden;
+.main1 .notice {
+  border-bottom: 0.1rem solid #ccc;
+  margin: 1.5rem 0;
+  padding: 2rem 0;
+}
+.main1 .notice h3 {
+  text-indent: 2.5rem;
+  background: url("../img/sound2.png") no-repeat left center;
+  background-size: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.8rem;
+  color: #4e4e4e;
+}
+.main1 .notice .time {
+  font-size: 1.2rem;
+  color: #b0b0b0;
+}
+.main1 .notice p {
+  font-size: 1.3rem;
+  color: #868686;
+  text-indent: 2rem;
 }
 
-.welcomeWrap {
-  height: 100%;
-  background: #29bdf4;
-}
-
-.welcome {
-  width: 66.6%;
-  padding: 9.5rem 0;
-  margin: 0 auto;
-}
-.welcome .welcome-img {
-  width: 100%;
-}
-.welcome .welcome-txt {
-  margin-top: 4.4rem;
-  font-size: 2rem;
-  color: #fff;
-  text-align: center;
-}
-.welcome .welcome-txt .dot {
-  display: inline-block;
-  margin: 0 1rem;
-  vertical-align: middle;
-  width: .5rem;
-  height: .5rem;
-  border-radius: 50%;
-  background: #fff;
-}
-
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=notice.css.map */

@@ -1,0 +1,103 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+footer,
+html {
+  width: 100%;
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "HiraginoSansGB";
+  font-size: 1.7rem;
+}
+
+li,
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+/*清除浮动*/
+.clearfix:after {
+  display: block;
+  content: "";
+  clear: both;
+  height: 0;
+}
+
+.main1 {
+  width: 80%;
+  display: block;
+  margin: 5rem auto;
+}
+.main1 h3 {
+  line-height: 2;
+  font-size: 1.8rem;
+  font-weight: normal;
+  color: #4e4e4e;
+}
+
+.main1 .detail {
+  font-size: 1.8rem;
+  color: #4e4e4e;
+}
+.main1 ul {
+  margin: 5rem 0;
+}
+.main1 ul li {
+  margin-top: -.1rem;
+  border-top: 0.1rem solid #ccc;
+  border-bottom: 0.1rem solid #ccc;
+}
+.main1 ul li a {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  line-height: 2;
+  font-size: 1.8rem;
+  color: #4e4e4e;
+}
+.main1 ul li a .QQ {
+  font-size: 1.3rem;
+}
+.main1 ul li img {
+  height: 1.7rem;
+}
+.main1 .QRcode {
+  display: flex;
+  justify-content: space-between;
+}
+.main1 .QRcode img {
+  margin-bottom: 2.5rem;
+  width: 5.6rem;
+}
+.main1 .QRcode span {
+  display: block;
+  font-size: 1.3rme;
+  color: #4e4e4e;
+}
+
+/*# sourceMappingURL=about.css.map */

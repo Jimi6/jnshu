@@ -47,6 +47,18 @@ button {
   height: 0;
 }
 
+.main1 {
+  width: 80%;
+  display: block;
+  margin: 5rem auto;
+}
+.main1 h3 {
+  line-height: 2;
+  font-size: 1.8rem;
+  font-weight: normal;
+  color: #4e4e4e;
+}
+
 .header {
   display: flex;
   justify-content: space-between;

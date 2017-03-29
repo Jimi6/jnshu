@@ -47,6 +47,78 @@ button {
   height: 0;
 }
 
+.main1 {
+  width: 80%;
+  display: block;
+  margin: 5rem auto;
+}
+.main1 h3 {
+  line-height: 2;
+  font-size: 1.8rem;
+  font-weight: normal;
+  color: #4e4e4e;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+footer,
+html {
+  width: 100%;
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "HiraginoSansGB";
+  font-size: 1.7rem;
+}
+
+li,
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+/*清除浮动*/
+.clearfix:after {
+  display: block;
+  content: "";
+  clear: both;
+  height: 0;
+}
+
+.main1 {
+  width: 80%;
+  display: block;
+  margin: 5rem auto;
+}
+.main1 h3 {
+  line-height: 2;
+  font-size: 1.8rem;
+  font-weight: normal;
+  color: #4e4e4e;
+}
+
 .playersMatch {
   display: flex;
   justify-content: space-between;
@@ -90,7 +162,7 @@ button {
   margin-right: 1.1rem;
   width: 0.5rem;
   height: 0.5rem;
-  background: #ee9f1b;
+  background: #Fab344;
 }
 .playersMatch .matchResult ul li .square2 {
   background: #29bdf4;
