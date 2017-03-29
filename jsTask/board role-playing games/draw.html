@@ -20,9 +20,7 @@
 			<!--角色卡片-->
 			<div class="roleCard">
 				<!--角色编号-->
-				<div class="roleNumber">
-					3
-				</div>
+				<div id="roleNum" class="roleNumber"></div>
 				<div id="role">
 							<!--头像-->
 					<div class="thumbnail">
@@ -32,8 +30,8 @@
 						<div class="role-pic">
 							<img class="img" alt="图片" src="img/wow.png" />
 						</div>
-						<span class="identity">角色：杀手</span>
-						<span class="wordGroup">词组：西伯利亚</span>
+						<span id="identify" class="identity"></span>
+						<span id="words" class="wordGroup"></span>
 					</div>
 					<!--提示信息-->
 					<div class="tip">
@@ -46,7 +44,7 @@
 		</div>
 
 		<!--页脚-->
-		<footer class="footer"><button id="footerBtn" class="btn btn-2" value="">查看3号身份</button></footer>
+		<footer class="footer"><button id="look" class="btn btn-2"></button></footer>
 	</body>
 	<script src="js/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
 	<script src="js/draw.jquery.js" type="text/javascript" charset="utf-8"></script>

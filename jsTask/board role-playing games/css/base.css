@@ -52,13 +52,13 @@ button {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  height: 4rem;
+  height: 4.5rem;
   border-bottom: .1rem solid #74d4eb;
   background: #29bdf4;
 }
 .header .btn {
   margin: 0 .8rem;
-  height: 2rem;
+  height: 1.7rem;
   border: 0;
   outline: none;
   cursor: pointer;
@@ -75,9 +75,11 @@ button {
 .footer {
   position: fixed;
   bottom: 0;
+  background: #29bdf4;
 }
 .footer .btn {
-  margin: 0 2.5% 1rem;
+  display: block;
+  margin: 0 auto 1rem;
   width: 95%;
   height: 4.5rem;
   line-height: 4.5rem;
@@ -89,8 +91,8 @@ button {
   background: #Fab344;
 }
 .footer .btn.btn-2 {
-  margin: 0 12% 3rem;
-  width: 76%;
+  margin: 0 auto 3rem;
+  width: 24rem;
   height: 4.3rem;
 }
 

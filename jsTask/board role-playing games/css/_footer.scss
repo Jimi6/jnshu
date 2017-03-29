@@ -1,10 +1,13 @@
 @charset "utf-8";
+$themeColor:#29bdf4;
 //页脚
 .footer {
     position: fixed;
     bottom: 0;
+    background: $themeColor;
     .btn {
-        margin: 0 2.5% 1rem;
+        display: block;
+        margin: 0 auto 1rem;
         width: 95%;
         height: 4.5rem;
         line-height: 4.5rem;
@@ -15,8 +18,8 @@
         border: 0;
         background: #Fab344;
         &.btn-2 {
-            margin: 0 12% 3rem;
-            width: 76%;
+            margin: 0 auto 3rem;
+            width: 24rem;
             height: 4.3rem;
         }
 

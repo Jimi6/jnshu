@@ -50,13 +50,12 @@ $(document).ready(function() { //页面载入时执行
 		rolesCreate();
 		roles.sort(function(a, b) { return Math.random() > .5 ? -1 : 1; }); //数组乱序
 		for(var m in roles) {
-			var role = $("<li></li>"); //		创建角色整体标签
+			var roleTag = $("<li></li>"); //		创建角色整体标签
 			var content = $("<span></span>").html((parseInt(m) + 1) + "号:" + roles[m]); //		创建角色内容标签  此句效果等同于  var content = $("<span>"+(parseInt(m) + 1) + "号:" + roles[m]+"</span>") 
 			var square = $("<i></i>").addClass((roles[m] == killers[0] && "square2") || "square"); //		创建正方形图标标签。如果是杀手，i标签的类名是"square2",平民则为"square"。                             添加类名 方法一：addClass 方法二.attr("class", (roles[m] == killers[0] && "square2") || "square")
-			$("#matchResult ul").append(role.append(square).append(content)); //			roleList.append(role.append(square).append(content)); //添加正方形,内容至角色标签后;添加角色至角色列表标签后。
+			$("#matchResult ul").append(roleTag.append(square).append(content)); //			roleList.append(role.append(square).append(content)); //添加正方形,内容至角色标签后;添加角色至角色列表标签后。
 			console.log(content.html()); //控制台打印角色配比内容
-		}
-//		$("#matchResult").append(roleList); //	设置玩家后显示内容
+		}//		$("#matchResult").append(roleList); //	设置玩家后显示内容
 	})
 	//点击增加按钮值加1；
 	$("#increase").click(function() {
@@ -71,6 +70,9 @@ $(document).ready(function() { //页面载入时执行
 		showRole(); //显示角色人数
 	})
 	$("#back").click(function() { history.back();}) //返回上一页;若无访问历史，则无反应
-	$("#deal").click(function() { location.href = "draw.html"; }) //发牌按钮跳转
+	$("#deal").click(function() { //去发牌按钮
+		location.href = "draw.html"; 
+		var $word=$(".playerWrods");//获取用户词组
+	}) //发牌按钮跳转
 	showRole();
 })
