@@ -131,7 +131,6 @@ body {
 .userDetail .muted {
   color: #999999;
   font-weight: bold;
-  width: 6rem;
   white-space: nowrap;
 }
 .userDetail .strong {

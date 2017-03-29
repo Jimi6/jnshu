@@ -149,7 +149,6 @@ ul {
 }
 .info-detail dl .type {
   white-space: nowrap;
-  width: 6rem;
 }
 .info-detail dl .type:after {
   width: 1px;
