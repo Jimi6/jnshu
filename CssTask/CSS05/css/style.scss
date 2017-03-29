@@ -161,8 +161,8 @@ ul {
             display: inline-block;
             content: "";
             vertical-align: middle;
+            white-space: nowrap;
         }
-        .muted-line {}
         .price {
             padding-left: 0.5rem;
             color: #f00;
