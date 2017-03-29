@@ -123,6 +123,10 @@ button {
   margin: 1rem;
 }
 
+body {
+  background: #29bdf4;
+}
+
 .mainWrap {
   overflow: hidden;
   background: #29bdf4;

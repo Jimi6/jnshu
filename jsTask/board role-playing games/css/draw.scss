@@ -5,6 +5,9 @@
 @import "common";
 //引入角色卡样式
 @import "roleCard";
+body{
+    background:$themeColor;
+}
 .mainWrap{
     overflow: hidden;
     background: $themeColor;
