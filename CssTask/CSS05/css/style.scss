@@ -151,7 +151,8 @@ ul {
 
         }
         .type{
-            white-space: pre;
+            white-space: nowrap;
+            width: 6rem;
         }
         .type:after {
             width: 1px;

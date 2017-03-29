@@ -148,7 +148,8 @@ ul {
   margin-right: 0.5rem;
 }
 .info-detail dl .type {
-  white-space: pre;
+  white-space: nowrap;
+  width: 6rem;
 }
 .info-detail dl .type:after {
   width: 1px;
