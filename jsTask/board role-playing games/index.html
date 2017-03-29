@@ -5,14 +5,6 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 		<link rel="stylesheet" type="text/css" href="css/index.css" />
-		<script type="text/javascript">
-			window.onload = function() {//点击“简化版”按钮跳转至玩家配比页
-				var game = document.getElementById("game-simple")
-				game.onclick = function() {
-					window.location.href = "matchPage.html";
-				}
-			}
-		</script>
 		<title>桌游精灵|首页</title>
 	</head>
 
@@ -25,14 +17,14 @@
 		<div class="container">
 			<div class="wraper">
 				<div class="last-game">
-					<a href="#">上次游戏:捉鬼猜词版<span class="last"><img src="img/go-history.png"/></span></a>
+					<a id="history" href="#">上次游戏:捉鬼猜词版<span class="last"><img src="img/go-history.png"/></span></a>
 				</div>
 				<div class="game">
 					<dl class="list-group">
 						<dt class="list-group-tittle">杀人游戏</dt>
 						<dd class="list-group-item">
 							<button id="game-simple" class="btn-game">简化版</button>
-							<p class="state">有1234个用户正在玩此款游戏</p>
+							<p class="state">暂时只有简化版可使用</p>
 						</dd>
 						<dd class="list-group-item">
 							<button class="btn-game">猜词版</button>
@@ -48,5 +40,21 @@
 
 		</div>
 	</body>
-
+	<script src="js/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+//			window.onload = function() {//点击“简化版”按钮跳转至玩家配比页
+//				var game = document.getElementById("game-simple")
+//				game.onclick = function() {
+//					window.location.href = "matchPage.html";
+//				}
+//			}
+			$(document.ready=function(){
+				$("#game-simple").click(function(){//点击“简化版”按钮跳转至玩家配比页
+					location.href = "matchPage.html";
+				})
+				$("#history").click(function(){//暂未实现
+					window.history.back(2);
+				})
+			})
+	</script>
 </html>

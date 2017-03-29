@@ -6,8 +6,10 @@ $(document.ready = function() {
 	$("#close").click(function() { //点击关闭按钮跳回主页
 		location.href = "index.html";
 	})
-	var roles = ["平民", "杀手", "平民", "平民", "平民", "杀手", "平民", "平民"]; //玩家配比数组
-	var words = ["康熙", "乾隆"];
+	var str1=localStorage.getItem("role");//从本地存储获取角色配比字符串   //传值前测试用 	var roles = ["平民", "杀手", "平民", "平民", "平民", "杀手", "平民", "平民"]; //玩家配比数组
+	var roles=str1.split(",");//角色数组   将字符串分割成数组
+    var str2=localStorage.getItem("word");//获取玩家词组   //传值前测试用 	var words = ["康熙", "乾隆"];
+    var words=str2.split(",");//玩家词组
 	var look = false; //角色查看状态
 	var complete = false; //所有玩家完成查看
 	var num = 1; //玩家编号
@@ -23,7 +25,7 @@ $(document.ready = function() {
 		$("#role .front").show(); //显示正面    $("#role .front").fadeIn(1000)//淡入正面
 		$("#roleNum").text(num); //玩家编号信息
 		$("#identify").text("角色：" + roles[num - 1]); //玩家身份信息
-		var word = (roles[num] == "杀手") ? words[0] : words[1];
+		var word = (roles[num] == "平民") ? words[0] : words[1];
 		$("#words").text("词组：" + word); //玩家词组。      效果等同于下句注释
 		//if(roles[num] == "杀手") { //杀手词组 $("#words").text("词组：" + words[0]);} else { //平民词组$("#words").text("词组：" + words[1]);}
 	}

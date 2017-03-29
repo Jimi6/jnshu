@@ -78,7 +78,8 @@ $(document).ready(function() { //页面载入时执行
 	})
 	$("#back").click(function() { history.back();}) //返回上一页;若无访问历史，则无反应
 	$("#deal").click(function() { //去发牌按钮
-		var $word=$(".playerWrods");//获取用户词组
+		var $word=$(".playerWrods");//获取用户词组输入框
+		var words=[$word.length];//玩家词组
 		var wordInput=true;//玩家词组设置状态
 		if(matched){//检测配比状态
 			for(var i=0;i<$word.length;i++){
@@ -88,10 +89,13 @@ $(document).ready(function() { //页面载入时执行
 				}else{
 					wordInput=true;
 				}
+				words[i]=$word[i].value;
 				console.log($word[i].placeholder+"："+$word[i].value);
 			}
 			if(wordInput){
 				location.href = "draw.html"; 
+				localStorage.setItem("role",roles);//将玩家配比信息存入本地存储
+				localStorage.setItem("word",words);//将玩家词组信息存入本地存储
 			}
 		}else{
 			$("#tip").text("请先配比角色，才能发牌！");
