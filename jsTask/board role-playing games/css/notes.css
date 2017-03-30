@@ -1,5 +1,82 @@
+.role {
+  float: left;
+  width: 33.3%;
+  margin-top: 1rem;
+}
+.role .role-info {
+  margin: 0 auto;
+  width: 7rem;
+  height: 7rem;
+  border: 0.2rem solid white;
+}
+.role .role-info .role-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70%;
+  background: #f5c97b;
+  font-size: 1.5rem;
+  color: #000000;
+}
+.role .role-info .role-num {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30%;
+  font-size: 1.2rem;
+  background: #83b09a;
+  color: #fff;
+}
+.role .role-info:hover + .role-tool {
+  visibility: visible;
+}
+.role .tool {
+  visibility: visible;
+  margin: 1rem auto 0;
+  width: 7rem;
+  height: 1.5rem;
+  overflow: hidden;
+}
+.role .tool .tool-item {
+  float: left;
+  display: none;
+  background-color: #fff;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 0;
+  background: url("../img/tool.png") #fff;
+  background-size: 100%;
+}
+.role .tool .tool-item + .tool-item {
+  margin-left: 0.3rem;
+}
+.role .tool .tool-kill {
+  background-position: 0 0;
+}
+.role .tool .tool-search {
+  background-position: 0 -1.5rem;
+}
+.role .tool .tool-mark {
+  background-position: 0 -3rem;
+}
+.role .tool .tool-add {
+  background-position: 0 -4.5rem;
+}
+.role:hover .tool-kill {
+  display: block;
+}
+
 body {
   background: #29bdf4;
+  padding-bottom: 6.5rem;
+}
+
+.role {
+  margin-bottom: 1rem;
+}
+
+.role-list-group {
+  overflow: hidden;
 }
 
 /*# sourceMappingURL=notes.css.map */

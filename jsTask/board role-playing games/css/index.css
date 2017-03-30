@@ -19,11 +19,12 @@ html {
 
 html {
   font-size: 62.5%;
+  background: #fff;
 }
 
 body {
   font-family: "HiraginoSansGB";
-  font-size: 1.7rem;
+  font-size: 1.8rem;
 }
 
 li,
@@ -35,8 +36,9 @@ a {
   text-decoration: none;
 }
 
-button {
+button, .btn {
   cursor: pointer;
+  outline: none;
 }
 
 /*清除浮动*/

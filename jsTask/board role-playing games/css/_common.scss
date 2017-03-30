@@ -1,18 +1,12 @@
 @charset "utf-8";
-//主题色
-$themeColor: rgb(41,189,244);
+$themeColor: rgb(41,189,244);//主题色
 $orange:#Fab344;
-//最大宽度
-$maxWidth: 768px;
-
-//页面字体
-$fontStack: "HiraginoSansGB";
-
+$maxWidth: 768px;//最大宽度
+$fontStack: "HiraginoSansGB";//页面字体
 * {
     margin: 0;
     padding: 0;
 }
-
 body,
 footer,
 html {
@@ -26,10 +20,11 @@ html {
 }
 html {
     font-size: 62.5%;
+    background: #fff;
 }
 body {
     font-family: $fontStack;
-    font-size: 1.7rem;
+    font-size: 1.8rem;
 }
 li,
 ul {
@@ -39,8 +34,9 @@ ul {
 a {
     text-decoration: none;
 }
-button{
+button,.btn{
     cursor: pointer;
+    outline:none;
 }
 /*清除浮动*/
 .clearfix {

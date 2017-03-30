@@ -1,4 +1,14 @@
 @charset "utf-8";
+@import "role";
 body{
     background: #29bdf4;
+    padding-bottom: 6.5rem;
+}
+.container{
+}
+.role{
+    margin-bottom: 1rem;
+}
+.role-list-group {
+    overflow: hidden;
 }

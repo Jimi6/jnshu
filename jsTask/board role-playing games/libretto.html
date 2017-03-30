@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" type="text/css" href="css/libretto.css" />
+		<title>法官台本</title>
+	</head>
+
+	<body>
+		<!--页头-->
+		<header class="header">
+			<button id="back" class="btn left"><img alt="返回" src="img/icon-back.png" /></button>
+			<span class="title">法官台本</span>
+			<button id="close" class="btn right"><img alt="关闭" src="img/close.png" /></button>
+		</header>
+		<div class="main">
+			<div class="gameState">
+				<h3 class="date">第一天</h3>
+				<div class="detail">
+					<!--晚上-->
+					<div class="night">
+						<div class="icon">
+							<!--晚上图标-->
+						</div>
+						<button class="btn"><i>
+						</i>杀手杀人</button>
+					</div>
+					<!--白天-->
+					<div class="day">
+						<!--白天图标-->
+						<div class="icon"></div>
+						<button class="btn"><i></i>亡灵发表遗言</button>
+						<button class="btn"><i></i>玩家依次发言</button>
+						<button class="btn"><i></i>全民投票</button>
+					</div>
+				</div>
+			</div>
+			<!--每日步骤衔接三角形-->
+			<!--<div class="trigale">
+			</div>-->
+		</div>
+		<!--页脚-->
+		<footer class="footer footer-2">
+			<button id="gameover" class="btn" value="">结束游戏</button>
+			<button id="notes" class="btn" value="">法官日记</button>
+		</footer>
+	</body>
+	<script src="js/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/base.jquery.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$("#gameover").click(function() {
+			location.href = "home.html";
+		})
+		$("#notes").click(function() {
+			location.href = "notes.html";
+		})
+	</script>
+
+</html>

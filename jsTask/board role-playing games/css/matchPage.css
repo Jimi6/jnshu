@@ -19,11 +19,12 @@ html {
 
 html {
   font-size: 62.5%;
+  background: #fff;
 }
 
 body {
   font-family: "HiraginoSansGB";
-  font-size: 1.7rem;
+  font-size: 1.8rem;
 }
 
 li,
@@ -35,8 +36,9 @@ a {
   text-decoration: none;
 }
 
-button {
+button, .btn {
   cursor: pointer;
+  outline: none;
 }
 
 /*清除浮动*/
@@ -79,11 +81,12 @@ html {
 
 html {
   font-size: 62.5%;
+  background: #fff;
 }
 
 body {
   font-family: "HiraginoSansGB";
-  font-size: 1.7rem;
+  font-size: 1.8rem;
 }
 
 li,
@@ -95,8 +98,9 @@ a {
   text-decoration: none;
 }
 
-button {
+button, .btn {
   cursor: pointer;
+  outline: none;
 }
 
 /*清除浮动*/
@@ -152,14 +156,15 @@ button {
   float: left;
   display: inline-flex;
   align-items: center;
-  margin: 1rem 0 1rem 1.8rem;
+  width: 50%;
+  margin: 1rem 0;
   text-align: left;
   font-size: 1.3rem;
   color: #a1a1a1;
 }
 .playersMatch .matchResult ul li .square, .playersMatch .matchResult ul li .square2 {
   display: inline-block;
-  margin-right: 1.1rem;
+  margin: 0 1.1rem 0 1.8rem;
   width: 0.5rem;
   height: 0.5rem;
   background: #Fab344;
@@ -187,6 +192,11 @@ button {
   margin-left: 0.8rem;
 }
 
+@media screen and (min-width: 768px) {
+  .playersMatch .matchResult ul li {
+    width: 25%;
+  }
+}
 .wordGroup {
   background: #fff;
   width: 100%;
@@ -286,7 +296,7 @@ body {
 }
 
 .footer {
-  background: transparent;
+  background: #efefef;
 }
 
 /*# sourceMappingURL=matchPage.css.map */

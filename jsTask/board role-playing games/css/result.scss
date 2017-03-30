@@ -1,21 +1,5 @@
 @charset "utf-8";
 @import "common";
-.header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 6rem;
-    padding: 0 .9rem;
-    border-bottom: 2px solid rgba(141,189,224,.5);
-    background: $themeColor;
-    img{
-        height: 1.5rem;
-    }
-    .title{
-        font-size: 1.7rem;
-        color: white;
-    }
-}
 .result-main{
     padding-bottom: 6.5rem;
 }
@@ -76,27 +60,6 @@
     }
 }
 .footer{
-    position: fixed;
-    bottom: 0;
-    margin: 0 auto;
-    width: 100%;
-    max-width: $maxWidth;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 6.5rem;
-    background: rgba(41,189,224,.5);
-    .btn{
-        margin: 0 4%;
-        width: 40%;
-        height: 4.3rem;
-        line-height: 4.3rem;;
-        border-radius: 5px;
-        font-family: "微软雅黑";
-        font-size: 2rem;
-        color: white;
-        text-align: center;
-    }
     .btn-again{
         background: rgb(246,111,111);
     }

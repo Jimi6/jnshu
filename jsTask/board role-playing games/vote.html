@@ -4,242 +4,236 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
 		<link rel="stylesheet" type="text/css" href="css/vote.css" />
 		<title>玩家投票</title>
 	</head>
 
 	<body>
 		<header class="header">
-			<a id="set" class="vote-menu"><img src="img/menu.png" /></a>
+			<a id="set" class="btn left"><img src="img/menu.png" /></a>
 			<span class="title">投票</span>
-			<a id="close" class="vote-close"><img src="img/close.png" /></a>
+			<a id="close" class="btn right"><img src="img/close.png" /></a>
 		</header>
 		<div class="container vote-main">
-			<div class="hint">
-				<div class="main-hint">
-					<span class="hint-txt">发言讨论结束，请大家投票</span>
+			<div class="tipWrap">
+				<div class="tip1">
+					<p class="tip1-txt">发言讨论结束，请大家投票</p>
 					<div class="music">
 						<img src="img/play.png" />
 						<audio src="media/CaiFuZiYou.mp3"></audio>
 					</div>
 				</div>
-				<div class="sub-hint">
+				<div class="tip2">
 					<span>点击得票数最多人的头像</span>
 				</div>
 			</div>
 			<div class="role-list-group">
-				<ul class="list-group">
-					<li class="list-group-item">
+				<ul>
+					<li class="role">
 						<div class="role-info">
 							<div class="role-name">
 								平民
 							</div>
-							<div class="role-no">
+							<div class="role-num">
 								1号
 							</div>
 						</div>
-						<div class="role-tool">
-							<a class="role-tool-item" href="#"><img alt="kill" src="img/knife.png" /></a>
-							<a class="role-tool-item" href="#"><img alt="search" src="img/search.png" /></a>
-							<a class="role-tool-item" href="#"><img alt="mark" src="img/mark.png" /></a>
-							<a class="role-tool-item" href="#"><img alt="add" src="img/add.png" /></a>
-
+							<div class="tool">
+							<button class="tool-item tool-kill"></button>
+							<button class="tool-item tool-search"></button>
+							<button class="tool-item tool-mark"></button>
+							<button class="tool-item tool-add"></button>
 						</div>
 					</li>
-					<li class="list-group-item">
+					<li class="role">
 						<div class="role-info">
 							<div class="role-name">
 								杀手
 							</div>
-							<div class="role-no">
+							<div class="role-num">
 								2号
 							</div>
 						</div>
-						<div class="role-tool">
-							<a class="role-tool-item" href="#"><img alt="kill" src="img/knife.png" /></a>
-							<a class="role-tool-item" href="#"><img alt="search" src="img/search.png" /></a>
-							<a class="role-tool-item" href="#"><img alt="mark" src="img/mark.png" /></a>
-							<a class="role-tool-item" href="#"><img alt="add" src="img/add.png" /></a>
-
+						<div class="tool">
+							<button class="tool-item tool-kill"></button>
+							<button class="tool-item tool-search"></button>
+							<button class="tool-item tool-mark"></button>
+							<button class="tool-item tool-add"></button>
 						</div>
 					</li>
-					<li class="list-group-item">
+					<li class="role">
 						<div class="role-info">
 							<div class="role-name">
 								平民
 							</div>
-							<div class="role-no">
+							<div class="role-num">
 								3号
 							</div>
 						</div>
-						<div class="role-tool">
-							<a class="role-tool-item" href="#"><img alt="kill" src="img/knife.png" /></a>
-							<a class="role-tool-item" href="#"><img alt="search" src="img/search.png" /></a>
-							<a class="role-tool-item" href="#"><img alt="mark" src="img/mark.png" /></a>
-							<a class="role-tool-item" href="#"><img alt="add" src="img/add.png" /></a>
-
+						<div class="tool">
+							<button class="tool-item tool-kill"></button>
+							<button class="tool-item tool-search"></button>
+							<button class="tool-item tool-mark"></button>
+							<button class="tool-item tool-add"></button>
 						</div>
 					</li>
-					<li class="list-group-item">
+					<li class="role">
 						<div class="role-info">
 							<div class="role-name">
 								医生民
 							</div>
-							<div class="role-no">
+							<div class="role-num">
 								4号
 							</div>
 						</div>
-						<div class="role-tool">
-							<a class="role-tool-item" href="#"><img alt="kill" src="img/knife.png" /></a>
-							<a class="role-tool-item" href="#"><img alt="search" src="img/search.png" /></a>
-							<a class="role-tool-item" href="#"><img alt="mark" src="img/mark.png" /></a>
-							<a class="role-tool-item" href="#"><img alt="add" src="img/add.png" /></a>
-
+						<div class="tool">
+							<button class="tool-item tool-kill"></button>
+							<button class="tool-item tool-search"></button>
+							<button class="tool-item tool-mark"></button>
+							<button class="tool-item tool-add"></button>
 						</div>
 					</li>
-					<li class="list-group-item">
+					<li class="role">
 						<div class="role-info">
 							<div class="role-name">
 								警察
 							</div>
-							<div class="role-no">
+							<div class="role-num">
 								5号
 							</div>
 						</div>
-						<div class="role-tool">
-							<a class="role-tool-item" href="#"><img alt="kill" src="img/knife.png" /></a>
-							<a class="role-tool-item" href="#"><img alt="search" src="img/search.png" /></a>
-							<a class="role-tool-item" href="#"><img alt="mark" src="img/mark.png" /></a>
-							<a class="role-tool-item" href="#"><img alt="add" src="img/add.png" /></a>
-
+						<div class="tool">
+							<button class="tool-item tool-kill"></button>
+							<button class="tool-item tool-search"></button>
+							<button class="tool-item tool-mark"></button>
+							<button class="tool-item tool-add"></button>
 						</div>
 					</li>
-					<li class="list-group-item">
+					<li class="role">
 						<div class="role-info">
 							<div class="role-name">
 								狙击手
 							</div>
-							<div class="role-no">
+							<div class="role-num">
 								6号
 							</div>
 						</div>
-						<div class="role-tool">
-							<a class="role-tool-item" href="#"><img alt="kill" src="img/knife.png" /></a>
-							<a class="role-tool-item" href="#"><img alt="search" src="img/search.png" /></a>
-							<a class="role-tool-item" href="#"><img alt="mark" src="img/mark.png" /></a>
-							<a class="role-tool-item" href="#"><img alt="add" src="img/add.png" /></a>
-
+						<div class="tool">
+							<button class="tool-item tool-kill"></button>
+							<button class="tool-item tool-search"></button>
+							<button class="tool-item tool-mark"></button>
+							<button class="tool-item tool-add"></button>
 						</div>
 					</li>
-					<li class="list-group-item">
+					<li class="role">
 						<div class="role-info">
 							<div class="role-name">
 								平民
 							</div>
-							<div class="role-no">
+							<div class="role-num">
 								7号
 							</div>
 						</div>
-						<div class="role-tool">
-							<a class="role-tool-item" href="#"><img alt="kill" src="img/knife.png" /></a>
-							<a class="role-tool-item" href="#"><img alt="search" src="img/search.png" /></a>
-							<a class="role-tool-item" href="#"><img alt="mark" src="img/mark.png" /></a>
-							<a class="role-tool-item" href="#"><img alt="add" src="img/add.png" /></a>
-
+						<div class="tool">
+							<button class="tool-item tool-kill"></button>
+							<button class="tool-item tool-search"></button>
+							<button class="tool-item tool-mark"></button>
+							<button class="tool-item tool-add"></button>
 						</div>
 					</li>
-					<li class="list-group-item">
+					<li class="role">
 						<div class="role-info">
 							<div class="role-name">
 								警察
 							</div>
-							<div class="role-no">
+							<div class="role-num">
 								8号
 							</div>
 						</div>
-						<div class="role-tool">
-							<a class="role-tool-item" href="#"><img alt="kill" src="img/knife.png" /></a>
-							<a class="role-tool-item" href="#"><img alt="search" src="img/search.png" /></a>
-							<a class="role-tool-item" href="#"><img alt="mark" src="img/mark.png" /></a>
-							<a class="role-tool-item" href="#"><img alt="add" src="img/add.png" /></a>
-
+						<div class="tool">
+							<button class="tool-item tool-kill"></button>
+							<button class="tool-item tool-search"></button>
+							<button class="tool-item tool-mark"></button>
+							<button class="tool-item tool-add"></button>
 						</div>
 					</li>
-					<li class="list-group-item">
+					<li class="role">
 						<div class="role-info">
 							<div class="role-name">
 								平民
 							</div>
-							<div class="role-no">
+							<div class="role-num">
 								9号
 							</div>
 						</div>
-						<div class="role-tool">
-							<a class="role-tool-item" href="#"><img alt="kill" src="img/knife.png" /></a>
-							<a class="role-tool-item" href="#"><img alt="search" src="img/search.png" /></a>
-							<a class="role-tool-item" href="#"><img alt="mark" src="img/mark.png" /></a>
-							<a class="role-tool-item" href="#"><img alt="add" src="img/add.png" /></a>
-
+						<div class="tool">
+							<button class="tool-item tool-kill"></button>
+							<button class="tool-item tool-search"></button>
+							<button class="tool-item tool-mark"></button>
+							<button class="tool-item tool-add"></button>
 						</div>
 					</li>
-					<li class="list-group-item">
+					<li class="role">
 						<div class="role-info">
 							<div class="role-name">
 								平民
 							</div>
-							<div class="role-no">
+							<div class="role-num">
 								10号
 							</div>
 						</div>
-						<div class="role-tool">
-							<a class="role-tool-item" href="#"><img alt="kill" src="img/knife.png" /></a>
-							<a class="role-tool-item" href="#"><img alt="search" src="img/search.png" /></a>
-							<a class="role-tool-item" href="#"><img alt="mark" src="img/mark.png" /></a>
-							<a class="role-tool-item" href="#"><img alt="add" src="img/add.png" /></a>
-
+						<div class="tool">
+							<button class="tool-item tool-kill"></button>
+							<button class="tool-item tool-search"></button>
+							<button class="tool-item tool-mark"></button>
+							<button class="tool-item tool-add"></button>
 						</div>
 					</li>
-					<li class="list-group-item">
+					<li class="role">
 						<div class="role-info">
 							<div class="role-name">
 								平民
 							</div>
-							<div class="role-no">
+							<div class="role-num">
 								11号
 							</div>
 						</div>
-						<div class="role-tool">
-							<a class="role-tool-item" href="#"><img alt="kill" src="img/knife.png" /></a>
-							<a class="role-tool-item" href="#"><img alt="search" src="img/search.png" /></a>
-							<a class="role-tool-item" href="#"><img alt="mark" src="img/mark.png" /></a>
-							<a class="role-tool-item" href="#"><img alt="add" src="img/add.png" /></a>
-
+						<div class="tool">
+							<button class="tool-item tool-kill"></button>
+							<button class="tool-item tool-search"></button>
+							<button class="tool-item tool-mark"></button>
+							<button class="tool-item tool-add"></button>
 						</div>
 					</li>
-					<li class="list-group-item">
+					<li class="role">
 						<div class="role-info">
 							<div class="role-name">
 								平民
 							</div>
-							<div class="role-no">
+							<div class="role-num">
 								12号
 							</div>
 						</div>
-						<div class="role-tool">
-							<a class="role-tool-item" href="#"><img alt="kill" src="img/knife.png" /></a>
-							<a class="role-tool-item" href="#"><img alt="search" src="img/search.png" /></a>
-							<a class="role-tool-item" href="#"><img alt="mark" src="img/mark.png" /></a>
-							<a class="role-tool-item" href="#"><img alt="add" src="img/add.png" /></a>
-
+						<div class="tool">
+							<button class="tool-item tool-kill"></button>
+							<button class="tool-item tool-search"></button>
+							<button class="tool-item tool-mark"></button>
+							<button class="tool-item tool-add"></button>
 						</div>
 					</li>
 				</ul>
 			</div>
 		</div>
 		<footer class="footer">
-			<a class="btn btn-vote" href="result.html">投死</a>
+			<a id="vote" class="btn">投死</a>
 		</footer>
 	</body>
 <script src="js/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
 <script src="js/base.jquery.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	$("#vote").click(function(){
+		location.href="libretto.html";
+	})
+</script>
 </html>

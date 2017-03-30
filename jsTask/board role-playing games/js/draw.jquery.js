@@ -42,6 +42,5 @@ $(document.ready = function() {
 			}
 		}
 	})
-	localStorage.setItem("history",$("title").text());//将页面标题存入本地
 	showBackFace(); //页面加载默认显示背面
 })

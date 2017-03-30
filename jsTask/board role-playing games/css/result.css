@@ -19,11 +19,12 @@ html {
 
 html {
   font-size: 62.5%;
+  background: #fff;
 }
 
 body {
   font-family: "HiraginoSansGB";
-  font-size: 1.7rem;
+  font-size: 1.8rem;
 }
 
 li,
@@ -35,8 +36,9 @@ a {
   text-decoration: none;
 }
 
-button {
+button, .btn {
   cursor: pointer;
+  outline: none;
 }
 
 /*清除浮动*/
@@ -57,23 +59,6 @@ button {
   font-size: 1.8rem;
   font-weight: normal;
   color: #4e4e4e;
-}
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 6rem;
-  padding: 0 .9rem;
-  border-bottom: 2px solid rgba(141, 189, 224, 0.5);
-  background: #29bdf4;
-}
-.header img {
-  height: 1.5rem;
-}
-.header .title {
-  font-size: 1.7rem;
-  color: white;
 }
 
 .result-main {
@@ -132,29 +117,6 @@ button {
   color: #a6a6a6;
 }
 
-.footer {
-  position: fixed;
-  bottom: 0;
-  margin: 0 auto;
-  width: 100%;
-  max-width: 768px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 6.5rem;
-  background: rgba(41, 189, 224, 0.5);
-}
-.footer .btn {
-  margin: 0 4%;
-  width: 40%;
-  height: 4.3rem;
-  line-height: 4.3rem;
-  border-radius: 5px;
-  font-family: "微软雅黑";
-  font-size: 2rem;
-  color: white;
-  text-align: center;
-}
 .footer .btn-again {
   background: #f66f6f;
 }

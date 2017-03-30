@@ -7,23 +7,6 @@ body {
     background: $bgColor;
 }
 
-.header {
-    display: flex;
-    align-items: center;
-    height: 6rem;
-    padding: 0 1.1rem;
-
-    background: $themeColor;
-    .btn-menu {
-        width: 2rem;
-        height: 2rem;
-        img{
-            width: 1.7rem;
-        }
-
-    }
-}
-
 .container {
     .wraper {
         padding: 0 1.8rem;

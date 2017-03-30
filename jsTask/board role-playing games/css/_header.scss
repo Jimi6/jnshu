@@ -1,17 +1,67 @@
 @charset "utf-8";
-$themeColor: rgb(41,189,244);
-//页头
+$themeColor: rgb(41,189,244);//主题色
+$headerHeight:4.5rem;//页头高
+////页头
+//.header{//头部有2个按钮时
+//  display: flex;
+//  justify-content: space-between;
+//  align-items: center;
+//  width: 100%;
+//  height: 4.5rem;
+//  border-bottom: .1rem solid #74d4eb;
+//  background: $themeColor;
+//  .btn{
+//      margin: 0 .8rem;
+//      height: 2rem;
+//      border: 0;
+//      outline: none;
+//      cursor: pointer;
+//      background: transparent;
+//      img{
+//          height: 100%;
+//          vertical-align: middle;
+//      }
+//  }
+//  .title{
+//      font-size: 1.7rem;
+//      color: #fff;
+//  }
+//  &.header2{//头部只有左边一个按钮时
+//      display: block;
+//      text-align: center;
+//      .btn{
+//          float: left;
+//          line-height: 4.5rem;
+//      }
+//      .title{
+//          line-height: 4.5rem;
+//      }
+//  }
+//  &.header3{//头部只有右边按钮时
+//      display: block;
+//      text-align: center;
+//      .btn{
+//          float: right;
+//          line-height: 4.5rem;
+//      }
+//      .title{
+//          line-height: 4.5rem;
+//      }
+//  }
+//  
+//}
 .header{//头部有2个按钮时
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: block;
+    text-align: center;
     width: 100%;
-    height: 4.5rem;
+    height: $headerHeight;
+    line-height: $headerHeight;
     border-bottom: .1rem solid #74d4eb;
     background: $themeColor;
     .btn{
         margin: 0 .8rem;
-        height: 1.7rem;
+        line-height: $headerHeight;
+        height: 2rem;
         border: 0;
         outline: none;
         cursor: pointer;
@@ -25,16 +75,11 @@ $themeColor: rgb(41,189,244);
         font-size: 1.7rem;
         color: #fff;
     }
-    &.header2{//头部只有左边一个按钮时
-        display: block;
-        text-align: center;
-        .btn{
-            float: left;
-            line-height: 4.5rem;
-        }
-        .title{
-            line-height: 4.5rem;
-        }
+    .left{
+        float: left;
+    }
+    .right{
+        float: right;
     }
     
 }

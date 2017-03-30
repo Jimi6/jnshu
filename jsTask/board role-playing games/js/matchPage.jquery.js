@@ -101,6 +101,5 @@ $(document).ready(function() { //页面载入时执行
 			$("#tip").text("请先配比角色，才能发牌！");
 		}
 	}) //发牌按钮跳转
-	localStorage.setItem("history",$("title").text());//将页面标题存入本地
 	showRole();//页面载入时，显示默认玩家配置信息
 })

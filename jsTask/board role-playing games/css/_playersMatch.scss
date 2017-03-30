@@ -35,13 +35,14 @@ $match-border-color: #d9d9d9;
                 float: left;
                 display: inline-flex;
                 align-items: center;
-                margin: 1rem 0 1rem 1.8rem;
+                width: 50%;
+                margin: 1rem 0;
                 text-align: left;
                 font-size: 1.3rem;
                 color: rgb(161, 161, 161);
                 .square {
                     display: inline-block;
-                    margin-right: 1.1rem;
+                    margin:0 1.1rem 0 1.8rem;
                     width: 0.5rem;
                     height: 0.5rem;
                     background: $orange;
@@ -72,5 +73,10 @@ $match-border-color: #d9d9d9;
             width: 0.9rem;
             margin-left: 0.8rem;
         }
+    }
+}
+@media screen and(min-width:768px){
+    .playersMatch .matchResult ul li{//pad
+        width: 25%;
     }
 }

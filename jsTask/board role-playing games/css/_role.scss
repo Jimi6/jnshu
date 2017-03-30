@@ -1,0 +1,74 @@
+@charset "utf-8";
+$roleWidth: 7rem;
+$toolHeight: 1.5rem;
+.role {
+    float: left;
+    width: 33.3%;
+    margin-top: 1rem;
+    .role-info {
+        margin: 0 auto;
+        width: $roleWidth;
+        height: $roleWidth;
+        border: 0.2rem solid white;
+        .role-name {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 70%;
+            background: rgb(245,201,123);
+            font-size: 1.5rem;
+            color: #000000;
+        }
+        .role-num {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 30%;
+            font-size: 1.2rem;
+            background: rgb(131,176,154);
+            color: #fff;
+        }
+        &:hover+.role-tool {
+            visibility: visible;
+        }
+    }
+    .tool {
+        visibility: visible;
+        margin: 1rem auto 0;
+        width: $roleWidth;
+        height: $toolHeight;
+        overflow: hidden;
+        .tool-item {
+            float: left;
+            display: none;
+            background-color: #fff;
+            width: $toolHeight;
+            height: $toolHeight;
+            border: 0;
+            background: url("../img/tool.png") #fff;
+            background-size: 100%;
+            &+.tool-item {
+                margin-left: 0.3rem;
+            }
+
+        }
+        .tool-kill {
+            background-position: 0 0;
+        }
+        .tool-search {
+            background-position: 0 -1*$toolHeight;
+        }
+        .tool-mark {
+            background-position: 0 -2*$toolHeight;
+        }
+        .tool-add {
+            background-position: 0 -3*$toolHeight;
+        }
+    }
+    &:hover{
+        .tool-kill{
+            display: block
+        }
+    }
+
+}

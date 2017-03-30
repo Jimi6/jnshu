@@ -46,6 +46,27 @@ body.active {
   -o-transition: all 0.2s ease-in-out;
 }
 .list-group-item {
+    .icon{
+        display: inline-block;
+       width: 2rem;
+       height: 2rem;
+       background: url(../img/menu-icon.png) no-repeat;
+       background-size: 100%;
+       margin-right: 1rem;    
+       vertical-align: middle;
+    }
+    .notice{
+       background-position:0 0; 
+    }
+    .config{
+        background-position:0 -2rem;
+    }
+    .help{
+        background-position:0 -4rem;
+    }
+    .about{
+        background-position:0 -6rem;
+    }
      text-align:left;
     &:first-child,&:last-child{
       border-radius:0;
@@ -57,8 +78,12 @@ body.active {
     }
     }
    
-    .icon-go img{
-      height:1.2rem;
+    .back {
+        width: 2rem;
+        height: 2rem;
+        display: inline-block;
+      background: url(../img/back-icon.png)left center no-repeat;
+      background-size: contain;
     }
   	a{
   		color:#35bdde;
