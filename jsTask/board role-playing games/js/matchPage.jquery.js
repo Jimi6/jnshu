@@ -1,5 +1,5 @@
 //JQuery实现
-$(document).ready(function() { //页面载入时执行
+$(function(){//页面载入时，$(document).ready(function(){})
 	var killers = []; //杀手数组
 	var civilians = []; //平民数组
 	var roles = []; //角色存放数组
@@ -101,5 +101,5 @@ $(document).ready(function() { //页面载入时执行
 			$("#tip").text("请先配比角色，才能发牌！");
 		}
 	}) //发牌按钮跳转
-	showRole();//页面载入时，显示默认玩家配置信息
+	showRole();////页面载入时，显示默认玩家配置信息
 })

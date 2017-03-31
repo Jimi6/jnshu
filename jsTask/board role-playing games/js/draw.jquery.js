@@ -1,5 +1,5 @@
 //翻牌页
-$(document.ready = function() {
+$(function() {
 	var str1=localStorage.getItem("role");//从本地存储获取角色配比字符串   //传值前测试用 	var roles = ["平民", "杀手", "平民", "平民", "平民", "杀手", "平民", "平民"]; //玩家配比数组
 	var roles=str1.split(",");//角色数组   将字符串分割成数组
     var str2=localStorage.getItem("word");//获取玩家词组   //传值前测试用 	var words = ["康熙", "乾隆"];

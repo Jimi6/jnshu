@@ -1,4 +1,4 @@
-$(document.ready = function() {
+$(function() {
 	localStorage.setItem("history",$("title").text());//将页面标题存入本地
 	function jumpurl() { 
 		window.location.href = "home.html";

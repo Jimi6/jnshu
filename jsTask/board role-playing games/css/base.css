@@ -156,10 +156,12 @@ button, .btn {
   color: #4e4e4e;
 }
 
+/*页脚*/
 .footer {
   position: fixed;
   bottom: 0;
   background: #29bdf4;
+  z-index: 3;
 }
 .footer .btn {
   display: block;

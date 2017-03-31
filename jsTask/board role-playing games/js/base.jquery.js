@@ -1,5 +1,5 @@
 //页面通用js文件
-$(document.ready=function(){
+$(function(){
 	$("#back").click(function(){//返回按钮
 		history.back();
 	})

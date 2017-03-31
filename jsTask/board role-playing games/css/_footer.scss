@@ -1,10 +1,11 @@
 @charset "utf-8";
 @import "common";
-//页脚
+/*页脚*/
 .footer {
     position: fixed;
     bottom: 0;
     background: $themeColor;
+    z-index: 3;
     .btn {
         display: block;
         margin: 1rem auto;
