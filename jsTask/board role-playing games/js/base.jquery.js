@@ -9,14 +9,17 @@ $(function(){
 	$("#help").click(function(){//帮助按钮
 		location.href = "help.html";
 	})
-	$("#set").click(function(){//设置
-		location.href = "set.html";
+	$("#config").click(function(){//设置
+		location.href = "config.html";
 	})
 	$("#about").click(function(){//关于
 		location.href = "about.html";
 	})
 	$("#notice").click(function(){//公告
 		location.href = "notice.html";
+	})
+	$("#home").click(function(){
+		location.href = "home.html";
 	})
 	localStorage.setItem("history",$("title").text());//将页面标题存入本地
 })

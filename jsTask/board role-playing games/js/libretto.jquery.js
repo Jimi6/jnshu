@@ -11,7 +11,6 @@ $(function() { //	JSON.parse(a);JSON.stringify(b)
 		var changeColor = "#92b7a5"; //步骤完成颜色
 		var defaultColor = "#24a7c6"; //默认颜色
 		currentState = localStorage.getItem("currentState") || currentState; //从本地存储获取当前游戏状态，若无存储则不获取。
-		mainHTML = $this.parents("#main").html(); //获取当前主体内容
 		$this.css("background-color", changeColor);
 		$this.find("i").css("border-right-color", changeColor);
 		var $clone = $this.parents(".gameState").clone(true); //复制当前按钮父标签的游戏状态模块
@@ -20,7 +19,8 @@ $(function() { //	JSON.parse(a);JSON.stringify(b)
 				localStorage.setItem("身份", "杀手");
 				localStorage.setItem("currentState", "亡灵发表遗言");
 				localStorage.setItem("mainHTML", mainHTML);
-				location.href="vote.html";
+				localStorage.setItem("roleState",currentState);
+				location.href="judge.html";
 				break;
 			case "亡灵发表遗言":
 				localStorage.setItem("currentState", "玩家依次发言");
@@ -32,10 +32,13 @@ $(function() { //	JSON.parse(a);JSON.stringify(b)
 				break;
 			case "玩家投票":
 				$("#main").append($clone); //复制1份游戏进度内容
+				mainHTML = $this.parents("#main").html(); //获取当前主体内容
 				localStorage.setItem("身份", "普通玩家");
 				localStorage.setItem("currentState", "杀手杀人");
+				localStorage.setItem("roleState",currentState)
 				localStorage.setItem("mainHTML", mainHTML);
-				location.href="vote.html";
+				console.log(mainHTML);
+				location.href="judge.html";
 				break;
 			default:
 				console.log("无效状态！");
@@ -53,7 +56,8 @@ $(function() { //	JSON.parse(a);JSON.stringify(b)
 		location.href = "home.html";
 	})
 	$("#notes").click(function() {
-		location.href = "notes.html";
+		localStorage.setItem("roleState","法官日志");
+		location.href = "judge.html";
 	})
 
 	//	if(today.state.vote){//若完成一天，进入下一天，重置今日游戏状态
