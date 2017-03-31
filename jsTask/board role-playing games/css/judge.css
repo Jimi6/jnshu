@@ -65,6 +65,7 @@ button, .btn {
   float: left;
   width: 33.3%;
   margin-top: 1rem;
+  cursor: pointer;
 }
 .role .role-info {
   margin: 0 auto;
@@ -127,6 +128,10 @@ button, .btn {
 }
 .role:hover .tool-kill {
   display: block;
+}
+
+body {
+  background: #29bdf4;
 }
 
 .vote-main {

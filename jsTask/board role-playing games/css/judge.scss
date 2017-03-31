@@ -1,6 +1,9 @@
 @charset "utf-8";
 @import "common";
 @import"role";
+body{
+    background: $themeColor;
+}
 .vote-main {
     padding-bottom: 9.5rem;
     background: $themeColor;
