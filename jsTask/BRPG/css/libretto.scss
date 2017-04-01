@@ -1,6 +1,8 @@
 @charset "utf-8";
 @import "common";
 /*法官台本*/
+$doneColor:#92b7a5; //步骤完成颜色
+$undoColor :#24a7c6; //默认颜色
 $iconWidth: 3rem; //图标的宽
 body {
     background-color: #dedede;
@@ -64,7 +66,7 @@ body {
         height: 4rem;
         width: 90%;
         margin: 1rem 0.5rem 1rem auto;
-        background: #24a7c6;
+        background: $doneColor;
         border: 0;
         outline: none;
         font-size: 1.5rem;
@@ -76,7 +78,13 @@ body {
             top: 1.5rem;
             display: block;
             border: 0.5rem solid transparent;
-            border-right-color: #24a7c6;
+            border-right-color: $doneColor;
+        }
+        &.btn-step{
+            background: $undoColor;
+            i{
+             border-right-color: $undoColor;   
+            }
         }
     }
 }

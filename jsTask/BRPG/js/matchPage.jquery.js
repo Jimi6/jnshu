@@ -4,7 +4,6 @@ $(function(){//页面载入时，$(document).ready(function(){})
 	var civilians = []; //平民数组
 	var roles = []; //角色存放数组
 	var matched=false;//配比状态
-	localStorage.clear();
 	function rolesCreate() { //角色数组初始化
 		var sum = parseInt($("#sum").val()); //获取总人数
 		var killersNum = Math.floor(sum / 4); //杀手人数

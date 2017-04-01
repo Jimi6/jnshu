@@ -120,7 +120,7 @@ body {
   height: 4rem;
   width: 90%;
   margin: 1rem 0.5rem 1rem auto;
-  background: #24a7c6;
+  background: #92b7a5;
   border: 0;
   outline: none;
   font-size: 1.5rem;
@@ -132,6 +132,12 @@ body {
   top: 1.5rem;
   display: block;
   border: 0.5rem solid transparent;
+  border-right-color: #92b7a5;
+}
+.gameState .btn.btn-step {
+  background: #24a7c6;
+}
+.gameState .btn.btn-step i {
   border-right-color: #24a7c6;
 }
 
