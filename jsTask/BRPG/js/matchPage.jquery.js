@@ -94,8 +94,8 @@ $(function(){//页面载入时，$(document).ready(function(){})
 			}
 			if(wordInput){
 				location.href = "draw.html"; 
-				localStorage.setItem("roles",roles);//将玩家配比信息存入本地存储
-				localStorage.setItem("words",words);//将玩家词组信息存入本地存储
+				localStorage.setItem("roles",JSON.stringify(roles));//将玩家配比信息存入本地存储
+				localStorage.setItem("words",JSON.stringify(words));//将玩家词组信息存入本地存储
 			}
 		}else{
 			$("#tip").text("请先配比角色，才能发牌！");

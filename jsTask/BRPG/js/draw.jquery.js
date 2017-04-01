@@ -1,9 +1,15 @@
 //翻牌页
 $(function() {
-	var str1=localStorage.getItem("roles");//从本地存储获取角色配比字符串   //传值前测试用 	var roles = ["平民", "杀手", "平民", "平民", "平民", "杀手", "平民", "平民"]; //玩家配比数组
-	var roles=str1.split(",");//角色数组   将字符串分割成数组
-    var str2=localStorage.getItem("words");//获取玩家词组   //传值前测试用 	var words = ["康熙", "乾隆"];
-    var words=str2.split(",");//玩家词组
+	function illegal(){//未进行玩家配比进入页面处理
+		if(confirm("玩家配比后才可进行游戏，前往配比？")){
+			location.href="matchPage.html";
+		}else {//返回主页，后期考虑改成直接关闭页面。
+			alert("玩家未配比不能继续游戏!");
+			location.href="home.html";
+		}
+	}
+    var roles=JSON.parse(localStorage.getItem("roles"))||illegal();//获取角色数组，若非法进入游戏则先行玩家配比
+	var words=JSON.parse(localStorage.getItem("words"));//获取玩家词组
 	var look = false; //角色查看状态
 	var complete = false; //所有玩家完成查看
 	var num = 1; //玩家编号
