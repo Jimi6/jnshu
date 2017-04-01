@@ -1,6 +1,7 @@
 //法官台本
 $(function() { //	JSON.parse(a);JSON.stringify(b)
 	var state = "杀手杀人" //初始化游戏状态
+	var states=["杀手杀人","亡灵发表遗言","玩家依次发言","全民投票"];
 	var jump = false; //是否跳转至投票页
 //	localStorage.clear("progress");
 //localStorage.clear("state");
@@ -19,29 +20,29 @@ $(function() { //	JSON.parse(a);JSON.stringify(b)
     var gameState={toggle:function($this){
     	state = localStorage.getItem("state") || state//从本地存储获取当前游戏状态，若无存储则不获取。
 		switch(state) {
-			case "杀手杀人":
-				localStorage.setItem("state", "亡灵发表遗言");
+			case states[0]:
+				localStorage.setItem("state",states[1]);
 				localStorage.setItem("roleState",state);
 				progress.step++;
 				localStorage.setItem("progress",JSON.stringify(progress));//跳转页面前存入游戏状态
 				{location.href="judge.html"}
 				break;
-			case "亡灵发表遗言":
-				localStorage.setItem("state", "玩家依次发言");
+			case states[1]:
+				localStorage.setItem("state", states[2]);
 				confirm("请死者亮明身份并发表遗言");
+				$this.removeClass("btn-step");//改变步骤完成状态
 				progress.step++;
 				localStorage.setItem("progress",JSON.stringify(progress));//跳转页面前存入游戏状态
-				loadPage();//游戏状态改变，刷新页面
 				break;
-			case "玩家依次发言":
-				localStorage.setItem("state", "玩家投票");
+			case states[2]:
+				localStorage.setItem("state", states[3]);
 				confirm("玩家依次发言讨论");
+				$this.removeClass("btn-step");//改变步骤完成状态
 				progress.step++;
 				localStorage.setItem("progress",JSON.stringify(progress));//跳转页面前存入游戏状态
-				loadPage();//游戏状态改变，刷新页面
 				break;
-			case "玩家投票":
-				localStorage.setItem("state", "杀手杀人");
+			case states[3]:
+				localStorage.setItem("state", states[0]);
 				localStorage.setItem("roleState",state)
 				progress.daily++;
 				progress.step++;

@@ -16,9 +16,9 @@ $toolHeight: 1.5rem;
             justify-content: center;
             align-items: center;
             height: 70%;
-            background: rgb(245,201,123);
+            background: #83b09a;
             font-size: 1.5rem;
-            color: #000000;
+            color: #fff;
         }
         .role-num {
             display: flex;
@@ -72,4 +72,10 @@ $toolHeight: 1.5rem;
         }
     }
 
+}
+.role.role-live{
+    .role-name {
+            background: rgb(245,201,123);
+            color: #000000;
+    }   
 }

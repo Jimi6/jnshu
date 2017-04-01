@@ -8,6 +8,8 @@ $(function() {
 	for(i in rolesLive){
 		rolesLive[i]=true;
 	}
+
+	rolesLive=JSON.parse(localStorage.getItem("rolesLive"))||rolesLive;//从本地存储获取玩家生存状态，无存储前初始化
 //	localStorage.clear("progress");
 	function liveState(){
 		for(i in roles){
@@ -18,6 +20,9 @@ $(function() {
 			}
 		}
 	}
+	liveState();//初始化角色存活数组
+	killers=JSON.parse(localStorage.getItem("killers"))||killers;//从本地存储获取存活杀手数组，无存储则初始化数组
+	civilians=JSON.parse(localStorage.getItem("civilians"))||civilians;////从本地存储获取存活平民数组，无存储则初始化数组
 	function gameOver(){//判断游戏胜负
 		var result="还没判出胜负";
 		if(killers.length==0){
@@ -70,7 +75,12 @@ $(function() {
 				tool.append(toolItem);
 			}
 			var role = document.createElement("li");
-			role.className = "role";
+//			if(rolesLive[i]){
+//				role.className = "role role-live";//存活玩家类名
+//			}else{
+//				role.className = "role";//死亡玩家类名
+//			}
+			role.className = "role role-live";//存活玩家类名
 			role.append(roleInfo);
 			role.append(tool);
 			$("#roleList").append(role);
@@ -91,16 +101,19 @@ $(function() {
 	}
 
 	function changeToDie(roleState) { //状态变死亡
-		$(".role").click(function() {
+		$(".role.role-live").click(function() {//存活角色才可被杀
 			$roleName = $(this).find(".role-name");
-			if(roleState == "杀手杀人"||"玩家投票") {
+			
+			if(roleState == "杀手杀人"||"全民投票") {
 				if(killed){
 					confirm("一次只能杀一个人！");
-				}else if($roleName.text() == "杀手") {
+				}else if(roleState == "杀手杀人"&&$roleName.text() == "杀手"){
 					alert("坑货！不能杀自己人！");
-				} else {
+						
+				}else{
 					var i = $(this).find(".role-num").text();
 					rolesLive[parseInt(i) - 1] = false;
+					localStorage.setItem("rolesLive",JSON.stringify(rolesLive));
 //					var progress=JSON.parse(localStorage.getItem("progress"));
 //					var log={"daily":progress.daily,"dailyState":progress.dailyState,"num":i}
 //					var a=[];
@@ -109,16 +122,18 @@ $(function() {
 //					console.log("第"+deadLog.daily+"天"+deadLog.num+"号被杀死");
 //					localStorage.setItem("deadLog", deadLog); //将死者号码存入本地
 					console.log(i + "号死了！");
-					$roleName.css("background-color", "#83b09a").css("color", "#fff");
+//					$roleName.css("background-color", "#83b09a").css("color", "#fff");
 					if($roleName.text()==killers[0]){//若死者是杀手，则从杀手存活数组删除一个
 						killers.pop(killers[0]);
+						localStorage.setItem("killers",JSON.stringify(killers));//将杀手存活数组存入本地
 					}else{//若死者是平民，则从平民存活数组删除一个
 						civilians.pop(civilians[0]);
+						localStorage.setItem("killers",JSON.stringify(killers));//将平民存活数组存入本地
 					}
 					killed=true;
+					$(this).removeClass("role-live");//改变生存状态
 				}
-				
-			}
+			}		
 		});
 		gameOver();
 
@@ -154,7 +169,6 @@ $(function() {
 		}
 	}
 	lodePage(); //初始化角色列表 
-	liveState();//初始化角色存活数组
 	roleAndState() //根据不同身份做出响应
 	console.log(roles.length);
 	$("#operate").click(function() {
