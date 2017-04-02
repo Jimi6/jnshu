@@ -1,5 +1,5 @@
 //法官台本
-$(function() { //	JSON.parse(a);JSON.stringify(b)
+$(window).load(function() { //	JSON.parse(a);JSON.stringify(b)
 	var state = "杀手杀人" //初始化游戏状态
 	var states=["杀手杀人","亡灵发表遗言","玩家依次发言","全民投票"];
 	var jump = false; //是否跳转至投票页

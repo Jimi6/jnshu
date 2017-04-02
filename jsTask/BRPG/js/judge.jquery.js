@@ -1,4 +1,4 @@
-$(function() {
+$(window).load(function() {
     var roles=JSON.parse(localStorage.getItem("roles"));//获取配比玩家数组
 	var killed = false; //是否杀过
 	var judge=true;//是否法官
