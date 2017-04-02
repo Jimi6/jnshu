@@ -1,5 +1,5 @@
 //翻牌页
-$(window).load(function() {
+$(function() {
 	function illegal(){//未进行玩家配比进入页面处理
 		if(confirm("玩家配比后才可进行游戏，前往配比？")){
 			location.href="matchPage.html";

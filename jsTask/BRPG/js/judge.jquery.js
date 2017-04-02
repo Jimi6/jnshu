@@ -1,4 +1,4 @@
-$(window).load(function() {
+$(function() {
     var roles=JSON.parse(localStorage.getItem("roles"));//获取配比玩家数组
 	var killed = false; //是否杀过
 	var judge=true;//是否法官
@@ -136,7 +136,6 @@ $(window).load(function() {
 			}		
 		});
 		gameOver();
-
 	}
 	function roleAndState() { //判断玩家身份和状态
 		var roleState = localStorage.getItem("roleState") || "法官开始"; //从本地存储获取当前身份和状态；

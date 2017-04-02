@@ -80,11 +80,17 @@
 			</div>
 		</div>
 		<footer class="footer footer-2">
-			<a class="btn btn-again" href="vote.html">再来一局</a>
-			<a class="btn btn-share">上传并分享</a>
+			<button id="btn-again" class="btn btn-again" href="matchPage.html">再来一局</button>
+			<button class="btn btn-share">上传并分享</button>
 		</footer>
 	</body>
 	<script src="js/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
 	<script src="js/base.jquery.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$("#btn-again").click(function(){
+			location.href="matchPage.html";
+			localStorage.clear("rolesLive");
+		})
+	</script>
 
 </html>
