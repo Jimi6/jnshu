@@ -1,11 +1,9 @@
 //法官台本
-$(window).load(function() { //	JSON.parse(a);JSON.stringify(b)
+$(function() { //	JSON.parse(a);JSON.stringify(b)
 	var state = "杀手杀人" //初始化游戏状态
 	var states=["杀手杀人","亡灵发表遗言","玩家依次发言","全民投票"];
 	var jump = false; //是否跳转至投票页
-//	localStorage.clear("progress");
-//localStorage.clear("state");
-	var progress=JSON.parse(localStorage.getItem("progress"))||{"daily":1,"dailyState":"白天","step":1};//获取当前游戏时间段及游戏步骤，初始为第1天白天第1步
+	var progress=JSON.parse(sessionStorage.getItem("progress"))||{"daily":1,"dailyState":"白天","step":1};//获取当前游戏时间段及游戏步骤，初始为第1天白天第1步
 	function loadPage(){//载入页面
 		var mainHTML="";
 		for(var i=0;i<progress.daily;){
@@ -18,40 +16,40 @@ $(window).load(function() { //	JSON.parse(a);JSON.stringify(b)
 	
 	loadPage();
     var gameState={toggle:function($this){
-    	state = localStorage.getItem("state") || state//从本地存储获取当前游戏状态，若无存储则不获取。
+    	state = sessionStorage.getItem("state") || state//从本地存储获取当前游戏状态，若无存储则不获取。
 		switch(state) {
 			case states[0]:
-				localStorage.setItem("state",states[1]);
-				localStorage.setItem("roleState",state);
+				sessionStorage.setItem("state",states[1]);
+				sessionStorage.setItem("roleState",state);
 				progress.step++;
-				localStorage.setItem("progress",JSON.stringify(progress));//跳转页面前存入游戏状态
+				sessionStorage.setItem("progress",JSON.stringify(progress));//跳转页面前存入游戏状态
 				{location.href="judge.html"}
 				break;
 			case states[1]:
-				localStorage.setItem("state", states[2]);
+				sessionStorage.setItem("state", states[2]);
 				confirm("请死者亮明身份并发表遗言");
 				$this.removeClass("btn-step");//改变步骤完成状态
 				progress.step++;
-				localStorage.setItem("progress",JSON.stringify(progress));//跳转页面前存入游戏状态
+				sessionStorage.setItem("progress",JSON.stringify(progress));//跳转页面前存入游戏状态
 				break;
 			case states[2]:
-				localStorage.setItem("state", states[3]);
+				sessionStorage.setItem("state", states[3]);
 				confirm("玩家依次发言讨论");
 				$this.removeClass("btn-step");//改变步骤完成状态
 				progress.step++;
-				localStorage.setItem("progress",JSON.stringify(progress));//跳转页面前存入游戏状态
+				sessionStorage.setItem("progress",JSON.stringify(progress));//跳转页面前存入游戏状态
 				break;
 			case states[3]:
-				localStorage.setItem("state", states[0]);
-				localStorage.setItem("roleState",state)
+				sessionStorage.setItem("state", states[0]);
+				sessionStorage.setItem("roleState",state)
 				progress.daily++;
 				progress.step++;
-				localStorage.setItem("progress",JSON.stringify(progress));//跳转页面前存入游戏状态
+				sessionStorage.setItem("progress",JSON.stringify(progress));//跳转页面前存入游戏状态
 				{location.href="judge.html"}
 				break;
 			default:
 				console.log("无效状态！");
-				localStorage.setItem("state", "无效状态！");
+				sessionStorage.setItem("state", "无效状态！");
 				break;
 		}
 		$this.removeClass("btn-step");
@@ -66,7 +64,7 @@ $(window).load(function() { //	JSON.parse(a);JSON.stringify(b)
 		location.href = "home.html";
 	})
 	$("#notes").click(function() {
-		localStorage.setItem("roleState","法官日志");
+		sessionStorage.setItem("roleState","法官日志");
 		location.href = "judge.html";
 	})
 })

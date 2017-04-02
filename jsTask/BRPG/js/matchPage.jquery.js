@@ -58,6 +58,9 @@ $(function(){//页面载入时，$(document).ready(function(){})
 			var square = $("<i></i>").addClass((roles[m] == killers[0] && "square2") || "square"); //		创建正方形图标标签。如果是杀手，i标签的类名是"square2",平民则为"square"。                             添加类名 方法一：addClass 方法二.attr("class", (roles[m] == killers[0] && "square2") || "square")
 			$("#matchResult ul").append(roleTag.append(square).append(content)); //			roleList.append(role.append(square).append(content)); //添加正方形,内容至角色标签后;添加角色至角色列表标签后。
 			console.log(content.html()); //控制台打印角色配比内容
+			sessionStorage.setItem("killers",JSON.stringify(killers));
+			sessionStorage.setItem("civilians",JSON.stringify(civilians));
+			console.log("杀手："+killers+"平民："+civilians);
 		}//		$("#matchResult").append(roleList); //	设置玩家后显示内容
 		matched=!matched;//配比状态设为是
 		$("#tip").text("完成配比！");
@@ -94,8 +97,8 @@ $(function(){//页面载入时，$(document).ready(function(){})
 			}
 			if(wordInput){
 				location.href = "draw.html"; 
-				localStorage.setItem("roles",JSON.stringify(roles));//将玩家配比信息存入本地存储
-				localStorage.setItem("words",JSON.stringify(words));//将玩家词组信息存入本地存储
+				sessionStorage.setItem("roles",JSON.stringify(roles));//将玩家配比信息存入本地存储localStorage.setItem("roles",JSON.stringify(roles));
+				sessionStorage.setItem("words",JSON.stringify(words));//将玩家词组信息存入本地存储localStorage.setItem("words",JSON.stringify(words));
 			}
 		}else{
 			$("#tip").text("请先配比角色，才能发牌！");

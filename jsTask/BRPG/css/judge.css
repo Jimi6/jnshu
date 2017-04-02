@@ -159,12 +159,14 @@ body {
   color: #000;
   text-indent: 1rem;
 }
-.tip1 .music {
+.tip1 .audio {
   width: 2.6rem;
   height: 2.6rem;
-}
-.tip1 .music img {
-  width: 100%;
+  background: url(../img/play.png) no-repeat left center transparent;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  background-size: 100%;
 }
 
 .tip2 {

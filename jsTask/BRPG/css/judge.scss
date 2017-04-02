@@ -22,12 +22,14 @@ body{
         color: #000;
         text-indent: 1rem;
     }
-    .music {
+    .audio {
         width: 2.6rem;
         height: 2.6rem;
-        img {
-            width: 100%;
-        }
+        background: url(../img/play.png) no-repeat left center transparent;
+        border: 0;
+        outline: none;
+        cursor: pointer;
+        background-size: 100%;
     }
 }
 .tip2 {

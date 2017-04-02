@@ -12,21 +12,20 @@
 
 	<body>
 		<header class="header">
-			<a id="config" class="btn left"><img src="img/menu.png" /></a>
+			<a id="config" class="btn jump left"><img src="img/menu.png" /></a>
 			<span id="title" class="title"></span>
 			<a id="close" class="btn right"><img src="img/close.png" /></a>
 		</header>
 		<div class="container vote-main">
-			<div class="tipWrap">
+			<div id="tip" class="tipWrap">
 				<div class="tip1">
-					<p class="tip1-txt">发言讨论结束，请大家投票</p>
-					<div class="music">
-						<img src="img/play.png" />
-						<audio src="media/CaiFuZiYou.mp3"></audio>
-					</div>
+					<p id="tip1Txt" class="tip1-txt"></p>
+					<button id="play" class="audio">
+						<audio id="audio" src="media/CaiFuZiYou.mp3"></audio>
+					</button>
 				</div>
 				<div class="tip2">
-					<span>点击得票数最多人的头像</span>
+					<span id="tip2Txt"></span>
 				</div>
 			</div>
 			<div class="role-list-group">
