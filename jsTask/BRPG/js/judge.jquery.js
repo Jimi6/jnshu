@@ -41,7 +41,7 @@ $(function() {
 				tool.append(toolItem);
 			}
 			var role = document.createElement("li");
-			if(rolesLive[i]) {
+			if(rolesLive[i]==true) {
 				role.className = "role role-live"; //存活玩家类名
 			} else {
 				role.className = "role"; //死亡玩家类名
@@ -93,10 +93,6 @@ $(function() {
 					alert("坑货！不能杀自己人！");
 
 				} else {
-					killed = true; //更新本次操作状态为已经杀死1个人
-					$(this).removeClass("role-live"); //改变生存状态
-					sessionStorage.setItem("rolesLive", JSON.stringify(rolesLive));
-
 					if($roleName.text() == killers[0]) { //将死者从对应数组删除，并存入本地存储
 						killers.splice(0, 1);
 						sessionStorage.setItem("killers", JSON.stringify(killers));
@@ -104,9 +100,11 @@ $(function() {
 						civilians.splice(0, 1);
 						sessionStorage.setItem("civilians", JSON.stringify(civilians));
 					}
-
+					killed = true; //更新本次操作状态为已经杀死1个人
 					var num = $(this).find(".role-num").text();
+					$(this).removeClass("role-live"); //改变生存状态
 					rolesLive[parseInt(num) - 1] = false; //将被杀死对象生存状态设为死
+					sessionStorage.setItem("rolesLive", JSON.stringify(rolesLive));
 					if(roleState == "杀手杀人") {
 						var deadMethod = "被杀死";
 					} else {

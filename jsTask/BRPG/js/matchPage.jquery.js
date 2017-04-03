@@ -96,24 +96,19 @@ $(function(){//页面载入时，$(document).ready(function(){})
 				console.log($word[i].placeholder+"："+$word[i].value);
 			}
 			if(wordInput){
-				location.href = "draw.html"; 
-				sessionStorage.setItem("roles",JSON.stringify(roles));//将玩家配比信息存入本地存储localStorage.setItem("roles",JSON.stringify(roles));
-				sessionStorage.setItem("words",JSON.stringify(words));//将玩家词组信息存入本地存储localStorage.setItem("words",JSON.stringify(words));
+				if($word[1].value==$word[0].value){
+					alert($word[1].placeholder+"不能和"+$word[0].placeholder+"一样，请重新设置");
+				} else{
+					location.href = "draw.html"; 
+					sessionStorage.setItem("roles",JSON.stringify(roles));//将玩家配比信息存入本地存储localStorage.setItem("roles",JSON.stringify(roles));
+					sessionStorage.setItem("words",JSON.stringify(words));//将玩家词组信息存入本地存储localStorage.setItem("words",JSON.stringify(words));
+				}
 			}
 		}else{
 			$("#tip").text("请先配比角色，才能发牌！");
 		}
 	}) //发牌按钮跳转
 	function clearDate(){//重新分配角色，清除接口（删除数据）
-	localStorage.clear("roles");//角色
-	localStorage.clear("words");//玩家词组
-	localStorage.clear("killers");//杀手
-	localStorage.clear("civilians");//平民
-	localStorage.clear("state");//游戏继续具体步骤状态
-	localStorage.clear("progress");//游戏进度
-	localStorage.clear("roleState");//进入法官页的角色和状态
-	localStorage.clear("rolesLive");//标记玩家存活状态数组
-	localStorage.clear("result");//游戏结果	
 	sessionStorage.clear("roles");//角色
 	sessionStorage.clear("words");//玩家词组
 	sessionStorage.clear("killers");//杀手
