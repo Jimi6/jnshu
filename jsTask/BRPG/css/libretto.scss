@@ -71,6 +71,13 @@ body {
         outline: none;
         font-size: 1.5rem;
         color: #fff;
+        .byKilled{
+            position: absolute;
+            top: -2rem;
+            left: 0;
+            color: #000;
+            font-size: 1.4rem;
+        }
         i {
             //小三角形
             position: absolute;

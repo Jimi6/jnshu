@@ -8,10 +8,8 @@ $(function() {
 			location.href="home.html";
 		}
 	}
-//  var roles=JSON.parse(localStorage.getItem("roles"))||illegal();//获取角色数组，若非法进入游戏则先行玩家配比
-    var roles=JSON.parse(sessionStorage.getItem("roles"))||illegal();
-//	var words=JSON.parse(localStorage.getItem("words"));//获取玩家词组
-	var words=JSON.parse(sessionStorage.getItem("words"));//获取玩家词组
+    var roles=JSON.parse(sessionStorage.getItem("roles"))||illegal();//  var roles=JSON.parse(localStorage.getItem("roles"))||illegal();//获取角色数组，若非法进入游戏则先行玩家配比
+	var words=JSON.parse(sessionStorage.getItem("words"));//获取玩家词组//	var words=JSON.parse(localStorage.getItem("words"));//获取玩家词组
 	var look = false; //角色查看状态
 	var complete = false; //所有玩家完成查看
 	var num = 1; //玩家编号

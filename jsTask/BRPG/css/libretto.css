@@ -126,6 +126,13 @@ body {
   font-size: 1.5rem;
   color: #fff;
 }
+.gameState .btn .byKilled {
+  position: absolute;
+  top: -2rem;
+  left: 0;
+  color: #000;
+  font-size: 1.4rem;
+}
 .gameState .btn i {
   position: absolute;
   left: -1rem;

@@ -18,64 +18,40 @@
 		<div class="container result-main">
 			<div class="result-info">
 				<div class="result-win">
-					<img src="img/win.png" />
+					<div class="result">
+						<span id="result-txt" class="result-txt"></span>
+					</div>
 					<p class="txt-win">
-						太棒了！值得么？在捉鬼游戏中只有20%的卧底取得最终胜利哦！
+						太棒了！只有智力超群的人才能取得最终胜利哦！
 					</p>
 				</div>
 				<div class="result-info-detail">
 					<div class="row">
 						<span>本次游戏共计用时0小时25分钟</span>
 					</div>
-					<div class="row">
-						<span>警&emsp;察1人</span><span>平&emsp;民6人</span><span>杀&emsp;手0人</span>
+					<div id="liveRole" class="row">
+						<!--<span>警&emsp;察1人</span><span>平&emsp;民6人</span><span>杀&emsp;手0人</span>-->
 					</div>
-					<div class="row">
-						<span>狙击手0人</span><span>医&emsp;生1人</span>
-					</div>
-					<div class="row">
+					<div id="wordGroup">
+						<!--<div class="row">
 						<span>卧底词汇：爱新觉罗</span>
+						</div>
+						<div class="row">
+							<span>平民民词汇：努尔哈赤</span>
+						</div>-->
 					</div>
-					<div class="row">
-						<span>平民民词汇：努尔哈赤</span>
-					</div>
-
 				</div>
 			</div>
 			<div class="result-detail">
-				<ul class="list-group">
-					<li class="list-group-item">
+				<ul id="deadList" class="list-group">
+					<!--<li class="list-group-item">
 						<div class="time-wrapper">
 							<span class="date">第1天</span>
 							<span class="time">0小时07分</span>
 						</div>
 						<p class="muted">晚上：5号被杀手杀死，5号是水民</p>
 						<p class="muted">白天：8耗被全民投票投死，8号是杀手</p>
-					</li>
-					<li class="list-group-item">
-						<div class="time-wrapper">
-							<span class="date">第1天</span>
-							<span class="time">0小时07分</span>
-						</div>
-						<p class="muted">晚上：5号被杀手杀死，5号是水民</p>
-						<p class="muted">白天：8耗被全民投票投死，8号是杀手</p>
-					</li>
-					<li class="list-group-item">
-						<div class="time-wrapper">
-							<span class="date">第1天</span>
-							<span class="time">0小时07分</span>
-						</div>
-						<p class="muted">晚上：5号被杀手杀死，5号是水民</p>
-						<p class="muted">白天：8耗被全民投票投死，8号是杀手</p>
-					</li>
-					<li class="list-group-item">
-						<div class="time-wrapper">
-							<span class="date">第1天</span>
-							<span class="time">0小时07分</span>
-						</div>
-						<p class="muted">晚上：5号被杀手杀死，5号是水民</p>
-						<p class="muted">白天：8耗被全民投票投死，8号是杀手</p>
-					</li>
+					</li>-->
 				</ul>
 			</div>
 		</div>
@@ -86,10 +62,5 @@
 	</body>
 	<script src="js/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
 	<script src="js/base.jquery.js" type="text/javascript" charset="utf-8"></script>
-	<script type="text/javascript">
-		$("#btn-again").click(function(){
-			location.href="matchPage.html";
-		})
-	</script>
-
+	<script src="js/result.jquery.js" type="text/javascript" charset="utf-8"></script>
 </html>

@@ -104,5 +104,27 @@ $(function(){//页面载入时，$(document).ready(function(){})
 			$("#tip").text("请先配比角色，才能发牌！");
 		}
 	}) //发牌按钮跳转
+	function clearDate(){//重新分配角色，清除接口（删除数据）
+	localStorage.clear("roles");//角色
+	localStorage.clear("words");//玩家词组
+	localStorage.clear("killers");//杀手
+	localStorage.clear("civilians");//平民
+	localStorage.clear("state");//游戏继续具体步骤状态
+	localStorage.clear("progress");//游戏进度
+	localStorage.clear("roleState");//进入法官页的角色和状态
+	localStorage.clear("rolesLive");//标记玩家存活状态数组
+	localStorage.clear("result");//游戏结果	
+	sessionStorage.clear("roles");//角色
+	sessionStorage.clear("words");//玩家词组
+	sessionStorage.clear("killers");//杀手
+	sessionStorage.clear("civilians");//平民
+	sessionStorage.clear("state");//游戏继续具体步骤状态
+	sessionStorage.clear("progress");//游戏进度
+	sessionStorage.clear("roleState");//进入法官页的角色和状态
+	sessionStorage.clear("rolesLive");//标记玩家存活状态数组
+	sessionStorage.clear("deadLog");//死亡记录
+	sessionStorage.clear("result");//游戏结果	
+	}
+	clearDate()//重新分配角色，清除接口（删除数据）
 	showRole();////页面载入时，显示默认玩家配置信息
 })
